@@ -1,0 +1,19 @@
+<% include partials/header %>
+
+<div class="container">
+    <h2>ARCHIVE OF GIGS</h2>
+    <% for (var i = 0; i < gigs.length; i ++) { %>
+        <div>
+            <a class="gigs" href="/archive/<%= gigs[i].id %>"><%= gigs[i].place %> (<%= gigs[i].event %>)</a>
+            <p>
+                <%= gigs[i].start_date %>
+                <% if (gigs[i].end_date) { %>
+                    - <%= gigs[i].end_date %>
+                <% } %>
+            </p>
+            
+        </div>
+    <% } %>
+</div>
+
+<% include partials/footer %>

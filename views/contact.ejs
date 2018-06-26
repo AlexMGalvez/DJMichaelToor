@@ -1,0 +1,38 @@
+<% include partials/header %>
+
+<div class="container"></div>
+    <h2>CONTACT INFO</h2>
+    <p>If you have any enquiries, fill out the form below and you'll receive a response promptly.</p>
+
+<% if(success){ %>
+    <section class="success">
+        <br>
+        <br>
+        <p>Message Received - Thank You</p>
+    </section>
+<% } else { %>
+    
+<%  if(errors){ %>
+        <section class="errors">
+            <ul>
+<%              errors.forEach(function(error){ %>   
+                    <li>"<%= error.msg %>"</li>
+<%              }) %>    
+            </ul>
+        </section>
+<%  } %>
+    <form action="/contact" method="POST">
+        <input class="name" type="text" id="fname" name="fname" placeholder="First Name">
+        <input class="name" type="text" id="lname" name="lname" placeholder="Last Name" style="float: right;"><br>
+        <h4>Email Address:</h4>
+        <input class="inputs" type="text" id="email" name="email"><br>
+        <h4>Subject:</h4>
+        <input class="inputs" type="text" id="subject" name="subject"><br>
+        <h4>Message:</h4>
+        <input class="inputs" type="text" id="message" name="message"><br>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+<% } %>
+
+<% include partials/footer %>

@@ -1,0 +1,15 @@
+<% include partials/header %>
+
+<div class="container">
+    <h2 style="text-transform: uppercase;"><%= gig.place %> (<%= gig.event %>)</h2>
+    <p style="margin-top: 20px;">
+        <%= gig.start_date %>
+        <% if (gig.end_date) { %>
+            - <%= gig.end_date %>
+        <% } %>
+    </p>
+    <p><%= gig.address %> (<a href="<%= gig.map_url %>">Map</a>)</p>
+    <button onclick="window.history.back()">Back</button>
+</div>
+
+<% include partials/footer %>
