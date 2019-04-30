@@ -22,15 +22,17 @@
         </section>
 <%  } %>
     <form action="/contact" method="POST">
-        <input class="name" type="text" id="fname" name="fname" placeholder="First Name">
-        <input class="name" type="text" id="lname" name="lname" placeholder="Last Name" style="float: right;"><br>
-        <h4>Email Address:</h4>
-        <input class="inputs" type="text" id="email" name="email"><br>
-        <h4>Subject:</h4>
-        <input class="inputs" type="text" id="subject" name="subject"><br>
-        <h4>Message:</h4>
-        <input class="inputs" type="text" id="message" name="message"><br>
-        <button type="submit">Submit</button>
+        <label for="fname">First Name</label>
+        <input class="form-control" type="text" id="fname" name="fname" placeholder="First Name">
+        <label for="lname">Last Name</label>
+        <input class="form-control" type="text" id="lname" name="lname" placeholder="Last Name" style="float: right;"><br>
+        <label for="email">Email Address</label>
+        <input class="form-control" type="text" id="email" name="email" placeholder="Email">
+        <label for="subject">Subject</label>
+        <input class="form-control" type="text" id="subject" name="subject" placeholder="Subject">
+        <label for="message">Message</label>
+        <input class="form-control" type="text" id="message" name="message" placeholder="Message">
+        <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 </div>
 <% } %>

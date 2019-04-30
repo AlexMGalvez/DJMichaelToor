@@ -1,0 +1,180 @@
+yui3-skin-gigs .yui3-calendar-content {
+    padding-top: 1.1em;
+    border-radius: 0px;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', endColorstr='#1a000000',GradientType=0 );
+    background-color: rgb(26, 0, 13);
+    color: #fefbfd;
+}
+
+.yui3-skin-gigs .yui3-calendar-grid {
+    padding: 5px;  /* any affect? */
+    border-collapse: collapse;
+}
+
+.yui3-skin-gigs .yui3-calendar-header {
+    padding-bottom:10px;
+    color: #fefbfd;
+    font-size: 150%;
+    display: block;
+}
+
+.yui3-skin-gigs .yui3-calendar-header-label {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.yui3-skin-gigs .yui3-calendar-day,
+.yui3-skin-gigs .yui3-calendar-prevmonth-day,
+.yui3-skin-gigs .yui3-calendar-nextmonth-day {
+    padding: 0.19em 0em 0.28em;
+    text-align: center;
+}
+
+.yui3-skin-gigs .yui3-calendar-weekday {
+    font-weight: bold;
+    /* background: {{weekdayHeadBackground}}; */
+    color: #fefbfd;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.yui3-skin-gigs .yui3-calendar-prevmonth-day,
+.yui3-skin-gigs .yui3-calendar-nextmonth-day {
+    font-weight: bold;
+    background: #040103;
+    color: rgba(255,255,255,.5);
+    border: solid 2px rgb(26, 0, 13);
+    width: 14.28%;
+    position: relative;
+}
+
+.yui3-skin-gigs .yui3-calendar-prevmonth-day:before,
+.yui3-skin-gigs .yui3-calendar-nextmonth-day:before{
+	content: "";
+	display: block;
+    padding-top: 78%; 	/* initial ratio of 1:1*/
+}
+
+.yui3-skin-gigs .yui3-calendar-day {
+    font-weight: bold;
+    background: #040103;
+    color: #fefbfd;
+    border: solid 2px rgb(26, 0, 13);
+    width: 14.28%;
+    position: relative;
+}
+
+.yui3-skin-gigs .yui3-calendar-day:before{
+	content: "";
+	display: block;
+	padding-top: 78%; 	/* initial ratio of 1:1*/
+}
+
+.content{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+    right: 0;
+    text-align: center;
+    line-height: 1;
+}
+
+.contentSmall{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+    right: 0;
+    text-align: center;
+    line-height: 1;
+    font-size: 75%;
+}
+
+/* .yui3-skin-gigs .mobileContent{
+    background: rgb(40, 40, 40);
+} */
+
+.yui3-skin-gigs .yui3-calendar-day:hover,         /* When cursor   is used to navigate days */
+.yui3-skin-gigs .yui3-calendar-day-highlighted {  /* When keyboard is used to navigate days */
+    background: rgb(26, 0, 13);
+    color: #fefbfd;
+}
+
+.yui3-skin-gigs .yui3-calendar-day-selected:hover, /* When cursor hovers over selected days */
+.yui3-skin-gigs .yui3-calendar-day-selected.yui3-calendar-day-highlighted { /* When keyboard focuses over selected days */
+    background-color: #1f000f;
+    color: #fffafc;
+}
+
+.yui3-skin-gigs .yui3-calendar-header-label {
+    text-align: center;
+}
+
+.yui3-skin-gigs .yui3-calendar-left-grid {
+   margin-right:1em;
+}
+
+.yui3-skin-gigs .yui3-calendar-right-grid {
+   margin-left:1em;
+}
+
+.yui3-skin-gigs .yui3-calendar-selection-disabled,
+.yui3-skin-gigs .yui3-calendar-selection-disabled:hover {
+  color: #db70b8;
+  background: #040103;
+}
+/**************** the following from calendarnavigator.css ******************/
+.yui3-skin-gigs .yui3-calendarnav-prevmonth, .yui3-skin-gigs .yui3-calendarnav-nextmonth {
+  color: #fefbfd;  /*falls back to text if image not rendered */
+  width: 12px;
+  height: 14px;
+  cursor:pointer; 
+
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAOCAYAAAA1+Nx+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAQhJREFUeNqs0yGLAlEUhuHrKoIgCFbBJghb3F+g0WrVarEqLIhBEEFYWKNNMBktU4z6C5RNkwyCyWQSTPuOfCOCrHNnxwMPyOGe73DAiTmOYywrhy/9/sTBZujN4k0KPbioi6teKuqCmsKGSN/10+q5ehN6QQkrLJB/Mp/Xm5VmAhdkMcEGZWNfZc1MlPGwII42dmiZ/1dLGW1lXhdU8YNvZEz0yijLy6z6FyTN6yvpX7DEOzo4vSD4pCwvc+lfcMEYBUwjhE+VMVbmw7/oiCY+sA4RvNZMUxmB38EWFTSwfxK815uKZkJ/yXMU0cf5rn9Wr6g3f1bC4nwvbIAZRup1Ay671a8AAwC3OzOqxK+rkwAAAABJRU5ErkJggg==);
+  background-repeat: no-repeat;
+}
+
+.yui3-skin-gigs .yui3-calendarnav-prevmonth:hover, .yui3-skin-gigs .yui3-calendarnav-nextmonth:hover {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAOCAYAAAA1+Nx+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPpJREFUeNpi/P//PwMxQD9jszSQ6oJyyy7O8H1KjD5GQhYADeYEUkVAXAHEPFDhL0DcAcR9QIu+k20B0PBAIDUBiOVwKHkExAVAS9aTZAHQYAOowfYMxIGDUIsu4LUAaLAQkGoB4kwG8sB0IK4BWvQOxQKgwcxAdj4Q1wExPwNl4CMQNwHxRKBFfxn10jd5ADm9QKzFQF1wDYiLmaAcNgbqA7CZTEBv7ADS2iDboN5joEIQgczSBpmNHsmiQKodiJPJNHwuEFcCDX49MMkUi0VRUB/hy2ggFy+jtKgohRYVnFDh79CiopuiogLNIjmobxigrn5EjD6AAAMAok9vhfHG8wQAAAAASUVORK5CYII=);
+  color: #0066CC;
+}
+
+.yui3-skin-gigs .yui3-calendarnav-month-disabled, .yui3-skin-gigs .yui3-calendarnav-month-disabled:hover {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAOCAYAAAA1+Nx+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAQhJREFUeNqs0yGLAlEUhuHrKoIgCFbBJghb3F+g0WrVarEqLIhBEEFYWKNNMBktU4z6C5RNkwyCyWQSTPuOfCOCrHNnxwMPyOGe73DAiTmOYywrhy/9/sTBZujN4k0KPbioi6teKuqCmsKGSN/10+q5ehN6QQkrLJB/Mp/Xm5VmAhdkMcEGZWNfZc1MlPGwII42dmiZ/1dLGW1lXhdU8YNvZEz0yijLy6z6FyTN6yvpX7DEOzo4vSD4pCwvc+lfcMEYBUwjhE+VMVbmw7/oiCY+sA4RvNZMUxmB38EWFTSwfxK815uKZkJ/yXMU0cf5rn9Wr6g3f1bC4nwvbIAZRup1Ay671a8AAwC3OzOqxK+rkwAAAABJRU5ErkJggg==);
+  cursor: default;
+  color: #fefbfd;
+}
+
+.yui3-skin-gigs .yui3-calendarnav-prevmonth, .yui3-skin-gigs .yui3-calendarnav-prevmonth:hover {
+  background-position: 0px 0px;
+  display: block;
+  margin-left: 10px;
+  float: left;
+}
+
+.yui3-skin-gigs .yui3-calendarnav-nextmonth, .yui3-skin-gigs .yui3-calendarnav-nextmonth:hover {
+  background-position: -12px 0px;
+  display: block;
+  margin-right: 10px;
+  float: right;
+}
+
+.yui3-skin-gigs .yui3-calendarnav-prevmonth span, .yui3-skin-gigs .yui3-calendarnav-nextmonth span {
+   display: none;
+   *display: block;
+}
+
+li {
+    list-style-type: none;
+}
+
+.gigs {
+    color: rgba(255,255,255,.5);
+    text-transform: uppercase;
+    font-size: 70%;
+}
+
+.gigs:hover {
+    color: white;
+}

@@ -1,0 +1,10 @@
+start server in console: nodemon
+server: http://localhost:3000
+install: npm install _____ --save
+new file example: touch models/user.js
+mobile server: 192.168.2.14:3000
+
+git --version
+git status
+git add
+git commit -m "messgae.."     //-m to add message

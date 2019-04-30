@@ -1,0 +1,19 @@
+body {
+    padding-top: 65px; 
+}
+
+.editModule {
+    padding-bottom: 65px; 
+}
+
+#rightElement {
+    padding-top: 40px;
+}
+
+#deleteB {
+    display: none;
+}
+
+#deleteLocB {
+    display: none;
+}

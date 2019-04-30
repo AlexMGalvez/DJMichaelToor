@@ -86,7 +86,7 @@ app.post("/contact", (req, res) => {
 
     // setup email data
     let mailOptions = {
-        to: "alexmarkgalvez@hotmail.com", 
+        to: "alexmarkgalvez@hotmail.com", //TEMPORARY EMAIL
         subject: req.body.subject,
         text:  "Email from " + req.body.fname + " " +  req.body.lname + " at " +  req.body.email + "\n" + "Message: \n" + req.body.message
     };
@@ -359,7 +359,7 @@ app.post("/deleteLocation", (req, res) => {
     const q = `DELETE FROM locations
                WHERE id=? AND id NOT IN (SELECT location_id
                                          FROM gigs)`;
-                                         
+
     connection.query(q, [req.body.deleteLocB], (error, result) => {
         if (error) {
             console.log(error);
