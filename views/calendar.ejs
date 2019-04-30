@@ -1,0 +1,103 @@
+<% include partials/header_calendar %>
+
+<script>
+    let gigs = <%- JSON.stringify(gigs) %>;
+
+    YUI().use("calendar", function (Y) {
+        let calendar = new Y.Calendar({
+            contentBox: "#gigsCalendar",
+            minimumDate: new Date(2016,7,1),
+            showPrevMonth: false,
+            showNextMonth: false
+        }).render();
+
+        let rules = {};
+
+        //append each gig day into calendar rules
+        for (let i = 0; i < gigs.length; i++) {
+            let year = gigs[i].start_year;
+            let month = gigs[i].start_month;
+            let day = gigs[i].start_day;
+
+            if (typeof rules[year] != 'undefined') {
+                if(typeof rules[year][month] != 'undefined'){
+                    rules[year][month][day] = {"all": "gig_day"};
+                } else {
+                    rules[year][month] = {"all": ""};
+                    rules[year][month][day] = {"all": "gig_day"};
+                }
+            } else {
+                rules[year] = {"all": ""};
+                rules[year][month] = {"all": ""};
+                rules[year][month][day] = {"all": "gig_day"};
+            }
+        }
+
+        //apply each gig day into the calendar
+        let filterFunction = (date, node, rules) => {
+            if (Y.Array.indexOf(rules, 'gig_day') >= 0) {
+                let day = node.getHTML();
+                let ydate = Y.DataType.Date,
+                    output = ydate.format(date, {
+                    format: "%m/%d/%y"
+                });
+                let i = 0;
+
+                while(i < gigs.length && gigs[i].start_date != output){
+                    i++;
+                }
+                while (i < gigs.length && gigs[i].start_date == output){
+                    //gigs are displayed differently for small screens
+                    if($(window).width() < 500){
+                        // node.addClass("mobileContent");
+                        node.setHTML(
+                        "<div class='contentSmall'>" +
+                            "<br><li><a class='gigs' href='/archive/" + gigs[i].id + "'>" + gigs[i].event + "</a></li>" +
+                        "</div>" +
+                        "<li>" + day + "</li>"
+                        );
+                    } else if($(window).width() < 751){
+                        node.setHTML(
+                        "<div class='content'>" +
+                            "<br><li><a class='gigs' href='/archive/" + gigs[i].id + "'>" + gigs[i].event + "</a></li>" +
+                        "</div>" +
+                        "<li>" + day + "</li>"
+                        );
+                    } else {
+                        node.setHTML(
+                        "<div class='content'>" +
+                            "<br><li><a class='gigs' href='/archive/" + gigs[i].id + "'>" + gigs[i].place + "<br>(" + gigs[i].event + ")</a></li>" +
+                        "</div>" +
+                        "<li>" + day + "</li>"
+                        );
+                    }
+                    i++;
+                }
+            }
+        }
+
+        //updates the calendar at window size change
+        $(() => {
+            $(window).resize(() => {
+                    //applies rules and filter to the calendar
+                    calendar.set("customRenderer", {rules: rules, filterFunction: filterFunction});
+            }).resize();
+        });
+
+        //converts the header to uppercase
+        calendar.set("headerRenderer", (curDate) => {
+            let ydate = Y.DataType.Date,
+                output = ydate.format(curDate, {
+                format: "%B %Y"
+                }).toUpperCase();
+            return output;
+        });
+
+    }); 
+</script>
+
+<div class="container yui3-skin-gigs">
+    <div id="gigsCalendar"></div>
+</div>
+
+<% include partials/footer %>
