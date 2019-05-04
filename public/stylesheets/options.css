@@ -2,8 +2,17 @@ body {
     padding-top: 65px; 
 }
 
-.editModule {
-    padding-bottom: 65px; 
+.moduleButton {
+    float: left;
+    border: none;
+    background-color: rgb(26, 0, 13);
+    color: white;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.moduleButtons {
+    padding-bottom: 80px;
 }
 
 #rightElement {
@@ -15,5 +24,17 @@ body {
 }
 
 #deleteLocB {
+    display: none;
+}
+
+#gigsModule {
+    display: block;
+}
+
+#newLocationModule {
+    display: none;
+}
+
+#editLocationModule {
     display: none;
 }

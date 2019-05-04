@@ -1,18 +1,23 @@
 <% include partials/header %>
-
-<div class="container">
-    <h2>ARCHIVE OF GIGS</h2>
-    <% for (let i = 0; i < gigs.length; i++) { %>
-        <div>
-            <a class="gigs" href="/archive/<%= gigs[i].id %>"><%= gigs[i].place %> (<%= gigs[i].event %>)</a>
-            <p>
-                <%= gigs[i].start_date %>
-                <% if (gigs[i].end_date) { %>
-                    - <%= gigs[i].end_date %>
-                <% } %>
-            </p>
-        </div>
-    <% } %>
+<div class="col-lg-8 col-md-6" >
+    <div id="leftElement">
+        <li class="backgroundIMG" id="backgroundIMG4"></li>
+    </div>
 </div>
-
+<div class="col-lg-4 col-md-6" id ="rightElement">
+    <div class="container">
+        <h2>ARCHIVE OF GIGS</h2>
+        <% for (let i = 0; i < gigs.length; i++) { %>
+            <div>
+                <a class="gigs" href="/archive/<%= gigs[i].id %>"><%= gigs[i].place %> (<%= gigs[i].event %>)</a>
+                <p>
+                    <%= gigs[i].start_date %>
+                    <% if (gigs[i].end_date) { %>
+                        - <%= gigs[i].end_date %>
+                    <% } %>
+                </p>
+            </div>
+        <% } %>
+    </div>
+</div>
 <% include partials/footer %>

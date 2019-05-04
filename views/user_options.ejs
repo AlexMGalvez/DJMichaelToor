@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DJ Michael Toor</title>
+        <!-- mobile screen adjustment -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- stylesheets -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> 
+        <link rel="stylesheet" href="/stylesheets/main.css">
+        <link rel="stylesheet" href="/stylesheets/options.css">  
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    </head>
+    <body>
+        <nav id="navbar" class="navbar navbar-expand-sm fixed-top navbar-dark">
+            <h2>USER OPTIONS</h2>
+            <ul class="navbar-nav ml-auto">
+                <a class="nav-link " href="/display">DISPLAY</a>
+                <a class="nav-link " href="/archive_options">ARCHIVE</a>
+                <form action="/logout" method="GET">
+                    <button type="login" class="btn btn-primary">Logout</button>
+                </form>
+            </ul>
+        </nav>
+        <div class="container">
+            <form action="/changePassword" method="POST">
+                <h3>CHANGE PASSWORD:</h3>
+                <label for="prevPW">Previous password:</label>
+                <input class="form-control" type="password" id="prevPW" name="prevPW" required>
+                <label for="newPW">New Password:</label>
+                <input class="form-control" type="password" id="newPW" name="newPW" required>
+                <label for="newPW2">Re-enter New Password:</label>
+                <input class="form-control" type="password" id="newPW2" name="newPW2" required>
+                <button type="submit" class="btn btn-primary" id="changePWB" name="changePWB">Submit</button>
+            </form>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,31 +1,19 @@
 <% include partials/header %>
-
-<div class="container">
-   <h2>ABOUT MICHAEL TOOR</h2>
-    <img class="picture" src="https://lh3.googleusercontent.com/H0IqD21rEYvsbc-ZQe7W9mULsMCcKOTb7LOZP37RIDW0cDWSW-bh7vIN29Ln8zo2IlRnn_uOQVRNr9wTIdDCVFa9cUDS8cJPhd3UohPrvpvihaPwG7nLI-p6A95gf_8BgUJ20pD8nmyK2MrgFwRWlkvUAQ5CyLyZACM2YFv-BTGpoMg0HmCUm9tNLhW_ZwhKmi-c_fq9nJ0t_TydbzmQES94mpYFV5ww7TxT304oAxY6vPKghrPRhJ0Y_OzL8X5oy-aFnXHcVHg2VM8I8Jh9cj4bbPO4qdw3wJEItDW0nfVZ6A4FIw3SiWuViR8wUwxIyz24mk7WU5xPglYcv0KqIAZZq4H7IPriNk64mTtCrpegi1a4zYMAc-WquKh5-QEvSVH0FlyVIFnQ4G1FnlxJKBhf9-CTt9_brFdm4ZdqI9ibIYLfuXZxBeJmYN__RcRU8oLdze-gOvxBF8qSQfjd6Pv6wREVrs0JNkwfnwUFyaU8jyUxVAAaxqMjzwWtwL_pJX1Eds1LlaXzph0zVOzrDOuCkr01casqqRO7bdLt5jIt6bTMm5agtAzchP-K5z9aGwDenXIkHO9aNVTK0RQ8Qd3MVLxWSYOwnW4vQg=w500-h333-no">
-    
-    <p style="padding-top: 20px;">
-        Michael Toor is a Canadian DJ and aspiring producer based in Southern Ontario.
-    </p>
-    <p>
-        Although he was born in the Greater Toronto Area, he found his true calling in the Tri-Cities (Kitchener-Cambridge-Waterloo) where he is quickly making a name for himself in the nightclub scene.
-    </p>
-    <p>
-        Capable of intricately blending anything from the most mellow of tunes to the heaviest Electronic Dance Music, Trap, and Dubstep, Michael makes his audiences move. He knows how to make any crowd go crazy and demonstrates this consistently, time and time again.
-    </p>
-    <p>
-        When it comes to music genre, Michael appreciates them all. From Reggae to EDM, from Country to Hip Hop, he knows they all have their merit and his vast library of music reflects this. Having such a diverse collection of music and knowing how to blend it together seamlessly makes Michael a highly coveted and remarkably versatile performer.
-    </p>
-    <p>
-        Having found his roots in Classic Rock, Michael is also a skilled musician who is experienced in playing a wide variety of instruments including piano, guitar, bass, and drums. This musical background translates well into his DJing and certainly contributes to his striking ability to rock any dance floor.
-    </p>
-    <p>
-        While Michael can be found every Saturday at his nightclub residency at Phil’s Grandson’s Place, he also owns and operates his home recording studio in Cambridge where he hopes to make a name for himself in the world of music production.
-    </p>
-    <p>
-        Although he is a fresh face in the production scene, one thing is for certain; Michael Toor will be making party people go wild for years to come.
-    </p> 
+<div class="col-lg-8 col-md-6" >
+    <div id="leftElement">
+        <li class="backgroundIMG" id="backgroundIMG2"></li>
+    </div>
 </div>
-
-
+<div class="col-lg-4 col-md-6" id ="rightElement">
+    <div class="container">
+        <h2>ABOUT MICHAEL TOOR</h2>
+        <img class="picture" src="https://lh3.googleusercontent.com/H0IqD21rEYvsbc-ZQe7W9mULsMCcKOTb7LOZP37RIDW0cDWSW-bh7vIN29Ln8zo2IlRnn_uOQVRNr9wTIdDCVFa9cUDS8cJPhd3UohPrvpvihaPwG7nLI-p6A95gf_8BgUJ20pD8nmyK2MrgFwRWlkvUAQ5CyLyZACM2YFv-BTGpoMg0HmCUm9tNLhW_ZwhKmi-c_fq9nJ0t_TydbzmQES94mpYFV5ww7TxT304oAxY6vPKghrPRhJ0Y_OzL8X5oy-aFnXHcVHg2VM8I8Jh9cj4bbPO4qdw3wJEItDW0nfVZ6A4FIw3SiWuViR8wUwxIyz24mk7WU5xPglYcv0KqIAZZq4H7IPriNk64mTtCrpegi1a4zYMAc-WquKh5-QEvSVH0FlyVIFnQ4G1FnlxJKBhf9-CTt9_brFdm4ZdqI9ibIYLfuXZxBeJmYN__RcRU8oLdze-gOvxBF8qSQfjd6Pv6wREVrs0JNkwfnwUFyaU8jyUxVAAaxqMjzwWtwL_pJX1Eds1LlaXzph0zVOzrDOuCkr01casqqRO7bdLt5jIt6bTMm5agtAzchP-K5z9aGwDenXIkHO9aNVTK0RQ8Qd3MVLxWSYOwnW4vQg=w500-h333-no">
+        
+        <p style="padding-top: 20px;" id="bioText"></p>
+    </div>
+</div>
+<script>
+    let bioText = <%- JSON.stringify(bioText) %>;
+    document.getElementById("bioText").innerHTML  = bioText;
+</script>
 <% include partials/footer %>

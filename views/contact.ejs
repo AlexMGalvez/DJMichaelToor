@@ -1,40 +1,45 @@
 <% include partials/header %>
-
-<div class="container"></div>
-    <h2>CONTACT INFO</h2>
-    <p>If you have any enquiries, fill out the form below and you'll receive a response promptly.</p>
-
-<% if(success){ %>
-    <section class="success">
-        <br>
-        <br>
-        <p>Message Received - Thank You</p>
-    </section>
-<% } else { %>
-    
-<%  if(errors){ %>
-        <section class="errors">
-            <ul>
-<%              errors.forEach(function(error){ %>   
-                    <li>"<%= error.msg %>"</li>
-<%              }) %>    
-            </ul>
-        </section>
-<%  } %>
-    <form action="/contact" method="POST">
-        <label for="fname">First Name</label>
-        <input class="form-control" type="text" id="fname" name="fname" placeholder="First Name">
-        <label for="lname">Last Name</label>
-        <input class="form-control" type="text" id="lname" name="lname" placeholder="Last Name" style="float: right;"><br>
-        <label for="email">Email Address</label>
-        <input class="form-control" type="text" id="email" name="email" placeholder="Email">
-        <label for="subject">Subject</label>
-        <input class="form-control" type="text" id="subject" name="subject" placeholder="Subject">
-        <label for="message">Message</label>
-        <input class="form-control" type="text" id="message" name="message" placeholder="Message">
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+<div class="col-lg-8 col-md-6" >
+    <div id="leftElement">
+        <li class="backgroundIMG" id="backgroundIMG3"></li>
+    </div>
 </div>
-<% } %>
+<div class="col-lg-4 col-md-6" id="rightElement">
+    <div class="container"></div>
+        <h2>CONTACT INFO</h2>
+        <p>If you have any enquiries, fill out the form below and you'll receive a response promptly.</p>
 
+    <% if(success){ %>
+        <section class="success">
+            <br>
+            <br>
+            <p>Message Received - Thank You</p>
+        </section>
+    <% } else { %>
+        
+    <%  if(errors){ %>
+            <section class="errors">
+                <ul>
+    <%              errors.forEach(function(error){ %>   
+                        <li>"<%= error.msg %>"</li>
+    <%              }) %>    
+                </ul>
+            </section>
+    <%  } %>
+        <form action="/contact" method="POST">
+            <label for="fname">First Name</label>
+            <input class="form-control" type="text" id="fname" name="fname" placeholder="First Name">
+            <label for="lname">Last Name</label>
+            <input class="form-control" type="text" id="lname" name="lname" placeholder="Last Name" style="float: right;"><br>
+            <label for="email">Email Address</label>
+            <input class="form-control" type="text" id="email" name="email" placeholder="Email">
+            <label for="subject">Subject</label>
+            <input class="form-control" type="text" id="subject" name="subject" placeholder="Subject">
+            <label for="message">Message</label>
+            <input class="form-control" type="text" id="message" name="message" placeholder="Message">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <% } %>
+</div>
 <% include partials/footer %>

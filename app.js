@@ -1,18 +1,24 @@
-let express          = require("express"),
+let fs               = require("fs"),                 //file reader
+    express          = require("express"),
     app              = express(),
     bodyParser       = require("body-parser"),
-    mysql            = require("mysql"),                   
-    nodemailer       = require("nodemailer"),
+    flash            = require("connect-flash"),      //flash messages
+    mysql            = require("mysql"),              //database   
+    nodemailer       = require("nodemailer"),         //email
+    crypto           = require("crypto"),             //token generator
+    async            = require("async"),
     expressValidator = require("express-validator"),
     expressSession   = require("express-session"),
     passport         = require("passport"),
-    LocalStrategy    = require("passport-local");  //username and password
+    LocalStrategy    = require("passport-local"),     //session for local username and password
+    bcrypt           = require("bcrypt");             //user password hashing
+                       require("dotenv").config()     //loads variables from .env -used for sensitive information
 
 //mysql database connection
 let connection = mysql.createConnection({
-    host:"localhost",
-    user: "root",
-    password: "3E3JLafy0sJelNcE",
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASS,
     database: "gigs_archive",
     dateStrings: "date",
     port: "3306",
@@ -22,28 +28,59 @@ let connection = mysql.createConnection({
 app.set("view engine", "ejs");
 
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(flash());
 app.use(expressValidator());
 app.use(express.static(__dirname + "/public"));    //use the contents of public (css file)
 app.use(expressSession({
-    name: "contact.sid", 
-    secret: "ku7mVsItuTE", 
+    name: process.env.ES_NAME,
+    secret: process.env.ES_SECR,
     saveUninitialized: false, 
     resave: false
 }));
-app.use(passport.initialize());  //owner session
-app.use(passport.session());     //owner session
+app.use(passport.initialize());  //user session
+app.use(passport.session());     //user session
 
-let User = {username: "dog", password: "dogg"};  //owner login information
+//email transporter
+let transporter = nodemailer.createTransport({
+    host: "smtp.live.com",
+    port: 587,
+    auth: {
+        user: process.env.NM_USER,
+        pass: process.env.NM_PASS
+    },
+    tls: {
+        rejectUnauthorized: false
+    }
+});
 
+//user login
 passport.use(new LocalStrategy(
     (username, password, done) => {
-        if (username != User.username) {
-          return done(null, false, { message: 'Incorrect username.' });
-        }
-        if (password != User.password) {
-          return done(null, false, { message: 'Incorrect password.' });
-        }
-        return done(null, username);
+        let q = `SELECT * FROM users`;
+
+        connection.query(q, (error, result) => {
+            if (error) {
+                console.log(error);
+            } else {
+                let User = {username: result[0].username, password: result[0].password};
+ 
+                if (username != User.username) {
+                    return done(null, false, { message: 'Incorrect username.' });
+                } else {
+                    //unhash password
+                    bcrypt.compare(password, User.password, function(err, res) {
+                        if(res) {
+                            if (username != User.username) {
+                                return done(null, false, { message: 'Incorrect username.' });
+                            }
+                        } else {
+                            return done(null, false, { message: 'Incorrect password.' });
+                        } 
+                        return done(null, username);
+                    });
+                }
+            }
+        });
     }
 ));
 
@@ -55,16 +92,26 @@ passport.deserializeUser((user, done) => {
     done(null, user);
 });
 
+//message handeling with flash
+app.use(function(req, res, next){
+    res.locals.error = req.flash("error");
+    res.locals.success = req.flash("success");
+    next();
+});
+
 app.get("/", (req, res) => {
-    res.render("home");
+    let widgets = fs.readFileSync("./display/home.txt").toString().split("\n");
+    res.render("home", {widgets: widgets});
 });
  
 app.get("/bio", (req, res) => {
-    res.render("bio");
+    let bioText = fs.readFileSync("./display/bio.txt", "utf8");  
+    res.render("bio", {bioText: bioText});
 });
 
 app.get("/studio", (req, res) => {
-    res.render("studio");
+    let studioText = fs.readFileSync("./display/studio.txt", "utf8"); 
+    res.render("studio", {studioText: studioText});
 });
 
 app.get("/contact", (req, res) => {
@@ -72,21 +119,9 @@ app.get("/contact", (req, res) => {
 });
 
 app.post("/contact", (req, res) => {
-    let transporter = nodemailer.createTransport({
-        host: "smtp.live.com",
-        port: 587,
-        auth: {
-            user: "DJMichaelToor@hotmail.com", 
-            pass: "nv96VG7L" 
-        },
-        tls: {
-            rejectUnauthorized: false
-        }
-    });
-
     // setup email data
     let mailOptions = {
-        to: "alexmarkgalvez@hotmail.com", //TEMPORARY EMAIL
+        to: process.env.NM_OUTG, //TEMPORARY EMAIL
         subject: req.body.subject,
         text:  "Email from " + req.body.fname + " " +  req.body.lname + " at " +  req.body.email + "\n" + "Message: \n" + req.body.message
     };
@@ -200,32 +235,196 @@ app.get("/login", (req, res) => {
 });
 
 app.post("/login", passport.authenticate("local", {
-    successRedirect: "/archiveOptions",
-    failureRedirect: "/login"
-}), (req, res) => {
-    const q = "";
-    connection.query(q, (error, result) => {
-        if (error) {
-            console.log(error);
-            res.redirect("error");
-        }
-    });
-});
+    successRedirect: "/archive_options",
+    failureRedirect: "/login",
+    failureFlash : true
+}));
 
-//middleware granting owner permission if logged in
+//middleware granting user permission if logged in
 isLoggedIn = (req, res, next) => {
     if(req.isAuthenticated()){
         return next();
     }
+    req.flash("error", "You need to be logged in to do that");
     res.redirect("/login");
 }
 
-app.get("/logout", (req, res) => {
-    req.logout();
-    res.redirect("login");
+app.get("/login/identify", (req, res) => {
+    res.render("identify");
 });
 
-app.get("/archiveOptions", isLoggedIn, (req, res) => {
+//password reset by email (forgot password)
+app.post("/login/identify", (req, res) => {
+    async.waterfall([
+        function(done){
+            //generate token
+            crypto.randomBytes(20, function(err, buf){
+                var token = buf.toString('hex');
+                if(err){
+                    console.log(error);
+                    return res.redirect("error");
+                }
+                done(null, token);
+            });
+        },
+        function(token, done){
+            let q = `SELECT * FROM users WHERE email=?`;
+
+            //check if email exists in database
+            connection.query(q, [req.body.email], (error, result) => {
+                if (error) {
+                    console.log(error);
+                    return res.redirect("error");
+                } else if (!result[0]) {
+                    req.flash("error", "No account with that email address exists");
+                    res.redirect("/login/identify");
+                } else {
+                    let q = `UPDATE users
+                             SET resetPasswordToken=?, resetPasswordExpires= DATE_ADD(?, INTERVAL 1 HOUR)
+                             WHERE email=?`;
+
+                    //inputs current date and adds 1 hours through the querry
+                    let currentDate = new Date().toISOString().slice(0, 19).replace('T', ' ');
+
+                    connection.query(q, [token, currentDate, req.body.email], (error, r) => {
+                        if (error) {
+                            console.log(error);
+                            return res.redirect("error");
+                        } else {
+                            done(null, token, result);
+                        }
+                    })
+                    //res.redirect("/login");
+                }
+            })
+        },
+        function(token, result, done){  
+            // setup email data
+            let mailOptions = {
+                to: process.env.NM_OUTG, //TEMPORARY EMAIL (will be  req.body.email)
+                subject: "DJ Michael Toor Website Password Reset",
+                text: "You are recieving this email because you (or someonone else) has requested to change your password. \n" +
+                      "In case you forgot your username, it is " + result[0].username + ".\n\n" +
+                      "Please click the following link, or paste it into your browser to complete the process:\n" + 
+                      "http://" + req.headers.host + "/reset/" + token + "\n\n" +
+                      "If you did not make this request, please ignore this email and your password will remain unchanged."
+            };
+            // send mail with defined transport object
+            transporter.sendMail(mailOptions, (error, info) => {
+                if (error) {
+                    return console.log(error);
+                }
+                console.log("Message sent: %s", info.messageId);
+                req.flash("success", "An email has been sent to " + result[0].email + " with further instructions");
+                done(null, "done");
+            });
+        }
+    ], function(err){
+        if (err) {
+            return next()
+        };
+        res.redirect("/login");
+    });
+});
+
+app.get("/reset/:token", function(req, res){
+    let q = `SELECT * FROM users WHERE resetPasswordToken=?`;
+
+    //check if token is valid
+    connection.query(q, [req.params.token], (error, result) => {
+        let currentDate = new Date().toISOString().slice(0, 19).replace('T', ' ');
+        
+        if (error) {
+            console.log(error);
+            return res.redirect("error");
+        } else if (result[0] == undefined || result[0].resetPasswordExpires < currentDate) {
+            req.flash("error", "Password reset token is invalid or has expired");
+            return res.redirect("/login/identify");
+        }
+        res.render("reset", {token: req.params.token})
+    });
+});
+
+app.post("/reset/:token", function(req, res){
+    async.waterfall([
+        function(done){
+            let q = `SELECT * FROM users WHERE resetPasswordToken=?`;
+
+            //check if token is valid
+            connection.query(q, [req.params.token], (error, result) => {
+                let currentDate = new Date().toISOString().slice(0, 19).replace('T', ' ');
+                
+                if (error) {
+                    console.log(error);
+                    return res.redirect("error");
+                } else if (result[0] == undefined || result[0].resetPasswordExpires < currentDate) {
+                    req.flash("error", "Password reset token is invalid or has expired");
+                    return res.redirect("/login/identify");
+                }
+                if (req.body.newPW === req.body.newPW2 && req.body.newPW.length >= 8) {
+                    //hash and update new password
+                    let user = result[0];
+                    bcrypt.hash(req.body.newPW, 10, function(err, hash) {
+                        if (err){
+                            console.log(err);
+                            return res.redirect("error");
+                        } else {
+                            let q = `UPDATE users
+                                     SET password=?, resetPasswordToken=?, resetPasswordExpires=?
+                                     WHERE username=?`;
+
+                            connection.query(q, [hash, undefined, undefined, user.username], (error, result) => {
+                                if (error) {
+                                    console.log(error);
+                                    return res.redirect("error");
+                                }
+                                done(err, user);
+                            });
+                        }
+                    });
+                } else {
+                    if(req.body.newPW.length < 8){
+                        req.flash("error", "Password must be over 8 characters in length");
+                    } else if(req.body.newPW != req.body.newPW2){
+                        req.flash("error", "Passwords do not match");
+                    }
+                    return res.redirect("/reset/" + req.params.token);
+                }
+            });
+        }, 
+        function(user, done){
+            // setup email data
+            let mailOptions = {
+                to: process.env.NM_OUTG, //TEMPORARY EMAIL (will be  req.body.email)
+                subject: "Your password has been changed",
+                text: "Hello \n\n" +
+                      "This is a confirmation that your account password for the DJ Michael Toor website has just been changed for user " + user.username + ".\n"
+            };
+            // send mail with defined transport object
+            transporter.sendMail(mailOptions, (error, info) => {
+                if (error) {
+                    return console.log(error);
+                }
+                console.log("Message sent: %s", info.messageId);
+                req.flash("success", "Your password has been changed and a confirmation email has been sent to " + user.email);
+                done(null,"done");
+            });
+        }
+    ], function(err){
+        if (err) {
+            return next();
+        };
+        res.redirect("/login");
+    });
+});
+
+app.get("/logout", (req, res) => {
+    req.logout(); 
+    req.flash("success", "Logged you out");
+    res.redirect("/login");
+});
+
+app.get("/archive_options", isLoggedIn, (req, res) => {
     const q = `SELECT gigs.id, gigs.location_id, place, event, DATE_FORMAT(start_date, '%m/%d/%y') AS start_date, DATE_FORMAT(start_date, '%m') - 1 AS start_month, DATE_FORMAT(start_date, '%d') AS start_day, DATE_FORMAT(start_date, '%Y') AS start_year, DATE_FORMAT(end_date, '%m/%d/%y') AS end_date, TIME_FORMAT(start_date, '%H:%i:%s') AS start_time, TIME_FORMAT(end_date, '%H:%i:%s') AS end_time 
                FROM gigs 
                LEFT JOIN locations ON gigs.location_id = locations.id 
@@ -264,13 +463,13 @@ app.get("/archiveOptions", isLoggedIn, (req, res) => {
                     map_url: result[1][i].map_url
                 });
             }
-            res.render("archiveOptions", {gigs: gigs, locations: locations});
+            res.render("archive_options", {gigs: gigs, locations: locations});
         }
     });
 });
 
 //SQL insert or edit gig
-app.post("/archiveOptions", (req, res) => {
+app.post("/archive_options", isLoggedIn, (req, res) => {
     let q = ``
     
     if(req.body.editB == 0){
@@ -294,12 +493,12 @@ app.post("/archiveOptions", (req, res) => {
             console.log(error);
             res.redirect("error");
         } else {
-            res.redirect("/archiveOptions");
+            res.redirect("/archive_options");
         }
     });
 });
 
-app.post("/archiveOptionsDelete", (req, res) => {
+app.post("/archiveOptionsDelete",  isLoggedIn, (req, res) => {
     const q = `DELETE FROM gigs
                WHERE id=?`;
 
@@ -308,12 +507,12 @@ app.post("/archiveOptionsDelete", (req, res) => {
             console.log(error);
             res.redirect("error");
         } else {
-            res.redirect("/archiveOptions");
+            res.redirect("/archive_options");
         }
     });
 });
 
-app.post("/newLocation", (req, res) => {
+app.post("/newLocation", isLoggedIn, (req, res) => {
     const q = `INSERT INTO locations (place, address, map_url)
                VALUES (?, ?, ?)`;
 
@@ -328,12 +527,12 @@ app.post("/newLocation", (req, res) => {
             console.log(error);
             res.redirect("error");
         } else {
-            res.redirect("/archiveOptions");
+            res.redirect("/archive_options");
         }
     });
 });
 
-app.post("/editLocation", (req, res) => {
+app.post("/editLocation", isLoggedIn, (req, res) => {
     const q = `UPDATE locations
                SET place=?, address=?, map_url=?
                WHERE id=?`;
@@ -350,12 +549,12 @@ app.post("/editLocation", (req, res) => {
             console.log(error);
             res.redirect("error");
         } else {
-            res.redirect("/archiveOptions");
+            res.redirect("/archive_options");
         }
     });
 });
 
-app.post("/deleteLocation", (req, res) => {
+app.post("/deleteLocation", isLoggedIn, (req, res) => {
     const q = `DELETE FROM locations
                WHERE id=? AND id NOT IN (SELECT location_id
                                          FROM gigs)`;
@@ -365,9 +564,72 @@ app.post("/deleteLocation", (req, res) => {
             console.log(error);
             res.redirect("error");
         } else {
-            res.redirect("/archiveOptions");
+            res.redirect("/archive_options");
         }
     });
+});
+
+app.get("/user_options", isLoggedIn, (req, res) => {
+    res.render("user_options");
+});
+
+app.post("/changePassword", isLoggedIn, (req, res) => {
+    let userPassword = req.body.prevPW;
+    let q = `SELECT * FROM users`;
+
+    connection.query(q, (error, result) => {
+        if (error) {
+            console.log(error);
+        } else {
+            let User = {username: result[0].username, password: result[0].password};
+
+            //unhash password
+            bcrypt.compare(userPassword, User.password, function(err, res) {
+                if(res && req.body.newPW.localeCompare(req.body.newPW2) == 0 && req.body.newPW.length >= 8) {
+                    //user password is correct, new password1 = new password2 and new password >= 8 characters
+    
+                    //hash and update new password
+                    bcrypt.hash(req.body.newPW, 10, function(err, hash) {
+                        if (err){
+                            console.log(err);
+                        } else {
+                            let q = `UPDATE users
+                                     SET password=?
+                                     WHERE username=?`;
+
+                            connection.query(q, [hash, User.username], (error, result) => {
+                                if (error) {
+                                    console.log(error);
+                                }
+                            });
+                        }
+                    });
+                } else {
+                    console.log(err);
+                } 
+            });
+        }
+    });
+    res.redirect("user_options");
+});
+
+app.get("/display", isLoggedIn, (req, res) => {
+    let widgets = fs.readFileSync("./display/home.txt").toString().split("\n");
+    let bioText = fs.readFileSync("./display/bio.txt", "utf8");  
+    let studioText = fs.readFileSync("./display/studio.txt", "utf8");  
+    res.render("display", 
+    {
+        bioText: bioText, 
+        studioText: studioText, 
+        widgets: widgets
+    });
+});
+
+app.post("/editDisplay", isLoggedIn, (req, res) => {
+    fs.writeFileSync("./display/home.txt", req.body.widget1 + "\n" + req.body.widget2 + "\n" + req.body.widget3 + "\n")
+    fs.writeFileSync("./display/bio.txt", req.body.editBio)
+    fs.writeFileSync("./display/studio.txt", req.body.editStudio)
+    res.redirect("display");
 });
 
 app.get("*", (req, res) => {

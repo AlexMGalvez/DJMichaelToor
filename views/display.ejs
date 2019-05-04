@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DJ Michael Toor</title>
+        <!-- mobile screen adjustment -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- stylesheets -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> 
+        <link rel="stylesheet" href="/stylesheets/main.css">
+        <link rel="stylesheet" href="/stylesheets/options.css">  
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    </head>
+    <body>
+        <nav id="navbar" class="navbar navbar-expand-sm fixed-top navbar-dark">
+            <h2>WEBSITE DISPLAY</h2>
+            <ul class="navbar-nav ml-auto">
+                <a class="nav-link " href="/user_options">OPTIONS</a>
+                <a class="nav-link " href="/archive_options">ARCHIVE</a>
+                <form action="/logout" method="GET">
+                    <button type="login" class="btn btn-primary">Logout</button>
+                </form>
+            </ul>
+        </nav>
+        <div class="container">
+            <form action="/editDisplay" method="POST">
+                <label for="widget1">Music Widget 1:</label>
+                <input type="text" class="form-control" id="widget1" name="widget1" value="">
+                <label for="widget2">Music Widget 2:</label>
+                <input type="text" class="form-control" id="widget2" name="widget2" value="">
+                <label for="widget3">Music Widget 3:</label>
+                <input type="text" class="form-control" id="widget3" name="widget3" value="">
+                <p>To edit a widget, paste the embedded code from the share tab of mixcloud, soundcloud, etc.</p>
+                <label for="editBio">Bio:</label>
+                <textarea class="form-control" rows="9" name="editBio" id="editBio"></textarea>
+                <label for="editStudio">Studio:</label>
+                <textarea class="form-control" rows="9" name="editStudio" id="editStudio"></textarea>
+                <p>Note: Insert break lines to indent text.</p>
+                <button type="submit" class="btn btn-primary">Save</button>
+            </form>
+        </div>
+        <script>
+            let widgets = <%- JSON.stringify(widgets) %>;
+            let bioText = <%- JSON.stringify(bioText) %>;
+            let studioText = <%- JSON.stringify(studioText) %>;
+
+            document.getElementById("editBio").innerHTML = bioText;
+            document.getElementById("editStudio").innerHTML = studioText;
+            document.getElementById("widget1").value = widgets[0];
+            document.getElementById("widget2").value = widgets[1];
+            document.getElementById("widget3").value = widgets[2];
+        </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    </body>
+</html>
