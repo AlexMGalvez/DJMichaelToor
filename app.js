@@ -154,7 +154,7 @@ app.get("/calendar", (req, res) => {
     const q = `SELECT gigs.id, place, event, DATE_FORMAT(start_date, '%m/%d/%y') AS start_date, DATE_FORMAT(start_date, '%m') - 1 AS start_month, DATE_FORMAT(start_date, '%d') AS start_day, DATE_FORMAT(start_date, '%Y') AS start_year, DATE_FORMAT(end_date, '%M %D, %Y') AS end_date 
                FROM gigs 
                LEFT JOIN locations ON gigs.location_id = locations.id 
-               ORDER BY start_date DESC`;
+               ORDER BY DATE(start_date) DESC`;
 
     connection.query(q, (error, result) => {
         if (error) {
@@ -183,7 +183,7 @@ app.get("/archive", (req, res) => {
     const q = `SELECT gigs.id, place, event, DATE_FORMAT(start_date, '%M %D, %Y') AS start_date, DATE_FORMAT(end_date, '%M %D, %Y') AS end_date 
                FROM gigs 
                LEFT JOIN locations ON gigs.location_id = locations.id 
-               ORDER BY start_date DESC`;
+               ORDER BY DATE(start_date) DESC`;
 
     connection.query(q, (error, result) => {
         if (error) {
@@ -428,7 +428,7 @@ app.get("/archive_options", isLoggedIn, (req, res) => {
     const q = `SELECT gigs.id, gigs.location_id, place, event, DATE_FORMAT(start_date, '%m/%d/%y') AS start_date, DATE_FORMAT(start_date, '%m') - 1 AS start_month, DATE_FORMAT(start_date, '%d') AS start_day, DATE_FORMAT(start_date, '%Y') AS start_year, DATE_FORMAT(end_date, '%m/%d/%y') AS end_date, TIME_FORMAT(start_date, '%H:%i:%s') AS start_time, TIME_FORMAT(end_date, '%H:%i:%s') AS end_time 
                FROM gigs 
                LEFT JOIN locations ON gigs.location_id = locations.id 
-               ORDER BY start_date DESC;    
+               ORDER BY DATE(start_date) DESC;    
 
                SELECT id, place, address, map_url 
                FROM locations`;
