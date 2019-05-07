@@ -21,7 +21,7 @@ let connection = mysql.createConnection({
     password: process.env.DB_PASS,
     database: "gigs_archive",
     dateStrings: "date",
-    port: "3306",
+    port: process.env.DB_PORT,
     multipleStatements: true
 });
 
