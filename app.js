@@ -19,7 +19,7 @@ let connection = mysql.createConnection({
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
     password: process.env.DB_PASS,
-    database: "gigs_archive",
+    database: "heroku_4b0085b1b13bf5b",
     dateStrings: "date",
     port: process.env.DB_PORT,
     multipleStatements: true
