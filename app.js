@@ -14,35 +14,17 @@ let fs               = require("fs"),                 //file reader
     bcrypt           = require("bcrypt");             //user password hashing
                        require("dotenv").config()     //loads variables from .env -used for sensitive information
 
-// //mysql database connection
-// let connection = mysql.createConnection({
-//     host: process.env.DB_HOST,
-//     user: process.env.DB_USER,
-//     password: process.env.DB_PASS,
-//     database: process.env.DB_NAME,
-//     dateStrings: "date",
-//     port: process.env.PORT,
-//     multipleStatements: true
-// });
-
+//mysql database connection
 var pool  = mysql.createPool({
-    connectionLimit : 10,
-    host            : process.env.DB_HOST,
-    user            : process.env.DB_USER,
-    password        : process.env.DB_PASS,
-    database        : process.env.DB_NAME
+    connectionLimit     : 10,
+    host                : process.env.DB_HOST,
+    user                : process.env.DB_USER,
+    password            : process.env.DB_PASS,
+    database            : process.env.DB_NAME,
+    dateStrings         : "date",
+    port                : process.env.PORT,
+    multipleStatements  : true
   });
-
-//local mysql database connection
-// let connection = mysql.createConnection({
-//     host: process.env.LOCAL_DB_HOST,
-//     user: process.env.LOCAL_DB_USER,
-//     password: process.env.LOCAL_DB_PASS,
-//     database: "gigs_archive",
-//     dateStrings: "date",
-//     port: "3000",
-//     multipleStatements: true
-// });
 
 app.set("view engine", "ejs");
 
@@ -77,7 +59,7 @@ passport.use(new LocalStrategy(
     (username, password, done) => {
         let q = `SELECT * FROM users`;
 
-        connection.query(q, (error, result) => {
+        pool.query(q, (error, result) => {
             if (error) {
                 console.log(error);
             } else {
@@ -175,7 +157,7 @@ app.get("/calendar", (req, res) => {
                LEFT JOIN locations ON gigs.location_id = locations.id 
                ORDER BY DATE(start_date) DESC`;
 
-    connection.query(q, (error, result) => {
+    pool.query(q, function (error, result) {
         let gigs = [];
         if (error) {
             console.log(error);
@@ -203,7 +185,7 @@ app.get("/archive", (req, res) => {
                LEFT JOIN locations ON gigs.location_id = locations.id 
                ORDER BY DATE(start_date) DESC`;
 
-    pool.query(q, function (error, result, fields) {
+    pool.query(q, function (error, result) {
         let gigs = [];
         if (error) {
             console.log(error);
@@ -222,23 +204,8 @@ app.get("/archive", (req, res) => {
     });
 
     // QUERY RETRIEVAL WITHOUT POOLING
-
     // connection.query(q, (error, result) => {
-    //     let gigs = [];
-    //     if (error) {
-    //         console.log(error);
-    //     } else {
-    //         for (var i = 0; i < result.length; i++) {
-    //             gigs.push({
-    //                 id: result[i].id,
-    //                 place: result[i].place,
-    //                 event: result[i].event,
-    //                 start_date: result[i].start_date,
-    //                 end_date: result[i].end_date
-    //             });
-    //         }
-    //     }
-    // res.render("archive", {gigs: gigs});
+    //     
     // });
 });
 
@@ -248,7 +215,7 @@ app.get("/archive/:id", (req, res) => {
                LEFT JOIN locations ON gigs.location_id = locations.id 
                WHERE gigs.id like ?`;
 
-    connection.query(q, [req.params.id], (error, result) => {
+    pool.query(q, [req.params.id], (error, result) => {
         if (error) {
             console.log(error);
             res.redirect("error");
@@ -308,7 +275,7 @@ app.post("/login/identify", (req, res) => {
             let q = `SELECT * FROM users WHERE email=?`;
 
             //check if email exists in database
-            connection.query(q, [req.body.email], (error, result) => {
+            pool.query(q, [req.body.email], (error, result) => {
                 if (error) {
                     console.log(error);
                     return res.redirect("error");
@@ -323,7 +290,7 @@ app.post("/login/identify", (req, res) => {
                     //inputs current date and adds 1 hours through the querry
                     let currentDate = new Date().toISOString().slice(0, 19).replace('T', ' ');
 
-                    connection.query(q, [token, currentDate, req.body.email], (error, r) => {
+                    pool.query(q, [token, currentDate, req.body.email], (error, r) => {
                         if (error) {
                             console.log(error);
                             return res.redirect("error");
@@ -368,7 +335,7 @@ app.get("/reset/:token", function(req, res){
     let q = `SELECT * FROM users WHERE resetPasswordToken=?`;
 
     //check if token is valid
-    connection.query(q, [req.params.token], (error, result) => {
+    pool.query(q, [req.params.token], (error, result) => {
         let currentDate = new Date().toISOString().slice(0, 19).replace('T', ' ');
         
         if (error) {
@@ -388,7 +355,7 @@ app.post("/reset/:token", function(req, res){
             let q = `SELECT * FROM users WHERE resetPasswordToken=?`;
 
             //check if token is valid
-            connection.query(q, [req.params.token], (error, result) => {
+            pool.query(q, [req.params.token], (error, result) => {
                 let currentDate = new Date().toISOString().slice(0, 19).replace('T', ' ');
                 
                 if (error) {
@@ -410,7 +377,7 @@ app.post("/reset/:token", function(req, res){
                                      SET password=?, resetPasswordToken=?, resetPasswordExpires=?
                                      WHERE username=?`;
 
-                            connection.query(q, [hash, undefined, undefined, user.username], (error, result) => {
+                            pool.query(q, [hash, undefined, undefined, user.username], (error, result) => {
                                 if (error) {
                                     console.log(error);
                                     return res.redirect("error");
@@ -470,7 +437,7 @@ app.get("/archive_options", isLoggedIn, (req, res) => {
                SELECT id, place, address, map_url 
                FROM locations`;
 
-    connection.query(q, [1, 2], (error, result) => {
+    pool.query(q, [1, 2], (error, result) => {
         let gigs = [];
         let locations = [];
 
@@ -517,7 +484,7 @@ app.post("/archive_options", isLoggedIn, (req, res) => {
              SET location_id=?, event=?, start_date= STR_TO_DATE(?, "%m/%d/%Y %H:%i:%s"), end_date= STR_TO_DATE(?, "%m/%d/%Y %H:%i:%s")
              WHERE id=?`;
     }
-    connection.query(q, 
+    pool.query(q, 
         [
             req.body.location, 
             req.body.event, 
@@ -539,7 +506,7 @@ app.post("/archiveOptionsDelete",  isLoggedIn, (req, res) => {
     const q = `DELETE FROM gigs
                WHERE id=?`;
 
-    connection.query(q, [req.body.deleteB], (error, result) => {
+    pool.query(q, [req.body.deleteB], (error, result) => {
         if (error) {
             console.log(error);
             res.redirect("error");
@@ -553,7 +520,7 @@ app.post("/newLocation", isLoggedIn, (req, res) => {
     const q = `INSERT INTO locations (place, address, map_url)
                VALUES (?, ?, ?)`;
 
-    connection.query(q, 
+    pool.query(q, 
         [
             req.body.place,
             req.body.address,
@@ -574,7 +541,7 @@ app.post("/editLocation", isLoggedIn, (req, res) => {
                SET place=?, address=?, map_url=?
                WHERE id=?`;
 
-    connection.query(q, 
+    pool.query(q, 
         [
             req.body.placeE,
             req.body.addressE,
@@ -596,7 +563,7 @@ app.post("/deleteLocation", isLoggedIn, (req, res) => {
                WHERE id=? AND id NOT IN (SELECT location_id
                                          FROM gigs)`;
 
-    connection.query(q, [req.body.deleteLocB], (error, result) => {
+    pool.query(q, [req.body.deleteLocB], (error, result) => {
         if (error) {
             console.log(error);
             res.redirect("error");
@@ -614,7 +581,7 @@ app.post("/changePassword", isLoggedIn, (req, res) => {
     let userPassword = req.body.prevPW;
     let q = `SELECT * FROM users`;
 
-    connection.query(q, (error, result) => {
+    pool.query(q, (error, result) => {
         if (error) {
             console.log(error);
         } else {
@@ -634,7 +601,7 @@ app.post("/changePassword", isLoggedIn, (req, res) => {
                                      SET password=?
                                      WHERE username=?`;
 
-                            connection.query(q, [hash, User.username], (error, result) => {
+                            pool.query(q, [hash, User.username], (error, result) => {
                                 if (error) {
                                     console.log(error);
                                 }
