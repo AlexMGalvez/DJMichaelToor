@@ -19,11 +19,22 @@ let connection = mysql.createConnection({
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
     password: process.env.DB_PASS,
-    database: "heroku_4b0085b1b13bf5b",
+    database: process.env.DB_NAME,
     dateStrings: "date",
-    port: process.env.DB_PORT,
+    port: process.env.PORT,
     multipleStatements: true
 });
+
+//local mysql database connection
+// let connection = mysql.createConnection({
+//     host: process.env.LOCAL_DB_HOST,
+//     user: process.env.LOCAL_DB_USER,
+//     password: process.env.LOCAL_DB_PASS,
+//     database: "gigs_archive",
+//     dateStrings: "date",
+//     port: "3000",
+//     multipleStatements: true
+// });
 
 app.set("view engine", "ejs");
 
@@ -157,11 +168,10 @@ app.get("/calendar", (req, res) => {
                ORDER BY DATE(start_date) DESC`;
 
     connection.query(q, (error, result) => {
+        let gigs = [];
         if (error) {
             console.log(error);
-            res.redirect("error");
         } else {
-            let gigs = [];
             for (var i = 0; i < result.length; i++) {
                 gigs.push({
                     id: result[i].id,
@@ -174,8 +184,8 @@ app.get("/calendar", (req, res) => {
                     end_date: result[i].end_date
                 });
             }
-            res.render("calendar", {gigs: gigs});
         }
+        res.render("calendar", {gigs: gigs});
     });
 });
 
@@ -186,11 +196,10 @@ app.get("/archive", (req, res) => {
                ORDER BY DATE(start_date) DESC`;
 
     connection.query(q, (error, result) => {
+        let gigs = [];
         if (error) {
             console.log(error);
-            res.redirect("error");
         } else {
-            let gigs = [];
             for (var i = 0; i < result.length; i++) {
                 gigs.push({
                     id: result[i].id,
@@ -200,8 +209,8 @@ app.get("/archive", (req, res) => {
                     end_date: result[i].end_date
                 });
             }
-            res.render("archive", {gigs: gigs});
         }
+        res.render("archive", {gigs: gigs});
     });
 });
 
@@ -434,11 +443,12 @@ app.get("/archive_options", isLoggedIn, (req, res) => {
                FROM locations`;
 
     connection.query(q, [1, 2], (error, result) => {
+        let gigs = [];
+        let locations = [];
+
         if (error) {
             console.log(error);
-            res.redirect("error");
         } else {
-            let gigs = [];
             for (var i = 0; i < result[0].length; i++) {
                 gigs.push({
                     id: result[0][i].id,
@@ -454,7 +464,6 @@ app.get("/archive_options", isLoggedIn, (req, res) => {
                     end_time: result[0][i].end_time
                 });
             }
-            let locations = [];
             for (var i = 0; i < result[1].length; i++) {
                 locations.push({
                     id: result[1][i].id,
@@ -463,8 +472,8 @@ app.get("/archive_options", isLoggedIn, (req, res) => {
                     map_url: result[1][i].map_url
                 });
             }
-            res.render("archive_options", {gigs: gigs, locations: locations});
         }
+        res.render("archive_options", {gigs: gigs, locations: locations});
     });
 });
 

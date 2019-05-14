@@ -29,7 +29,7 @@ body {
 } */
 
 .backgroundIMG {
-    background-image: url(https://lh3.googleusercontent.com/SdIAcvDYhhSDC_7vKb0iyQuM-74e76mJFC4k5XcoyxT_VUjeILFZbZFhz0O28j010en_T0NmwT0EcagEKWulpc5zzZcNiFI0mKUT-aHizeXdjv-dluqrYXUcKc4K_mYx9oTHyqfNBGE3mGKgy6x0uXMQTFunyIiKRyUvEapOhsdH_x5TakGVSisHmhPTwnkst6ekinlO5chiSxh_Bxxzf2KMws29nr9VjIT8qecMJAUw6S4FthJFoJ4zX2CiqH317PLHQQAlk0LIFvNrHaxzCbfgU2DcEkSVZlOEDXRTUOkmYFA8jenWnmiXgX2ipbAMF58-uYbfBiGA-jcaNfc59D7b1geyH4CHfQYc2507XOn0zKmaw3WcKsYp5JqV_x2R6_vNNrep_W7TfrXYveM94mxXfadHySJ4scoqLApebBNS6YMrWdHUgptD_3k3uVsaXvg6SqRTwlJuUo1bkfv_7Q9ejWhYm5mjHoKr_vpeBYRjxVqTS65KAx67dZK0WkOyoEvkvuX7RLeXtQKbdw6pu_QLqVLP5-8OxS2ugzCszNVHSmD8ag3-5CrWlh1d0eGTv2x4iPvLm_uAK_qVAYui2mUuLvQo-f7aI1tdnb7EmaHYO1BL-as9J6R85t8zbEPh5XJTgTYSLdvKOQIe886Tl0ssO32Ilw=w939-h625-no);
+    background-image: url(../images/Slide1.jpg);
     position: absolute;
     background-size: contain;
     width: 100%;
@@ -44,19 +44,19 @@ body {
 }
 
 #backgroundIMG2 {
-    background-image: url(https://lh3.googleusercontent.com/YlZOz8jMfR6q99jnLZSHuhWp-oEL4rJavkwUpSr6Ay9RTffJIIoNyh7_WayCX724TEmjymn2vLY_w_3VZ6XBvscsdgHm-PRvvERLph040Rw0HxeuuAt6A2uBRfhaaGtYcqbkvdGsdW8W4dNTlznZJguCeiTeuKfLMn_qlSkYRLLnYsra2rEObt80J-4OcvtGTkad9QgJwO2FKAdkzl0_kGr4blUgNnF7QABn85q1cHSlpQTzkzP-DyfHkiQbK6gLGTABoJaAVaXy6JprZG8X42oWNgCpg0N2WIYl86QIBZQAZ13UbAngoxGHc0pc_iVsCGFEaLfEZVwbhfbw1AHJkX7MzaZHS18hCycs_O2NfsP-F9RDypqoXUaVFPlV-j_pmMaflXDOn9fRCP6LOC49PKndwMmn9f3Aul81oV-eGA-K59XEynxn2Mvuqq3e_H45MLepzAqqFTzUPs216kJJlhL_B2dtAz_iQaOoh0GCt7fL5BYl5A-jTxTFPEQEYLuGN9XyeP3pHOcF6v6tSnzP3vewFGtdTqOY3WhPosg3lVnLFmfRfBeVwwxZrRmgI9nY9FTqevXt-c7k7254jtthG8BE2ckAjVVrrAcgyFJ7rzsSe1YO78MsCTtt3-JZ3VohV__KUV47vXA38Yf64xt24dJWy3fgNSw=w938-h625-no);
+    background-image: url(../images/Slide2.jpg);
 }
 
 #backgroundIMG3 {
-    background-image: url(https://lh3.googleusercontent.com/6xvZylHSITXh4_McWB5Q-zSBy1FTQoEC3xhy1DJmB1IudiOWJq0oaGsPF6Mong19FTdN6o_Oymcvk3l2S4mSlFZKSA0lS3KWGq6wJpHL_N3Rcscx3oOGwiND1tHaYyRTMcfMT2iCNGlPa7eu46_n868bDGPvtYviyIduOhsjTOZVlzc51FFIvqyr2Kd7J0CBT2xoOqNsX0gIphR9kfqMfOTM0wNz8KeVXKhggpk-xWHSDibmPnbxz2m3LJRn07HylS1h9BcrkfhZviDuLCFPgYNT9VgC-blBR8vGhwDE7isLeM6PlF-BbrdvL9BWKmQCrKNaZ3oZaVxdYB407eWl1OBBCNsGPOBj6FUM3REHEMTa7fwvhdiwVg0R4iim97H7y1WVQRVnYp7dHZwlHUeYq9fFvxp0YS-1p8lEv6b6ibk4n0Hk1BMmKlfRhX9kDqabqJ1gm90r2Gy_pt-Qyp0JKXWuxQUpwuNnMR8Zwwtx7icmaXv5lZjBnVnLDzEDzBq00jj-boM7D7YO-KyVREXDWZJiS_sOLvda6EVUABJ7DPcl1A63hU6o3wzNasGhgfnvmF6liABu_27uNvrhzsV2bTyVciD2KjJzraNWobpdHUesFDKt9YmcrqtDNnSz8YNnvrgfu3vmNbTa3oKrn90__LTc7QWxzGk=w938-h625-no);
+    background-image: url(../images/Slide3.jpg);
 }
 
 #backgroundIMG4 {
-    background-image: url(https://lh3.googleusercontent.com/nAjNbPeTw-urbmwWIBX5w6Rl0dvlagjNVb2E-arn3XwVFpfhOGrEqyzXep2fH-2Wp7WFktELgcoNC8EnvVZs6vlAG21bWGMCKibfSsttzBPDME1KkIKm2gGeN_B7y05xElwQwSTwWDjQrziKZWDSkUi01ZNZEX-axpiaRl5aKV1GqOf-EeX2nj3XEw0M7y2u7XsBkgBKuYQlfalOCxPSU0CMv0WarYf6l1bGnf1pMxu3ndiIAWEvGDjSdWwaH2xwwOw1bDlu6k8oTlWulh8hpXEGyZLEHpyQ4Ep4zNze4R0HxQGVNXrzLQaPRJBjHZS0AUF8d-cwlQeV9RHFGZCUF0T1MRoS-cNO5r3SMuFVzGu5boVOYpGq7uThdf4rTXdPNL-aJZ0am1NV1Jlyu098F-DXkHc-KM3FDXF0wtZqDQcSLbDRzp_JMVAhAN8oCseeMNt-oEw9CgC1PF3smfbjN4DTQJTD3ecjZdyBwILh8i9NzWOUyNvIVdeNlGBdZIkb1QDMGBYpI2G5DDHAZWUDq47AE-Oo3ZgkkklnBeZAzgjPzA7mgQ0BrB2tyFBQXbAwm5VuufSCgWir_oHchzXeGQG90maIJqurfJ8q96pTgqP2ZOYrZMW7kuu7FjeorP_5IG1WO2hVL6SDznsJ-yLeUsTho2cweP4=w938-h625-no);
+    background-image: url(../images/Slide4.jpg);
 }
 
 #backgroundStudioIMG {
-    background-image: url(https://lh3.googleusercontent.com/6sf97KD_FJ6u_DCixIcC1jbs9x6PQlkW1l7FLgA8pMMqB4T5Xdz-hXXQobj3lwQxIvJnWO9Luluj7Z3cIuOqjHNt2bpB_09aZBSRNP7uk9C2LOtoG1m0HW8jA_q1fGrkHzYEvfc_VxdUjSmaaogBY4916vQfRq4DFyI4Ir8JqROBgQNOT7XVs9AJjiJLFUtw602ZC0JvX1L5ciaEv8Oa-LdS2ne21prJndUSePyPscuCRXQkNaw_qemus1kSlB9n_qNNbSwbO3wuECBo9Oga0xKxulgDFTb27s0jEOx_ZzPoT3Jp7lclGp6eW4a62qfQWwk0hdeCP05wgNRkItVkGzdYadMhkzvswN8ycpQ63Gp5DlAiP1Uzy57GOcYtfBZ4giOytn1RqmS6ibkeP4J3RHwnMG96PngCdWay0qQ1pkbKaMPEgfHnvRnKVm2ETyf_h-7ZSzaiyDGmfCF8X-Dv4N2UXh9kdfUamsuPT7SVGioy_qhVbKLbZNPieBOdM2Rf_6c4t40V3Y5QV2KvFMz-10CrQuVenxsmm2OfsvO7NIvRqSPgqd-Po_cg47AOsIiK7yboFEAZb_wiUuAVm4xBRlLq8EL4BKoUEsbjH6UCBLKwZy_D7z35HZaoRijOyCbZRpdSzi1kfRMI5KSLFKWWiw6xDX41WtA=w480-h320-no);
+    background-image: url(../images/StudioReduced.jpg);
 }
 
 /* .slideshow li:nth-child(1) { 
@@ -100,6 +100,15 @@ body {
 
 .michaelToorLogo{
     max-width: 240px;
+
+    /* display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: url(../images/MichaelToorLogo.png); */
 }
 
 .picture {
