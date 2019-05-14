@@ -14,16 +14,24 @@ let fs               = require("fs"),                 //file reader
     bcrypt           = require("bcrypt");             //user password hashing
                        require("dotenv").config()     //loads variables from .env -used for sensitive information
 
-//mysql database connection
-let connection = mysql.createConnection({
-    host: process.env.DB_HOST,
-    user: process.env.DB_USER,
-    password: process.env.DB_PASS,
-    database: process.env.DB_NAME,
-    dateStrings: "date",
-    port: process.env.PORT,
-    multipleStatements: true
-});
+// //mysql database connection
+// let connection = mysql.createConnection({
+//     host: process.env.DB_HOST,
+//     user: process.env.DB_USER,
+//     password: process.env.DB_PASS,
+//     database: process.env.DB_NAME,
+//     dateStrings: "date",
+//     port: process.env.PORT,
+//     multipleStatements: true
+// });
+
+var pool  = mysql.createPool({
+    connectionLimit : 10,
+    host            : process.env.DB_HOST,
+    user            : process.env.DB_USER,
+    password        : process.env.DB_PASS,
+    database        : process.env.DB_NAME
+  });
 
 //local mysql database connection
 // let connection = mysql.createConnection({
@@ -195,7 +203,7 @@ app.get("/archive", (req, res) => {
                LEFT JOIN locations ON gigs.location_id = locations.id 
                ORDER BY DATE(start_date) DESC`;
 
-    connection.query(q, (error, result) => {
+    pool.query(q, function (error, result, fields) {
         let gigs = [];
         if (error) {
             console.log(error);
@@ -212,6 +220,26 @@ app.get("/archive", (req, res) => {
         }
         res.render("archive", {gigs: gigs});
     });
+
+    // QUERY RETRIEVAL WITHOUT POOLING
+
+    // connection.query(q, (error, result) => {
+    //     let gigs = [];
+    //     if (error) {
+    //         console.log(error);
+    //     } else {
+    //         for (var i = 0; i < result.length; i++) {
+    //             gigs.push({
+    //                 id: result[i].id,
+    //                 place: result[i].place,
+    //                 event: result[i].event,
+    //                 start_date: result[i].start_date,
+    //                 end_date: result[i].end_date
+    //             });
+    //         }
+    //     }
+    // res.render("archive", {gigs: gigs});
+    // });
 });
 
 app.get("/archive/:id", (req, res) => {
