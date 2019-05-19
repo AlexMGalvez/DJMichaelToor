@@ -23,7 +23,9 @@ var pool  = mysql.createPool({
     database            : process.env.DB_NAME,
     dateStrings         : "date",
     port                : process.env.PORT,
-    multipleStatements  : true
+    multipleStatements  : true,
+    connectTimeout      : 20000,
+    acquireTimeout      : 20000
   });
 
 app.set("view engine", "ejs");
