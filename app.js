@@ -17,15 +17,14 @@ let fs               = require("fs"),                 //file reader
 //mysql database connection
 var pool  = mysql.createPool({
     connectionLimit     : 10,
+    connectTimeout      : 60000,
     host                : process.env.DB_HOST,
     user                : process.env.DB_USER,
     password            : process.env.DB_PASS,
     database            : process.env.DB_NAME,
     dateStrings         : "date",
     port                : process.env.PORT,
-    multipleStatements  : true,
-    connectTimeout      : 20000,
-    acquireTimeout      : 20000
+    multipleStatements  : true
   });
 
 app.set("view engine", "ejs");
