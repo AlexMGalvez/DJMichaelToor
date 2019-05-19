@@ -173,6 +173,7 @@ app.get("/calendar", (req, res) => {
                        ORDER BY DATE(start_date) DESC`;
 
             connection.query(q, function (error, result) {
+                connection.release();
                 let gigs = [];
                 if (error) {
                     console.log(error);
@@ -191,7 +192,6 @@ app.get("/calendar", (req, res) => {
                     }
                 }
                 res.render("calendar", {gigs: gigs});
-                connection.release();
             });
         }
     });
@@ -208,6 +208,7 @@ app.get("/archive", (req, res) => {
             console.log(error);
         } else {
             connection.query(q, function (error, result) {
+                connection.release();
                 let gigs = [];
                 if (error) {
                     console.log(error);
@@ -223,7 +224,6 @@ app.get("/archive", (req, res) => {
                     }
                 }
                 res.render("archive", {gigs: gigs});
-                connection.release();
             });
         }
     });
@@ -241,6 +241,7 @@ app.get("/archive/:id", (req, res) => {
             res.redirect("error");
         } else {
             connection.query(q, [req.params.id], (error, result) => {
+                connection.release();
                 if (error) {
                     console.log(error);
                     res.redirect("error");
@@ -256,7 +257,6 @@ app.get("/archive/:id", (req, res) => {
                     };
                     res.render("show", {gig: gig});
                 }
-                connection.release();
             });
         }
     });
