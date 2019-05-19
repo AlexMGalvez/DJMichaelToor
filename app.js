@@ -16,10 +16,10 @@ let fs               = require("fs"),                 //file reader
 
 //mysql database connection
 var pool  = mysql.createPool({
-    connectionLimit : 1000, //was 10
-    connectTimeout  : 60 * 60 * 1000,
-    acquireTimeout  : 1000000,
-    timeout         : 60 * 60 * 1000,
+    connectionLimit : 10, //was 1000
+    // connectTimeout  : 60 * 60 * 1000,
+    // acquireTimeout  : 1000000,
+    // timeout         : 60 * 60 * 1000,
     host                : process.env.DB_HOST,
     user                : process.env.DB_USER,
     password            : process.env.DB_PASS,
