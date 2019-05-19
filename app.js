@@ -160,15 +160,16 @@ app.post("/contact", (req, res) => {
 });
 
 app.get("/calendar", (req, res) => {
-    const q = `SELECT gigs.id, place, event, DATE_FORMAT(start_date, '%m/%d/%y') AS start_date, DATE_FORMAT(start_date, '%m') - 1 AS start_month, DATE_FORMAT(start_date, '%d') AS start_day, DATE_FORMAT(start_date, '%Y') AS start_year, DATE_FORMAT(end_date, '%M %D, %Y') AS end_date 
-               FROM gigs 
-               LEFT JOIN locations ON gigs.location_id = locations.id 
-               ORDER BY DATE(start_date) DESC`;
 
     pool.getConnection(function(error, connection) {
         if (error) {
             console.log(error);
         } else {
+            const q = `SELECT gigs.id, place, event, DATE_FORMAT(start_date, '%m/%d/%y') AS start_date, DATE_FORMAT(start_date, '%m') - 1 AS start_month, DATE_FORMAT(start_date, '%d') AS start_day, DATE_FORMAT(start_date, '%Y') AS start_year, DATE_FORMAT(end_date, '%M %D, %Y') AS end_date 
+                       FROM gigs 
+                       LEFT JOIN locations ON gigs.location_id = locations.id 
+                       ORDER BY DATE(start_date) DESC`;
+
             connection.query(q, function (error, result) {
                 let gigs = [];
                 if (error) {
