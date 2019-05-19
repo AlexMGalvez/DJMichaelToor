@@ -25,7 +25,7 @@ var pool  = mysql.createPool({
     password            : process.env.DB_PASS,
     database            : process.env.DB_NAME,
     dateStrings         : "date",
-    port                : process.env.PORT,
+    port                : 3306,
     multipleStatements  : true
   });
 
@@ -202,30 +202,28 @@ app.get("/archive", (req, res) => {
                ORDER BY DATE(start_date) DESC`;
 
     pool.getConnection(function(error, connection) {
-        let gigs = [];
-        res.render("archive", {gigs: gigs});
-        // if (error) {
-        //     console.log(error);
-        // } else {
-        //     connection.query(q, function (error, result) {
-        //         connection.release();
-        //         let gigs = [];
-        //         if (error) {
-        //             console.log(error);
-        //         } else {
-        //             for (var i = 0; i < result.length; i++) {
-        //                 gigs.push({
-        //                     id: result[i].id,
-        //                     place: result[i].place,
-        //                     event: result[i].event,
-        //                     start_date: result[i].start_date,
-        //                     end_date: result[i].end_date
-        //                 });
-        //             }
-        //         }
-        //         res.render("archive", {gigs: gigs});
-        //     });
-        // }
+        if (error) {
+            console.log(error);
+        } else {
+            connection.query(q, function (error, result) {
+                connection.release();
+                let gigs = [];
+                if (error) {
+                    console.log(error);
+                } else {
+                    for (var i = 0; i < result.length; i++) {
+                        gigs.push({
+                            id: result[i].id,
+                            place: result[i].place,
+                            event: result[i].event,
+                            start_date: result[i].start_date,
+                            end_date: result[i].end_date
+                        });
+                    }
+                }
+                res.render("archive", {gigs: gigs});
+            });
+        }
     });
 });
 
