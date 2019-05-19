@@ -14,8 +14,6 @@ let fs               = require("fs"),                 //file reader
     bcrypt           = require("bcrypt");             //user password hashing
                        require("dotenv").config()     //loads variables from .env -used for sensitive information
 
-acquireTimeout: 1000000
-
 //mysql database connection
 var pool  = mysql.createPool({
     connectionLimit : 1000, //was 10
@@ -68,6 +66,7 @@ passport.use(new LocalStrategy((username, password, done) => {
             console.log(error);
         } else {
             connection.query(q, (error, result) => {
+                connection.destroy();
                 if (error) {
                     console.log(error);
                 } else {
@@ -88,7 +87,6 @@ passport.use(new LocalStrategy((username, password, done) => {
                             return done(null, username);
                         });
                     }
-                    connection.destroy();
                 }
             });
         }
@@ -204,28 +202,30 @@ app.get("/archive", (req, res) => {
                ORDER BY DATE(start_date) DESC`;
 
     pool.getConnection(function(error, connection) {
-        if (error) {
-            console.log(error);
-        } else {
-            connection.query(q, function (error, result) {
-                connection.release();
-                let gigs = [];
-                if (error) {
-                    console.log(error);
-                } else {
-                    for (var i = 0; i < result.length; i++) {
-                        gigs.push({
-                            id: result[i].id,
-                            place: result[i].place,
-                            event: result[i].event,
-                            start_date: result[i].start_date,
-                            end_date: result[i].end_date
-                        });
-                    }
-                }
-                res.render("archive", {gigs: gigs});
-            });
-        }
+        let gigs = [];
+        res.render("archive", {gigs: gigs});
+        // if (error) {
+        //     console.log(error);
+        // } else {
+        //     connection.query(q, function (error, result) {
+        //         connection.release();
+        //         let gigs = [];
+        //         if (error) {
+        //             console.log(error);
+        //         } else {
+        //             for (var i = 0; i < result.length; i++) {
+        //                 gigs.push({
+        //                     id: result[i].id,
+        //                     place: result[i].place,
+        //                     event: result[i].event,
+        //                     start_date: result[i].start_date,
+        //                     end_date: result[i].end_date
+        //                 });
+        //             }
+        //         }
+        //         res.render("archive", {gigs: gigs});
+        //     });
+        // }
     });
 });
 
@@ -491,6 +491,7 @@ app.get("/archive_options", isLoggedIn, (req, res) => {
             console.log(error);
         } else {
             connection.query(q, [1, 2], (error, result) => {
+                connection.release();
                 let gigs = [];
                 let locations = [];
         
@@ -522,7 +523,6 @@ app.get("/archive_options", isLoggedIn, (req, res) => {
                     }
                 }
                 res.render("archive_options", {gigs: gigs, locations: locations});
-                connection.release();
             });
         }
     });
@@ -553,13 +553,13 @@ app.post("/archive_options", isLoggedIn, (req, res) => {
                     req.body.editB
                 ],
                 (error, result) => {
-                if (error) {
-                    console.log(error);
-                    res.redirect("error");
-                } else {
-                    res.redirect("/archive_options");
-                }
-                connection.release();
+                    connection.release();
+                    if (error) {
+                        console.log(error);
+                        res.redirect("error");
+                    } else {
+                        res.redirect("/archive_options");
+                    }
             });
         }
     });
@@ -574,13 +574,13 @@ app.post("/archiveOptionsDelete",  isLoggedIn, (req, res) => {
             console.log(error);
         } else {
             connection.query(q, [req.body.deleteB], (error, result) => {
+                connection.destroy();
                 if (error) {
                     console.log(error);
                     res.redirect("error");
                 } else {
                     res.redirect("/archive_options");
                 }
-                connection.destroy();
             });
         }
     });
@@ -601,13 +601,13 @@ app.post("/newLocation", isLoggedIn, (req, res) => {
                     req.body.murl
                 ], 
                 (error, result) => {
-                if (error) {
-                    console.log(error);
-                    res.redirect("error");
-                } else {
-                    res.redirect("/archive_options");
-                }
-                connection.destroy();
+                    connection.destroy();
+                    if (error) {
+                        console.log(error);
+                        res.redirect("error");
+                    } else {
+                        res.redirect("/archive_options");
+                    }
             });
         }
     });
@@ -630,13 +630,13 @@ app.post("/editLocation", isLoggedIn, (req, res) => {
                     req.body.locationid
                 ], 
                 (error, result) => {
-                if (error) {
-                    console.log(error);
-                    res.redirect("error");
-                } else {
-                    res.redirect("/archive_options");
-                }
-                connection.release();
+                    connection.release();
+                    if (error) {
+                        console.log(error);
+                        res.redirect("error");
+                    } else {
+                        res.redirect("/archive_options");
+                    }
             });
         }
     });
@@ -652,13 +652,13 @@ app.post("/deleteLocation", isLoggedIn, (req, res) => {
             console.log(error);
         } else {
             connection.query(q, [req.body.deleteLocB], (error, result) => {
+                connection.destroy();
                 if (error) {
                     console.log(error);
                     res.redirect("error");
                 } else {
                     res.redirect("/archive_options");
                 }
-                connection.destroy();
             });
         }
     });
