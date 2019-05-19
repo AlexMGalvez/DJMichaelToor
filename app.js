@@ -14,11 +14,13 @@ let fs               = require("fs"),                 //file reader
     bcrypt           = require("bcrypt");             //user password hashing
                        require("dotenv").config()     //loads variables from .env -used for sensitive information
 
+acquireTimeout: 1000000
+
 //mysql database connection
 var pool  = mysql.createPool({
     connectionLimit : 1000, //was 10
     connectTimeout  : 60 * 60 * 1000,
-    acquireTimeout  : 60 * 60 * 1000,
+    acquireTimeout  : 1000000,
     timeout         : 60 * 60 * 1000,
     host                : process.env.DB_HOST,
     user                : process.env.DB_USER,
