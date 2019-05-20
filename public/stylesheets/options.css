@@ -19,7 +19,15 @@ body {
     padding-top: 40px;
 }
 
+#gigsModule2 {
+    display: none;
+}
+
 #deleteB {
+    display: none;
+}
+
+#deleteB2 {
     display: none;
 }
 

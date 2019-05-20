@@ -14,7 +14,19 @@ let fs               = require("fs"),                 //file reader
     bcrypt           = require("bcrypt");             //user password hashing
                        require("dotenv").config()     //loads variables from .env -used for sensitive information
 
-//mysql database connection
+// //database connection
+// var pool  = mysql.createPool({
+//     connectionLimit     : 10,
+//     host                : process.env.DB_HOST,
+//     user                : process.env.DB_USER,
+//     password            : process.env.DB_PASS,
+//     database            : process.env.DB_NAME,
+//     dateStrings         : "date",
+//     port                : 3306,
+//     multipleStatements  : true
+//   });
+
+//localhost database connection
 var pool  = mysql.createPool({
     connectionLimit     : 10,
     host                : process.env.DB_HOST,
@@ -22,7 +34,7 @@ var pool  = mysql.createPool({
     password            : process.env.DB_PASS,
     database            : process.env.DB_NAME,
     dateStrings         : "date",
-    port                : 3306,
+    port                : process.env.DB_PORT,
     multipleStatements  : true
   });
 
@@ -281,190 +293,200 @@ app.get("/login/identify", (req, res) => {
 });
 
 //password reset by email (forgot password)
-// app.post("/login/identify", (req, res) => {
-//     async.waterfall([
-//         function(done){
-//             //generate token
-//             crypto.randomBytes(20, function(err, buf){
-//                 var token = buf.toString('hex');
-//                 if(err){
-//                     console.log(error);
-//                     return res.redirect("error");
-//                 }
-//                 done(null, token);
-//             });
-//         },
-//         function(token, done){
-//             let q = `SELECT * FROM users WHERE email=?`;
+app.post("/login/identify", (req, res) => {
+    async.waterfall([
+        function(done){
+            //generate token
+            crypto.randomBytes(20, function(err, buf){
+                var token = buf.toString('hex');
+                if(err){
+                    console.log(error);
+                    return res.redirect("error");
+                }
+                done(null, token);
+            });
+        },
+        function(token, done){
+            let q = `SELECT * FROM users WHERE email=?`;
 
-//             pool.getConnection(function(error, connection) {
-//                 if (error) {
-//                     console.log(error);
-//                 } else {
-//                     //check if email exists in database
-//                     connection.query(q, [req.body.email], (error, result) => {
-//                         if (error) {
-//                             console.log(error);
-//                             return res.redirect("error");
-//                         } else if (!result[0]) {
-//                             req.flash("error", "No account with that email address exists");
-//                             res.redirect("/login/identify");
-//                         } else {
-//                             let q = `UPDATE users
-//                                     SET resetPasswordToken=?, resetPasswordExpires= DATE_ADD(?, INTERVAL 1 HOUR)
-//                                     WHERE email=?`;
+            pool.getConnection(function(error, connection) {
+                if (error) {
+                    console.log(error);
+                } else {
+                    //check if email exists in database
+                    connection.query(q, [req.body.email], (error, result) => {
+                        connection.destroy();
+                        if (error) {
+                            console.log(error);
+                            return res.redirect("error");
+                        } else if (!result[0]) {
+                            req.flash("error", "No account with that email address exists");
+                            res.redirect("/login/identify");
+                        } else {
+                            let q = `UPDATE users
+                                    SET resetPasswordToken=?, resetPasswordExpires= DATE_ADD(?, INTERVAL 1 HOUR)
+                                    WHERE email=?`;
 
-//                             pool.getConnection(function(error, connection) {
-//                                 if (error) {
-//                                     console.log(error);
-//                                 } else {
-//                                     //inputs current date and adds 1 hours through the querry
-//                                     let currentDate = new Date().toISOString().slice(0, 19).replace('T', ' ');
+                            pool.getConnection(function(error, connection) {
+                                if (error) {
+                                    console.log(error);
+                                } else {
+                                    //inputs current date and adds 1 hours through the querry
+                                    let currentDate = new Date().toISOString().slice(0, 19).replace('T', ' ');
 
-//                                     connection.query(q, [token, currentDate, req.body.email], (error, r) => {
-//                                         if (error) {
-//                                             console.log(error);
-//                                             return res.redirect("error");
-//                                         } else {
-//                                             done(null, token, result);
-//                                         }
-//                                     })
-//                                     //res.redirect("/login");
-//                                 }
-//                                 connection.destroy();
-//                             });
-//                         }
-//                         connection.destroy();
-//                     })
-//                 }
-//             });
-//         },
-//         function(token, result, done){  
-//             // setup email data
-//             let mailOptions = {
-//                 to: process.env.NM_OUTG, //TEMPORARY EMAIL (will be  req.body.email)
-//                 subject: "DJ Michael Toor Website Password Reset",
-//                 text: "You are recieving this email because you (or someonone else) has requested to change your password. \n" +
-//                       "In case you forgot your username, it is " + result[0].username + ".\n\n" +
-//                       "Please click the following link, or paste it into your browser to complete the process:\n" + 
-//                       "http://" + req.headers.host + "/reset/" + token + "\n\n" +
-//                       "If you did not make this request, please ignore this email and your password will remain unchanged."
-//             };
-//             // send mail with defined transport object
-//             transporter.sendMail(mailOptions, (error, info) => {
-//                 if (error) {
-//                     return console.log(error);
-//                 }
-//                 console.log("Message sent: %s", info.messageId);
-//                 req.flash("success", "An email has been sent to " + result[0].email + " with further instructions");
-//                 done(null, "done");
-//             });
-//         }
-//     ], function(err){
-//         if (err) {
-//             return next()
-//         };
-//         res.redirect("/login");
-//     });
-// });
+                                    connection.query(q, [token, currentDate, req.body.email], (error, r) => {
+                                        connection.destroy();
+                                        if (error) {
+                                            console.log(error);
+                                            return res.redirect("error");
+                                        } else {
+                                            done(null, token, result);
+                                        }
+                                    })
+                                    //res.redirect("/login");
+                                }
+                            });
+                        }    
+                    })
+                }
+            });
+        },
+        function(token, result, done){  
 
-// app.get("/reset/:token", function(req, res){
-//     let q = `SELECT * FROM users WHERE resetPasswordToken=?`;
+            // setup email data
+            let mailOptions = {
+                to: process.env.NM_OUTG, //TEMPORARY EMAIL (will be  req.body.email)
+                subject: "DJ Michael Toor Website Password Reset",
+                text: "You are recieving this email because you (or someonone else) has requested to change your password. \n" +
+                      "In case you forgot your username, it is " + result[0].username + ".\n\n" +
+                      "Please click the following link, or paste it into your browser to complete the process:\n" + 
+                      "http://" + req.headers.host + "/reset/" + token + "\n\n" +
+                      "If you did not make this request, please ignore this email and your password will remain unchanged."
+            };
 
-//     pool.getConnection(function(error, connection) {
-//         if (error) {
-//             console.log(error);
-//         } else {
-//             //check if token is valid
-//             connection.query(q, [req.params.token], (error, result) => {
-//                 let currentDate = new Date().toISOString().slice(0, 19).replace('T', ' ');
+            // send mail with defined transport object
+            transporter.sendMail(mailOptions, (error, info) => {
+                if (error) {
+                    return res.redirect("/error");
+                }
+                console.log("Message sent: %s", info.messageId);
+                req.flash("success", "An email has been sent to " + result[0].email + " with further instructions");
+                done(null, "done");
+            });
+        }
+    ], function(err){
+        if (err) {
+            return next()
+        };
+        res.redirect("/login");
+    });
+});
+
+app.get("/reset/:token", function(req, res){
+    let q = `SELECT * FROM users WHERE resetPasswordToken=?`;
+
+    pool.getConnection(function(error, connection) {
+        if (error) {
+            console.log(error);
+        } else {
+            //check if token is valid
+            connection.query(q, [req.params.token], (error, result) => {
+                connection.destroy();
+                let currentDate = new Date().toISOString().slice(0, 19).replace('T', ' ');
                 
-//                 if (error) {
-//                     console.log(error);
-//                     return res.redirect("error");
-//                 } else if (result[0] == undefined || result[0].resetPasswordExpires < currentDate) {
-//                     req.flash("error", "Password reset token is invalid or has expired");
-//                     return res.redirect("/login/identify");
-//                 }
-//                 res.render("reset", {token: req.params.token});
-//                 connection.destroy();
-//             });
-//         }
-//     });
-// });
+                if (error) {
+                    console.log(error);
+                    return res.redirect("error");
+                } else if (result[0] == undefined || result[0].resetPasswordExpires < currentDate) {
+                    req.flash("error", "Password reset token is invalid or has expired");
+                    return res.redirect("/login/identify");
+                }
+                res.render("reset", {token: req.params.token});
+            });
+        }
+    });
+});
 
-// app.post("/reset/:token", function(req, res){
-//     async.waterfall([
-//         function(done){
-//             let q = `SELECT * FROM users WHERE resetPasswordToken=?`;
+app.post("/reset/:token", function(req, res){
+    async.waterfall([
+        function(done){
 
-//             //check if token is valid
-//             pool.query(q, [req.params.token], (error, result) => {
-//                 let currentDate = new Date().toISOString().slice(0, 19).replace('T', ' ');
-                
-//                 if (error) {
-//                     console.log(error);
-//                     return res.redirect("error");
-//                 } else if (result[0] == undefined || result[0].resetPasswordExpires < currentDate) {
-//                     req.flash("error", "Password reset token is invalid or has expired");
-//                     return res.redirect("/login/identify");
-//                 }
-//                 if (req.body.newPW === req.body.newPW2 && req.body.newPW.length >= 8) {
-//                     //hash and update new password
-//                     let user = result[0];
-//                     bcrypt.hash(req.body.newPW, 10, function(err, hash) {
-//                         if (err){
-//                             console.log(err);
-//                             return res.redirect("error");
-//                         } else {
-//                             let q = `UPDATE users
-//                                      SET password=?, resetPasswordToken=?, resetPasswordExpires=?
-//                                      WHERE username=?`;
+            pool.getConnection(function(error, connection) {
+                if (error) {
+                    console.log(error);
+                } else {
+                    let q = `SELECT * FROM users WHERE resetPasswordToken=?`;
 
-//                             pool.query(q, [hash, undefined, undefined, user.username], (error, result) => {
-//                                 if (error) {
-//                                     console.log(error);
-//                                     return res.redirect("error");
-//                                 }
-//                                 done(err, user);
-//                             });
-//                         }
-//                     });
-//                 } else {
-//                     if(req.body.newPW.length < 8){
-//                         req.flash("error", "Password must be over 8 characters in length");
-//                     } else if(req.body.newPW != req.body.newPW2){
-//                         req.flash("error", "Passwords do not match");
-//                     }
-//                     return res.redirect("/reset/" + req.params.token);
-//                 }
-//             });
-//         }, 
-//         function(user, done){
-//             // setup email data
-//             let mailOptions = {
-//                 to: process.env.NM_OUTG, //TEMPORARY EMAIL (will be  req.body.email)
-//                 subject: "Your password has been changed",
-//                 text: "Hello \n\n" +
-//                       "This is a confirmation that your account password for the DJ Michael Toor website has just been changed for user " + user.username + ".\n"
-//             };
-//             // send mail with defined transport object
-//             transporter.sendMail(mailOptions, (error, info) => {
-//                 if (error) {
-//                     return console.log(error);
-//                 }
-//                 console.log("Message sent: %s", info.messageId);
-//                 req.flash("success", "Your password has been changed and a confirmation email has been sent to " + user.email);
-//                 done(null,"done");
-//             });
-//         }
-//     ], function(err){
-//         if (err) {
-//             return next();
-//         };
-//         res.redirect("/login");
-//     });
-// });
+                    //check if token is valid
+                    connection.query(q, [req.params.token], (error, result) => {
+                        connection.destroy();
+                        let currentDate = new Date().toISOString().slice(0, 19).replace('T', ' ');
+                        
+                        if (error) {
+                            console.log(error);
+                            return res.redirect("error");
+                        } else if (result[0] == undefined || result[0].resetPasswordExpires < currentDate) {
+                            req.flash("error", "Password reset token is invalid or has expired");
+                            return res.redirect("/login/identify");
+                        }
+                        if (req.body.newPW === req.body.newPW2 && req.body.newPW.length >= 8) {
+                            //hash and update new password
+                            let user = result[0];
+                            bcrypt.hash(req.body.newPW, 10, function(err, hash) {
+                                if (err){
+                                    console.log(err);
+                                    return res.redirect("error");
+                                } else {
+                                    let q = `UPDATE users
+                                            SET password=?, resetPasswordToken=?, resetPasswordExpires=?
+                                            WHERE username=?`;
+
+                                    pool.query(q, [hash, undefined, undefined, user.username], (error, result) => {
+                                        if (error) {
+                                            console.log(error);
+                                            return res.redirect("error");
+                                        }
+                                        done(err, user);
+                                    });
+                                }
+                            });
+                        } else {
+                            if(req.body.newPW.length < 8){
+                                req.flash("error", "Password must be over 8 characters in length");
+                            } else if(req.body.newPW != req.body.newPW2){
+                                req.flash("error", "Passwords do not match");
+                            }
+                            return res.redirect("/reset/" + req.params.token);
+                        }
+                    });
+                }
+            });
+        }, 
+        function(user, done){
+            // setup email data
+            let mailOptions = {
+                to: process.env.NM_OUTG, //TEMPORARY EMAIL (will be  req.body.email)
+                subject: "Your password has been changed",
+                text: "Hello \n\n" +
+                      "This is a confirmation that your account password for the DJ Michael Toor website has just been changed for user " + user.username + ".\n"
+            };
+            // send mail with defined transport object
+            transporter.sendMail(mailOptions, (error, info) => {
+                if (error) {
+                    return console.log(error);
+                }
+                console.log("Message sent: %s", info.messageId);
+                req.flash("success", "Your password has been changed and a confirmation email has been sent to " + user.email);
+                done(null,"done");
+            });
+        }
+    ], function(err){
+        if (err) {
+            return next();
+        };
+        res.redirect("/login");
+    });
+});
 
 app.get("/logout", (req, res) => {
     req.logout(); 
@@ -696,7 +718,6 @@ app.post("/changePassword", isLoggedIn, (req, res) => {
             bcrypt.compare(userPassword, User.password, function(error, result) {
                 if (error) {
                     console.log(error);
-                    // FIXME: error is initiated here
                 } 
                 else if (result) {
                     //hash new password
@@ -735,58 +756,6 @@ app.post("/changePassword", isLoggedIn, (req, res) => {
         req.flash("success", "Your password has been changed");
         res.redirect("/user_options");
     });
-
-
-
-    // //check if password1 = password2 and length is no less than 8
-    // if (req.body.newPW.localeCompare(req.body.newPW2) == 0 && req.body.newPW.length >= 8) {
-    //     let q = `SELECT * FROM users`;
-
-    //     pool.query(q, (error, result) => {
-    //         if (error) {
-    //             console.log(error);
-    //         } else {
-    //             let userPassword = req.body.prevPW;
-    //             let User = {username: result[0].username, password: result[0].password};
-    
-    //             //unhash password
-    //             bcrypt.compare(userPassword, User.password, function(error, result) {
-    //                 if (error) {
-    //                     console.log(error);
-    //                     // FIXME: error is initiated here
-    //                 } 
-    //                 else if (result) {
-    //                     //hash and update new password
-    //                     bcrypt.hash(req.body.newPW, 10, function(error, hash) {
-    //                         if (error){
-    //                             console.log(error);
-    //                         } else {
-    //                             let q = `UPDATE users
-    //                                      SET password=?
-    //                                      WHERE username=?`;
-    
-    //                             pool.query(q, [hash, User.username], (error, result) => {
-    //                                 if (error) {
-    //                                     console.log(error);
-    //                                 }
-    //                                 else {
-    //                                     req.flash("success", "Your password has been changed");
-    //                                 }
-    //                             });
-    //                         }
-    //                     });
-    //                 } else {
-    //                     req.flash("error", "Incorrect previous password");
-    //                 }
-    //             });
-    //         }
-    //     });
-    // } 
-    // else if (req.body.newPW.length < 8) {
-    //     req.flash("error", "Password must be greater than 8 characters");
-    // } else {
-    //     req.flash("error", "Passwords do not match");
-    // }
 });
 
 app.get("/display", isLoggedIn, (req, res) => {

@@ -109,6 +109,9 @@
                             Y.one("#editB").set('value', resultGig.id);
                             Y.one("#deleteB").set('value', resultGig.id);
                             Y.one("#deleteB").set('style.display', 'block');
+
+                            Y.one("#gigsModule2").set('style.display', 'block');
+                            Y.one("#deleteB2").set('style.display', 'block');
                         //clicked on empty date
                         } else {
                             Y.one("#edate").set('value', startDate);
@@ -116,6 +119,9 @@
                             Y.one("#editB").set('value', 0);
                             Y.one("#deleteB").set('value', '');
                             Y.one("#deleteB").set('style.display', 'none');
+
+                            Y.one("#gigsModule2").set('style.display', 'none');
+                            Y.one("#deleteB2").set('style.display', 'none');
                         }
                         Y.one("#sdate").set('value', startDate);
                     });
@@ -217,7 +223,7 @@
                 </div>
                 <div>
                     <form action="/archive_options" method="POST" id="gigsModule">
-                        <h3>GIGS:</h3>
+                        <h3>GIG 1:</h3>
                         <input class="form-control" type="text" id="event" name="event" placeholder="Event" required>
                         <label for="location">Select location or input new location details below:</label>
                         <div style="height:100px;overflow:auto;" id="location">
@@ -237,6 +243,29 @@
                     </form>
                     <form action="/archiveOptionsDelete" method="POST">
                         <button type="submit" class="btn btn-primary" id="deleteB" name="deleteB" value="">Delete</button>
+                    </form>
+
+                    <form action="/archive_options" method="POST" id="gigsModule2">
+                        <h3>GIG 2:</h3>
+                        <input class="form-control" type="text" id="event2" name="event2" placeholder="Event" required>
+                        <label for="location2">Select location or input new location details below:</label>
+                        <div style="height:100px;overflow:auto;" id="location2">
+                            <% for (let i = 0; i < locations.length; i++) { %>   
+                                <input type="radio" value="<%= locations[i].id %>" id="gigLocation<%= locations[i].id %>" name="location" required> <%= locations[i].place %></input><br>                              
+                            <% } %>
+                        </div>
+                        <label for="sdate2">Start date (select on calendar):</label>
+                        <input class="form-control" type="text" id="sdate2" name="sdate2" pattern="[0-9]{2}/[0-9]{2}/[0-9]{2}" oninvalid="this.setCustomValidity('Date must be in form mm/dd/yy.')" required>
+                        <label for="edate">End date:</label>
+                        <input class="form-control" type="text" id="edate2" name="edate2" pattern="[0-9]{2}/[0-9]{2}/[0-9]{2}" oninvalid="this.setCustomValidity('Date must be in form mm/dd/yy.')" required>
+                        <label for="stime">Start time:</label>
+                        <input type="time" id="stim2e" name="stime2" required><br>
+                        <label for="etime">End time:</label>
+                        <input type="time" id="etime2" name="etime2" required><br>
+                        <button type="submit" class="btn btn-primary" id="editB2" name="editB2">Insert</button>
+                    </form>
+                    <form action="/archiveOptionsDelete" method="POST">
+                        <button type="submit" class="btn btn-primary" id="deleteB2" name="deleteB2" value="">Delete</button>
                     </form>
                 </div>
                 <div>
