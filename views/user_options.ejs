@@ -24,6 +24,16 @@
             </ul>
         </nav>
         <div class="container">
+            <% if(error && error.length > 0){ %>
+                <div class="alert alert-danger" role="alert">
+                    <%= error %>
+                </div>
+            <% } %>
+            <% if(success && success.length > 0){ %>
+                <div class="alert alert-success" role="alert">
+                    <%= success %>
+                </div>
+            <% } %>
             <form action="/changePassword" method="POST">
                 <h3>CHANGE PASSWORD:</h3>
                 <label for="prevPW">Previous password:</label>

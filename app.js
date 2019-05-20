@@ -16,10 +16,7 @@ let fs               = require("fs"),                 //file reader
 
 //mysql database connection
 var pool  = mysql.createPool({
-    connectionLimit : 10, //was 1000
-    // connectTimeout  : 60 * 60 * 1000,
-    // acquireTimeout  : 1000000,
-    // timeout         : 60 * 60 * 1000,
+    connectionLimit     : 10,
     host                : process.env.DB_HOST,
     user                : process.env.DB_USER,
     password            : process.env.DB_PASS,
@@ -666,46 +663,131 @@ app.get("/user_options", isLoggedIn, (req, res) => {
     res.render("user_options");
 });
 
-// app.post("/changePassword", isLoggedIn, (req, res) => {
-//     let userPassword = req.body.prevPW;
-//     let q = `SELECT * FROM users`;
+app.post("/changePassword", isLoggedIn, (req, res) => {
+    async.waterfall([
+        function(done){
+            //check if password1 = password2 and length is no less than 8
+            if (req.body.newPW.localeCompare(req.body.newPW2) == 0 && req.body.newPW.length >= 8) {
+                done(null);
+            } 
+            else if (req.body.newPW.length < 8) {
+                req.flash("error", "Password must be greater than 8 characters");
+                return res.redirect("/user_options");
+            } else {
+                req.flash("error", "Passwords do not match");
+                return res.redirect("/user_options");
+            }
+        },
+        function(done){
+            let q = `SELECT * FROM users`;
 
-//     pool.query(q, (error, result) => {
-//         if (error) {
-//             console.log(error);
-//         } else {
-//             let User = {username: result[0].username, password: result[0].password};
-            
-//             //unhash password
-//             bcrypt.compare(userPassword, User.password, function(err, res) {
-//                 if(res && req.body.newPW.localeCompare(req.body.newPW2) == 0 && req.body.newPW.length >= 8) {
-//                     //user password is correct, new password1 = new password2 and new password >= 8 characters
+            pool.query(q, (error, result) => {
+                if (error) {
+                    console.log(error);
+                } else {
+                    let userPassword = req.body.prevPW;
+                    let User = {username: result[0].username, password: result[0].password};
+                    done(null, userPassword, User);
+                }
+            });
+        },
+        function(userPassword, User, done){
+            //unhash password
+            bcrypt.compare(userPassword, User.password, function(error, result) {
+                if (error) {
+                    console.log(error);
+                    // FIXME: error is initiated here
+                } 
+                else if (result) {
+                    //hash new password
+                    bcrypt.hash(req.body.newPW, 10, function(error, hash) {
+                        if (error){
+                            console.log(error);
+                        } else {
+                            done(null, hash, User);
+                        }
+                    });
+                } else {
+                    req.flash("error", "Incorrect previous password");
+                    return res.redirect("/user_options");
+                }
+            });
+        },
+        function(hash, User, done){
+            let q = `UPDATE users
+            SET password=?
+            WHERE username=?`;
+
+            //update new password
+            pool.query(q, [hash, User.username], (error, result) => {
+                if (error) {
+                    console.log(error);
+                }
+                else {
+                    done(null, "done");
+                }
+            });
+        }
+    ], function (err) {
+        if (err) {
+            return next();
+        };
+        req.flash("success", "Your password has been changed");
+        res.redirect("/user_options");
+    });
+
+
+
+    // //check if password1 = password2 and length is no less than 8
+    // if (req.body.newPW.localeCompare(req.body.newPW2) == 0 && req.body.newPW.length >= 8) {
+    //     let q = `SELECT * FROM users`;
+
+    //     pool.query(q, (error, result) => {
+    //         if (error) {
+    //             console.log(error);
+    //         } else {
+    //             let userPassword = req.body.prevPW;
+    //             let User = {username: result[0].username, password: result[0].password};
     
-//                     //hash and update new password
-//                     bcrypt.hash(req.body.newPW, 10, function(err, hash) {
-//                         if (err){
-//                             console.log(err);
-//                         } else {
-//                             let q = `UPDATE users
-//                                      SET password=?
-//                                      WHERE username=?`;
-
-//                             pool.query(q, [hash, User.username], (error, result) => {
-//                                 if (error) {
-//                                     console.log(error);
-//                                 }
-//                             });
-//                         }
-//                     });
-//                 } else {
-//                     // FIXME: error is initiated here
-//                     console.log(err);
-//                 } 
-//             });
-//         }
-//     });
-//     res.redirect("user_options");
-// });
+    //             //unhash password
+    //             bcrypt.compare(userPassword, User.password, function(error, result) {
+    //                 if (error) {
+    //                     console.log(error);
+    //                     // FIXME: error is initiated here
+    //                 } 
+    //                 else if (result) {
+    //                     //hash and update new password
+    //                     bcrypt.hash(req.body.newPW, 10, function(error, hash) {
+    //                         if (error){
+    //                             console.log(error);
+    //                         } else {
+    //                             let q = `UPDATE users
+    //                                      SET password=?
+    //                                      WHERE username=?`;
+    
+    //                             pool.query(q, [hash, User.username], (error, result) => {
+    //                                 if (error) {
+    //                                     console.log(error);
+    //                                 }
+    //                                 else {
+    //                                     req.flash("success", "Your password has been changed");
+    //                                 }
+    //                             });
+    //                         }
+    //                     });
+    //                 } else {
+    //                     req.flash("error", "Incorrect previous password");
+    //                 }
+    //             });
+    //         }
+    //     });
+    // } 
+    // else if (req.body.newPW.length < 8) {
+    //     req.flash("error", "Password must be greater than 8 characters");
+    // } else {
+    //     req.flash("error", "Passwords do not match");
+    // }
+});
 
 app.get("/display", isLoggedIn, (req, res) => {
     let widgets = fs.readFileSync("./display/home.txt").toString().split("\n");
