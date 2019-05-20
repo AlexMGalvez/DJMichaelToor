@@ -14,19 +14,7 @@ let fs               = require("fs"),                 //file reader
     bcrypt           = require("bcrypt");             //user password hashing
                        require("dotenv").config()     //loads variables from .env -used for sensitive information
 
-// //database connection
-// var pool  = mysql.createPool({
-//     connectionLimit     : 10,
-//     host                : process.env.DB_HOST,
-//     user                : process.env.DB_USER,
-//     password            : process.env.DB_PASS,
-//     database            : process.env.DB_NAME,
-//     dateStrings         : "date",
-//     port                : 3306,
-//     multipleStatements  : true
-//   });
-
-//localhost database connection
+//database connection
 var pool  = mysql.createPool({
     connectionLimit     : 10,
     host                : process.env.DB_HOST,
@@ -36,7 +24,7 @@ var pool  = mysql.createPool({
     dateStrings         : "date",
     port                : process.env.DB_PORT,
     multipleStatements  : true
-  });
+});
 
 app.set("view engine", "ejs");
 
@@ -545,7 +533,7 @@ app.get("/archive_options", isLoggedIn, (req, res) => {
     });
 });
 
-//SQL insert or edit gig
+//SQL insert or edit gig 1
 app.post("/archive_options", isLoggedIn, (req, res) => {
     let q = ``
     
@@ -582,6 +570,44 @@ app.post("/archive_options", isLoggedIn, (req, res) => {
     });
 });
 
+//SQL insert or edit gig 2
+app.post("/archive_options2", isLoggedIn, (req, res) => {
+    let q = ``
+    
+    if(req.body.editB2 == 0){
+        q = `INSERT INTO gigs (location_id, event, start_date, end_date)
+             VALUES (?, ?, STR_TO_DATE(?, "%m/%d/%Y %H:%i:%s"), STR_TO_DATE(?, "%m/%d/%Y %H:%i:%s"))`;
+    } else {
+        q = `UPDATE gigs
+             SET location_id=?, event=?, start_date= STR_TO_DATE(?, "%m/%d/%Y %H:%i:%s"), end_date= STR_TO_DATE(?, "%m/%d/%Y %H:%i:%s")
+             WHERE id=?`;
+    }
+    pool.getConnection(function(error, connection) {
+        if (error) {
+            console.log(error);
+        } else {
+            connection.query(q, 
+                [
+                    req.body.location2, 
+                    req.body.event2, 
+                    req.body.sdate2 + " " + req.body.stime2 + ":00", 
+                    req.body.edate2 + " " + req.body.etime2 + ":00", 
+                    req.body.editB2
+                ],
+                (error, result) => {
+                    connection.release();
+                    if (error) {
+                        console.log(error);
+                        res.redirect("error");
+                    } else {
+                        res.redirect("/archive_options");
+                    }
+            });
+        }
+    });
+});
+
+//SQL delete gig 1
 app.post("/archiveOptionsDelete",  isLoggedIn, (req, res) => {
     const q = `DELETE FROM gigs
                WHERE id=?`;
@@ -591,6 +617,28 @@ app.post("/archiveOptionsDelete",  isLoggedIn, (req, res) => {
             console.log(error);
         } else {
             connection.query(q, [req.body.deleteB], (error, result) => {
+                connection.destroy();
+                if (error) {
+                    console.log(error);
+                    res.redirect("error");
+                } else {
+                    res.redirect("/archive_options");
+                }
+            });
+        }
+    });
+});
+
+//SQL delete gig 2
+app.post("/archiveOptionsDelete2",  isLoggedIn, (req, res) => {
+    const q = `DELETE FROM gigs
+               WHERE id=?`;
+
+    pool.getConnection(function(error, connection) {
+        if (error) {
+            console.log(error);
+        } else {
+            connection.query(q, [req.body.deleteB2], (error, result) => {
                 connection.destroy();
                 if (error) {
                     console.log(error);
