@@ -1,0 +1,7043 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:wp="http://wordpress.org/export/1.2/">
+  <channel>
+    <title>The Official Website of Michael Toor</title>
+    <link>https://www.michaeltoor.com</link>
+    <pubDate>Fri, 28 Apr 2017 02:11:09 +0000</pubDate>
+    <description />
+    <language>en-CA</language>
+    <wp:wxr_version>1.2</wp:wxr_version>
+    <wp:author>
+      <wp:author_id>1934379162</wp:author_id>
+      <wp:author_login>mike.toor@gmail.com</wp:author_login>
+      <wp:author_email>mike.toor@gmail.com</wp:author_email>
+      <wp:author_display_name><![CDATA[Michael Toor]]></wp:author_display_name>
+      <wp:author_first_name><![CDATA[Michael]]></wp:author_first_name>
+      <wp:author_last_name><![CDATA[Toor]]></wp:author_last_name>
+    </wp:author>
+    <wp:category>
+      <wp:cat_name><![CDATA[null - null]]></wp:cat_name>
+      <wp:category_nicename>null-null</wp:category_nicename>
+      <wp:category_parent />
+    </wp:category>
+    <item>
+      <link>/latest-posts</link>
+      <title>Latest Posts</title>
+      <pubDate>Mon, 12 Sep 2016 21:50:03 +0000</pubDate>
+      <content:encoded><![CDATA[&nbsp;]]></content:encoded>
+      <wp:post_name>latest-posts</wp:post_name>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_id>0</wp:post_id>
+      <wp:status>publish</wp:status>
+    </item>
+    <item>
+      <link>/about</link>
+      <title>About Michael Toor</title>
+      <pubDate>Mon, 18 Jun 2018 00:07:36 +0000</pubDate>
+      <content:encoded><![CDATA[<h1>About Michael Toor</h1><p>Michael Toor is a Canadian DJ and aspiring producer based in Southern Ontario.</p><p>Although he was born in the Greater Toronto Area, he found his true calling in the Tri-Cities (Kitchener-Cambridge-Waterloo) where he is quickly making a name for himself in the nightclub scene.</p><p>Capable of intricately blending anything from the most mellow of tunes to the heaviest Electronic Dance Music, Trap, and Dubstep, Michael makes his audiences move. He knows how to make any crowd go crazy and demonstrates this consistently, time and time again.</p><p>When it comes to music genre, Michael appreciates them all. From Reggae to EDM, from Country to Hip Hop, he knows they all have their merit and his vast library of music reflects this. Having such a diverse collection of music and knowing how to blend it together seamlessly makes Michael a highly coveted and remarkably versatile performer.</p><p>Having found his roots in Classic Rock, Michael is also a skilled musician who is experienced in playing a wide variety of instruments including piano, guitar, bass, and drums. This musical background translates well into his DJing and certainly contributes to his striking ability to rock any dance floor.</p><p>While Michael can be found every other Saturday at his nightclub residency at Wax Nightclub, he also owns and operates his home recording studio in Cambridge where he hopes to make a name for himself in the world of music production.</p><p>Although he is a fresh face in the production scene, one thing is for certain; Michael Toor will be making party people go wild for years to come.</p>&nbsp;
+  
+      <img src="https://static1.squarespace.com/static/5902a4bdb3db2bade49c52a0/t/59b9c095bd10f00dcdc3f13e/1505345707457/Michael+Toor+at+District?format=original" alt=""/>]]></content:encoded>
+      <wp:post_name>about</wp:post_name>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_id>1</wp:post_id>
+      <wp:status>publish</wp:status>
+    </item>
+    <item>
+      <link>/contact</link>
+      <title>Contact</title>
+      <pubDate>Wed, 27 Sep 2017 21:11:11 +0000</pubDate>
+      <content:encoded><![CDATA[<h1>Contact</h1><p>If you have any enquiries, fill out the form below and you'll receive a response promptly.</p>
+
+
+
+<div class="form-wrapper"
+  
+>
+  
+  <div class="form-inner-wrapper">
+    <form
+       data-form-id="59b9c1a8b07869d96fe32717"
+       autocomplete="on"
+       
+       method="POST"
+       action="https://michael-toor.squarespace.com"
+       onsubmit="return (function (form) {
+  Y.use('squarespace-form-submit', 'node', function usingFormSubmit(Y) {
+    (new Y.Squarespace.FormSubmit(form)).submit({
+      formId: '59b9c1a8b07869d96fe32717',
+      collectionId: '',
+      objectName: 'page-59b9c1a8b07869d96fe32716'
+    });
+  });
+  return false;
+})(this);"
+       
+    >
+      
+        <div class="field-list clear">
+
+        
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+              <fieldset id="name-yui_3_17_2_8_1473784379919_5751" class="form-item fields name required">
+              <div class="title">Name <span class="required">*</span></div>
+              <legend>Name</legend>
+              
+                <div class="field first-name">
+                  <label class="caption"><input class="field-element field-control" name="fname"
+                  x-autocompletetype="given-name" type="text"
+                  spellcheck="false"
+                  maxlength="30"
+                  data-title="First" />
+                  First Name</label>
+                </div>
+                <div class="field last-name">
+                  <label class="caption"><input class="field-element field-control" name="lname"
+                  x-autocompletetype="surname" type="text"
+                  spellcheck="false" maxlength="30" data-title="Last" />
+                  Last Name</label>
+                </div>
+              </fieldset>
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+        
+
+            
+
+            
+
+            
+
+            
+
+            
+              <div id="email-yui_3_17_2_8_1473784379919_5752" class="form-item field email required">
+                <label class="title" for="email-yui_3_17_2_8_1473784379919_5752-field">Email Address <span class="required">*</span></label>
+                
+                <input class="field-element" name="email" x-autocompletetype="email" type="text" spellcheck="false" id="email-yui_3_17_2_8_1473784379919_5752-field" />
+              </div>
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+        
+
+            
+
+            
+
+            
+              <div id="text-yui_3_17_2_8_1473784379919_5753" class="form-item field text required">
+                <label class="title" for="text-yui_3_17_2_8_1473784379919_5753-field">Subject <span class="required">*</span></label>
+                
+                <input class="field-element text" type="text" id="text-yui_3_17_2_8_1473784379919_5753-field" />
+              </div>
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+        
+
+            
+
+            
+
+            
+
+            
+              <div id="textarea-yui_3_17_2_8_1473784379919_5754" class="form-item field textarea required">
+                <label class="title" for="textarea-yui_3_17_2_8_1473784379919_5754-field">Message <span class="required">*</span></label>
+                
+                <textarea class="field-element " id="textarea-yui_3_17_2_8_1473784379919_5754-field" ></textarea>
+              </div>
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+        
+
+        </div>
+
+      
+
+      
+
+      
+      <div class="form-button-wrapper form-button-wrapper--align-left">
+        <input class="button sqs-system-button sqs-editable-button" type="submit" value="Submit"/>
+      </div>
+      
+
+      
+
+      <div class="hidden form-submission-text"><p>Message Received - Thank You</p></div>
+
+      <div class="hidden form-submission-html" data-submission-html=""></div>
+    </form>
+
+  </div>
+
+</div>
+&nbsp;
+  
+      <img src="https://static1.squarespace.com/static/5902a4bdb3db2bade49c52a0/t/59b9fad82aeba5de362f5984/1505360640224/Michael+Toor+at+Phil%27s?format=original" alt=""/>]]></content:encoded>
+      <wp:post_name>contact</wp:post_name>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_id>2</wp:post_id>
+      <wp:status>publish</wp:status>
+    </item>
+    <item>
+      <link>/faq</link>
+      <title>FAQ</title>
+      <pubDate>Wed, 28 Sep 2016 18:48:25 +0000</pubDate>
+      <content:encoded><![CDATA[<h2>FREQUENTLY ASKED QUESTION</h2><p>You can use this <a target="_blank" href="https://support.squarespace.com/hc/en-us/articles/205813798">Text Block</a>&nbsp;to answer any questions your visitors may have. Note that the placeholder question is visually distinguished from the placeholder answer. This was done by alternating the text format, which you can change in the Text Block Editor. Other typographic customizations can be made with style changes.<br /> </p><h2>FREQUENTLY ASKED QUESTION</h2><p>Style changes are edits to the look of your site, like fonts, colors, backgrounds, and spacing. You can make and preview style changes in the Style Editor. Each template's Style Editor has different options called "tweaks." Learn how to use this feature <a target="_blank" href="https://support.squarespace.com/hc/en-us/articles/205815788">here</a>.<br /> </p><h2>FREQUENTLY ASKED QUESTION</h2><p>The following is placeholder text known as “lorem ipsum,” which is scrambled Latin used by designers to mimic real copy.&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non ligula in ligula commodo egestas. Integer cursus egestas ex dapibus eleifend. Maecenas mi erat, condimentum ac blandit sit amet, dapibus a purus. Praesent iaculis rutrum sapien, quis congue ligula tristique vel.</p>&nbsp;<h2>FREQUENTLY ASKED QUESTION</h2><p>Donec sed lorem enim. Cras quis quam diam. Maecenas congue aliquet sapien, eu sagittis libero luctus ultrices. Aenean ultrices scelerisque eros, at semper diam euismod eu. Aliquam felis dolor, laoreet non porta tempor, euismod in velit. Nam risus ipsum, porttitor id pharetra vitae, egestas sit amet nibh.<br /> </p><h2>FREQUENTLY ASKED QUESTION</h2><p>Fusce venenatis posuere magna, eu egestas ipsum. Mauris auctor tincidunt euismod. Etiam sagittis, ante maximus fermentum efficitur, risus elit aliquam mi, vitae laoreet metus dui nec dui. Nulla facilisi. Praesent finibus elit vitae tempor ornare. Vivamus eget dictum risus.<br /> </p><h2>FREQUENTLY ASKED QUESTION</h2><p>Duis odio ipsum, bibendum et facilisis eget, sollicitudin vitae dui. Curabitur et mi erat. Quisque accumsan ullamcorper lectus, quis suscipit nulla ultrices sit amet. Nunc congue eget erat et maximus. Maecenas sit amet vulputate mi, at tempor ex. Etiam quis enim ante. Praesent posuere mollis diam. Praesent sit amet ante porta, auctor massa eu, dictum risus.&nbsp;</p>&nbsp;]]></content:encoded>
+      <wp:post_name>faq</wp:post_name>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_id>3</wp:post_id>
+      <wp:status>publish</wp:status>
+    </item>
+    <item>
+      <link>/spotlight-post</link>
+      <title>Spotlight Post</title>
+      <pubDate>Wed, 28 Sep 2016 19:39:12 +0000</pubDate>
+      <content:encoded><![CDATA[&nbsp;&nbsp;<p class="text-align-center"><em>Welcome to the Rally Template</em></p><h1 class="text-align-center">To get started, watch these <a target="_blank" href="https://support.squarespace.com/hc/en-us/articles/205809798">short videos</a> on Squarespace basics and read the template <a target="_blank" href="https://support.squarespace.com/hc/en-us/articles/212512738">guide</a>.</h1>
+<div class="sqs-block-button-container--center" data-alignment="center" data-button-size="large">
+	<a href="https://rally-demo.squarespace.com/blog-rally/h6yczxgca4an9rgw8pndda8m9hzgdz" class="sqs-block-button-element--large sqs-block-button-element" >Read More</a>
+</div>&nbsp;&nbsp;]]></content:encoded>
+      <wp:post_name>spotlight-post</wp:post_name>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_id>4</wp:post_id>
+      <wp:status>publish</wp:status>
+    </item>
+    <item>
+      <link>/exclusives</link>
+      <title>Exclusives</title>
+      <pubDate>Wed, 28 Sep 2016 19:40:53 +0000</pubDate>
+      <content:encoded><![CDATA[&nbsp;&nbsp;&nbsp;&nbsp;<p class="text-align-center"><em>Come One, Come All</em></p><h1 class="text-align-center">the meetups</h1>
+<div class="sqs-block-button-container--center" data-alignment="center" data-button-size="large">
+	<a href="/the-meet-ups-rally" class="sqs-block-button-element--large sqs-block-button-element" >Learn More</a>
+</div><p class="text-align-center"><em>Print is Still Alive</em></p><h1 class="text-align-center">The magazine</h1>
+<div class="sqs-block-button-container--center" data-alignment="center" data-button-size="large">
+	<a href="/the-magazine-rally" class="sqs-block-button-element--large sqs-block-button-element" >Subscribe</a>
+</div>&nbsp;&nbsp;&nbsp;&nbsp;]]></content:encoded>
+      <wp:post_name>exclusives</wp:post_name>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_id>5</wp:post_id>
+      <wp:status>publish</wp:status>
+    </item>
+    <item>
+      <link>/social-feed</link>
+      <title>Social Feed</title>
+      <pubDate>Tue, 27 Sep 2016 22:17:04 +0000</pubDate>
+      <content:encoded><![CDATA[&nbsp;&nbsp;<p class="text-align-center"><em>Stay in the Know</em></p><h1 class="text-align-center">Follow us</h1>
+
+
+  
+
+  
+    
+<div class="sqs-blockStatus sqs-blockStatus--overlayMode" data-state="uninitialized">
+
+  <div class="sqs-blockStatus-disclosure"></div>
+
+  <div class="sqs-blockStatus-box">
+    <div class="sqs-blockStatus-box-title">instagram Block</div>
+    
+      <div class="sqs-blockStatus-box-message">
+        This is an example. To display your Instagram posts, double-click here to add an account or select an existing connected account.
+        
+          <a class="sqs-blockStatus-box-kbArticleLink" href="https://support.squarespace.com/hc/articles/206543367" target="_blank">Learn more</a>
+        
+      </div>
+    
+  </div>
+
+</div>
+
+
+  
+
+
+<div class="
+  sqs-gallery-container
+  sqs-gallery-block-grid
+  sqs-gallery-aspect-ratio-square
+  sqs-gallery-thumbnails-per-row-4
+  
+  
+
+  
+    sqs-gallery-block-show-meta sqs-gallery-block-meta-position-bottom
+    
+  
+  
+  
+  
+
+  sqs-block-is-placeholder
+  
+
+  
+  
+  clear"
+  
+  data-block-state="uninitialized"
+>
+  <div class="sqs-gallery">
+    
+      
+
+        
+
+        
+
+        
+          
+            <div class="slide" data-type="image">
+              <div class="margin-wrapper">
+                <a
+                  
+                      
+                  
+
+                  class="image-slide-anchor content-fill"
+                >
+                  <noscript><img src="https://static.squarespace.com/universal/images-v6/configuration/placeholder/3x2-image-8-half-color.jpg" alt="Pellentesque Risus Ridiculus" /></noscript><img class="thumb-image" data-src="https://static.squarespace.com/universal/images-v6/configuration/placeholder/3x2-image-8-half-color.jpg" data-image="https://static.squarespace.com/universal/images-v6/configuration/placeholder/3x2-image-8-half-color.jpg" data-image-dimensions="2000x1334" data-image-focal-point="0.5,0.5" alt="Pellentesque Risus Ridiculus" data-load="false" data-image-id="5cce694cfa0d6020ec695f1f" data-type="image" />
+                </a>
+                
+              </div>
+            </div>
+          
+
+          
+        
+
+      
+
+        
+
+        
+
+        
+          
+            <div class="slide" data-type="image">
+              <div class="margin-wrapper">
+                <a
+                  
+                      
+                  
+
+                  class="image-slide-anchor content-fill"
+                >
+                  <noscript><img src="https://static.squarespace.com/universal/images-v6/configuration/placeholder/1x1-image-1-half-color.jpg" alt="Porta" /></noscript><img class="thumb-image" data-src="https://static.squarespace.com/universal/images-v6/configuration/placeholder/1x1-image-1-half-color.jpg" data-image="https://static.squarespace.com/universal/images-v6/configuration/placeholder/1x1-image-1-half-color.jpg" data-image-dimensions="2000x2000" data-image-focal-point="0.5,0.5" alt="Porta" data-load="false" data-image-id="5cce694cfa0d6020ec695f20" data-type="image" />
+                </a>
+                
+              </div>
+            </div>
+          
+
+          
+        
+
+      
+
+        
+
+        
+
+        
+          
+            <div class="slide" data-type="image">
+              <div class="margin-wrapper">
+                <a
+                  
+                      
+                  
+
+                  class="image-slide-anchor content-fill"
+                >
+                  <noscript><img src="https://static.squarespace.com/universal/images-v6/configuration/placeholder/3x2-image-2-half-color.jpg" alt="Etiam Ultricies" /></noscript><img class="thumb-image" data-src="https://static.squarespace.com/universal/images-v6/configuration/placeholder/3x2-image-2-half-color.jpg" data-image="https://static.squarespace.com/universal/images-v6/configuration/placeholder/3x2-image-2-half-color.jpg" data-image-dimensions="2000x1334" data-image-focal-point="0.5,0.5" alt="Etiam Ultricies" data-load="false" data-image-id="5cce694cfa0d6020ec695f21" data-type="image" />
+                </a>
+                
+              </div>
+            </div>
+          
+
+          
+        
+
+      
+
+        
+
+        
+
+        
+          
+            <div class="slide" data-type="image">
+              <div class="margin-wrapper">
+                <a
+                  
+                      
+                  
+
+                  class="image-slide-anchor content-fill"
+                >
+                  <noscript><img src="https://static.squarespace.com/universal/images-v6/configuration/placeholder/3x4-image-6-half-color.jpg" alt="Vulputate Commodo Ligula" /></noscript><img class="thumb-image" data-src="https://static.squarespace.com/universal/images-v6/configuration/placeholder/3x4-image-6-half-color.jpg" data-image="https://static.squarespace.com/universal/images-v6/configuration/placeholder/3x4-image-6-half-color.jpg" data-image-dimensions="2000x2667" data-image-focal-point="0.5,0.5" alt="Vulputate Commodo Ligula" data-load="false" data-image-id="5cce694cfa0d6020ec695f22" data-type="image" />
+                </a>
+                
+              </div>
+            </div>
+          
+
+          
+        
+
+      
+
+        
+
+        
+
+        
+          
+            <div class="slide" data-type="image">
+              <div class="margin-wrapper">
+                <a
+                  
+                      
+                  
+
+                  class="image-slide-anchor content-fill"
+                >
+                  <noscript><img src="https://static.squarespace.com/universal/images-v6/configuration/placeholder/3x2-image-3-half-color.jpg" alt="Elit Condimentum" /></noscript><img class="thumb-image" data-src="https://static.squarespace.com/universal/images-v6/configuration/placeholder/3x2-image-3-half-color.jpg" data-image="https://static.squarespace.com/universal/images-v6/configuration/placeholder/3x2-image-3-half-color.jpg" data-image-dimensions="2000x1334" data-image-focal-point="0.5,0.5" alt="Elit Condimentum" data-load="false" data-image-id="5cce694cfa0d6020ec695f23" data-type="image" />
+                </a>
+                
+              </div>
+            </div>
+          
+
+          
+        
+
+      
+
+        
+
+        
+
+        
+          
+            <div class="slide" data-type="image">
+              <div class="margin-wrapper">
+                <a
+                  
+                      
+                  
+
+                  class="image-slide-anchor content-fill"
+                >
+                  <noscript><img src="https://static.squarespace.com/universal/images-v6/configuration/placeholder/3x4-image-9-half-color.jpg" alt="Aenean eu leo Quam" /></noscript><img class="thumb-image" data-src="https://static.squarespace.com/universal/images-v6/configuration/placeholder/3x4-image-9-half-color.jpg" data-image="https://static.squarespace.com/universal/images-v6/configuration/placeholder/3x4-image-9-half-color.jpg" data-image-dimensions="2000x2667" data-image-focal-point="0.5,0.5" alt="Aenean eu leo Quam" data-load="false" data-image-id="5cce694cfa0d6020ec695f24" data-type="image" />
+                </a>
+                
+              </div>
+            </div>
+          
+
+          
+        
+
+      
+
+        
+
+        
+
+        
+          
+            <div class="slide" data-type="image">
+              <div class="margin-wrapper">
+                <a
+                  
+                      
+                  
+
+                  class="image-slide-anchor content-fill"
+                >
+                  <noscript><img src="https://static.squarespace.com/universal/images-v6/configuration/placeholder/1x1-image-4-half-color.jpg" alt="Cursus Amet" /></noscript><img class="thumb-image" data-src="https://static.squarespace.com/universal/images-v6/configuration/placeholder/1x1-image-4-half-color.jpg" data-image="https://static.squarespace.com/universal/images-v6/configuration/placeholder/1x1-image-4-half-color.jpg" data-image-dimensions="2000x2000" data-image-focal-point="0.5,0.5" alt="Cursus Amet" data-load="false" data-image-id="5cce694cfa0d6020ec695f25" data-type="image" />
+                </a>
+                
+              </div>
+            </div>
+          
+
+          
+        
+
+      
+
+        
+
+        
+
+        
+          
+            <div class="slide" data-type="image">
+              <div class="margin-wrapper">
+                <a
+                  
+                      
+                  
+
+                  class="image-slide-anchor content-fill"
+                >
+                  <noscript><img src="https://static.squarespace.com/universal/images-v6/configuration/placeholder/3x4-image-7-half-color.jpg" alt="Pellentesque Risus Ridiculus" /></noscript><img class="thumb-image" data-src="https://static.squarespace.com/universal/images-v6/configuration/placeholder/3x4-image-7-half-color.jpg" data-image="https://static.squarespace.com/universal/images-v6/configuration/placeholder/3x4-image-7-half-color.jpg" data-image-dimensions="2000x2667" data-image-focal-point="0.5,0.5" alt="Pellentesque Risus Ridiculus" data-load="false" data-image-id="5cce694cfa0d6020ec695f26" data-type="image" />
+                </a>
+                
+              </div>
+            </div>
+          
+
+          
+        
+
+      
+
+        
+
+        
+
+        
+          
+            <div class="slide" data-type="image">
+              <div class="margin-wrapper">
+                <a
+                  
+                      
+                  
+
+                  class="image-slide-anchor content-fill"
+                >
+                  <noscript><img src="https://static.squarespace.com/universal/images-v6/configuration/placeholder/1x1-image-5-half-color.jpg" alt="Porta" /></noscript><img class="thumb-image" data-src="https://static.squarespace.com/universal/images-v6/configuration/placeholder/1x1-image-5-half-color.jpg" data-image="https://static.squarespace.com/universal/images-v6/configuration/placeholder/1x1-image-5-half-color.jpg" data-image-dimensions="2000x2000" data-image-focal-point="0.5,0.5" alt="Porta" data-load="false" data-image-id="5cce694cfa0d6020ec695f27" data-type="image" />
+                </a>
+                
+              </div>
+            </div>
+          
+
+          
+        
+
+      
+
+        
+
+        
+
+        
+          
+            <div class="slide" data-type="image">
+              <div class="margin-wrapper">
+                <a
+                  
+                      
+                  
+
+                  class="image-slide-anchor content-fill"
+                >
+                  <noscript><img src="https://static.squarespace.com/universal/images-v6/configuration/placeholder/3x2-image-8-half-color.jpg" alt="Etiam Ultricies" /></noscript><img class="thumb-image" data-src="https://static.squarespace.com/universal/images-v6/configuration/placeholder/3x2-image-8-half-color.jpg" data-image="https://static.squarespace.com/universal/images-v6/configuration/placeholder/3x2-image-8-half-color.jpg" data-image-dimensions="2000x1334" data-image-focal-point="0.5,0.5" alt="Etiam Ultricies" data-load="false" data-image-id="5cce694cfa0d6020ec695f28" data-type="image" />
+                </a>
+                
+              </div>
+            </div>
+          
+
+          
+        
+
+      
+
+        
+
+        
+
+        
+          
+            <div class="slide" data-type="image">
+              <div class="margin-wrapper">
+                <a
+                  
+                      
+                  
+
+                  class="image-slide-anchor content-fill"
+                >
+                  <noscript><img src="https://static.squarespace.com/universal/images-v6/configuration/placeholder/1x1-image-1-half-color.jpg" alt="Vulputate Commodo Ligula" /></noscript><img class="thumb-image" data-src="https://static.squarespace.com/universal/images-v6/configuration/placeholder/1x1-image-1-half-color.jpg" data-image="https://static.squarespace.com/universal/images-v6/configuration/placeholder/1x1-image-1-half-color.jpg" data-image-dimensions="2000x2000" data-image-focal-point="0.5,0.5" alt="Vulputate Commodo Ligula" data-load="false" data-image-id="5cce694cfa0d6020ec695f29" data-type="image" />
+                </a>
+                
+              </div>
+            </div>
+          
+
+          
+        
+
+      
+
+        
+
+        
+
+        
+          
+            <div class="slide" data-type="image">
+              <div class="margin-wrapper">
+                <a
+                  
+                      
+                  
+
+                  class="image-slide-anchor content-fill"
+                >
+                  <noscript><img src="https://static.squarespace.com/universal/images-v6/configuration/placeholder/3x2-image-2-half-color.jpg" alt="Elit Condimentum" /></noscript><img class="thumb-image" data-src="https://static.squarespace.com/universal/images-v6/configuration/placeholder/3x2-image-2-half-color.jpg" data-image="https://static.squarespace.com/universal/images-v6/configuration/placeholder/3x2-image-2-half-color.jpg" data-image-dimensions="2000x1334" data-image-focal-point="0.5,0.5" alt="Elit Condimentum" data-load="false" data-image-id="5cce694cfa0d6020ec695f2a" data-type="image" />
+                </a>
+                
+              </div>
+            </div>
+          
+
+          
+        
+
+      
+    
+  </div>
+
+  
+
+</div>
+
+
+
+
+<style type="text/css" id="design-grid-css">
+#block-yui_3_17_2_30_1473693705537_35606 .sqs-gallery-block-grid .sqs-gallery-design-grid { margin-right: -9px; }
+#block-yui_3_17_2_30_1473693705537_35606 .sqs-gallery-block-grid .sqs-gallery-design-grid-slide .margin-wrapper { margin-right: 9px; margin-bottom: 9px; }
+</style>
+
+
+
+&nbsp;&nbsp;]]></content:encoded>
+      <wp:post_name>social-feed</wp:post_name>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_id>6</wp:post_id>
+      <wp:status>publish</wp:status>
+    </item>
+    <item>
+      <link>/subscribe</link>
+      <title>Subscribe</title>
+      <pubDate>Wed, 26 Oct 2016 15:41:55 +0000</pubDate>
+      <content:encoded><![CDATA[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]]></content:encoded>
+      <wp:post_name>subscribe</wp:post_name>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_id>7</wp:post_id>
+      <wp:status>publish</wp:status>
+    </item>
+    <item>
+      <link>/recording-studio</link>
+      <title>Recording Studio</title>
+      <pubDate>Sat, 23 Sep 2017 03:41:03 +0000</pubDate>
+      <content:encoded><![CDATA[<h1 class="text-align-center">Michael Toor's recording studio</h1>
+  
+      <img src="https://static1.squarespace.com/static/5902a4bdb3db2bade49c52a0/t/59c5bbaaa803bbff9d1aeb95/1506130977131/Studio.jpg?format=original" alt=""/>
+  
+
+&nbsp;&nbsp;<h3>Michael's Home Studio...</h3><p>Pictured above is the Control Room in Michael Toor's self-built studio.</p>&nbsp;&nbsp;]]></content:encoded>
+      <wp:post_name>recording-studio</wp:post_name>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_id>8</wp:post_id>
+      <wp:status>publish</wp:status>
+    </item>
+    <item>
+      <link>/archive-of-gigs</link>
+      <title>Archive of Gigs</title>
+      <pubDate>Sat, 23 Sep 2017 04:25:40 +0000</pubDate>
+      <content:encoded><![CDATA[&nbsp;<h1 class="text-align-center">Archive of Gigs</h1>
+
+<div class="
+  archive-block-wrapper
+  archive-block-setting-layout-index
+  archive-block-setting-text-alignment-left
+  
+  
+  "
+
+  
+>
+  
+  
+
+  
+
+  <ul class="archive-group-list">
+    
+    
+
+    <li class="archive-group">
+
+      
+        
+          
+            <!-- event -->
+            <a href="/calendar?month=May-2019" class="archive-group-name-link">
+          
+        
+        
+        
+        
+        
+      
+
+        
+          May 2019
+        
+        
+      </a>
+
+      
+      
+      <ul class="archive-item-list">
+        
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            May 11, 2019
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2017/3/11/upper-canada-mall-guess-dj-zf3wn-7jnrz-r6rf8-pm9zr-3trdy-cly5k-nsgkf-gjmtp-t76r8-khegp" class="archive-item-link ">CF Sherway Gardens (Levi's DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            May 11, 2019
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+
+      </ul>
+
+      
+
+    </li>
+
+    
+
+    <li class="archive-group">
+
+      
+        
+          
+            <!-- event -->
+            <a href="/calendar?month=December-2018" class="archive-group-name-link">
+          
+        
+        
+        
+        
+        
+      
+
+        
+          December 2018
+        
+        
+      </a>
+
+      
+      
+      <ul class="archive-item-list">
+        
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Dec  8, 2018
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2017/3/11/upper-canada-mall-guess-dj-zf3wn-7jnrz-r6rf8-twtjb-3zbjy-edtzj" class="archive-item-link ">Upper Canada Mall (Guess DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Dec  8, 2018
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+
+      </ul>
+
+      
+
+    </li>
+
+    
+
+    <li class="archive-group">
+
+      
+        
+          
+            <!-- event -->
+            <a href="/calendar?month=November-2018" class="archive-group-name-link">
+          
+        
+        
+        
+        
+        
+      
+
+        
+          November 2018
+        
+        
+      </a>
+
+      
+      
+      <ul class="archive-item-list">
+        
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Nov 10, 2018
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2017/3/11/upper-canada-mall-guess-dj-zf3wn-7jnrz-r6rf8-pm9zr-3trdy-cly5k-nsgkf-gjmtp-t76r8" class="archive-item-link ">CF Sherway Gardens (Levi's DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Nov 10, 2018
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+
+      </ul>
+
+      
+
+    </li>
+
+    
+
+    <li class="archive-group">
+
+      
+        
+          
+            <!-- event -->
+            <a href="/calendar?month=October-2018" class="archive-group-name-link">
+          
+        
+        
+        
+        
+        
+      
+
+        
+          October 2018
+        
+        
+      </a>
+
+      
+      
+      <ul class="archive-item-list">
+        
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Oct 20, 2018
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2017/3/11/upper-canada-mall-guess-dj-zf3wn-7jnrz-r6rf8-twtjb-3zbjy" class="archive-item-link ">Upper Canada Mall (Guess DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Oct 20, 2018
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Oct  5, 2018
+              
+                 &ndash; Oct  6, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/11/17/trappers-alley-friday-night-asw6h-9apk5-d39gs-drm39" class="archive-item-link ">Trappers Alley (Fire Fridays)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Oct  5, 2018
+              
+                 &ndash; Oct  6, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+
+      </ul>
+
+      
+
+    </li>
+
+    
+
+    <li class="archive-group">
+
+      
+        
+          
+            <!-- event -->
+            <a href="/calendar?month=September-2018" class="archive-group-name-link">
+          
+        
+        
+        
+        
+        
+      
+
+        
+          September 2018
+        
+        
+      </a>
+
+      
+      
+      <ul class="archive-item-list">
+        
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Sep 22, 2018
+              
+                 &ndash; Sep 23, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2018/7/21/the-lakeview-wedding-ceremony-7g84b" class="archive-item-link ">Highland Glen Golf Club (Wedding Ceremony and Reception)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Sep 22, 2018
+              
+                 &ndash; Sep 23, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Sep 15, 2018
+              
+                 &ndash; Sep 16, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2018/6/9/wax-nightclub-the-saturday-social-zsfrb-2scy8-44b6r-wbgcn-7jc9x-g4e2c" class="archive-item-link ">Wax Nightclub (The Saturday Social)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Sep 15, 2018
+              
+                 &ndash; Sep 16, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Sep 15, 2018
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2017/3/11/upper-canada-mall-guess-dj-zf3wn-7jnrz-r6rf8-twtjb-4w345" class="archive-item-link ">Bramalea City Centre (Guess DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Sep 15, 2018
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Sep 14, 2018
+              
+                 &ndash; Sep 15, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2018/9/14/match-eatery-public-house-patio-dj" class="archive-item-link ">MATCH Eatery & Public House (Patio DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Sep 14, 2018
+              
+                 &ndash; Sep 15, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Sep  8, 2018
+              
+                 &ndash; Sep  9, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2018/9/22/the-pub-on-king-pok-saturday" class="archive-item-link ">The Pub On King (POK Frosh Saturday)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Sep  8, 2018
+              
+                 &ndash; Sep  9, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Sep  7, 2018
+              
+                 &ndash; Sep  8, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2018/9/22/the-pub-on-king-pok-saturday-kbra5" class="archive-item-link ">The Pub On King (POK Frosh Friday)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Sep  7, 2018
+              
+                 &ndash; Sep  8, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Sep  6, 2018
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2017/3/11/upper-canada-mall-guess-dj-zf3wn-7jnrz-r6rf8-pm9zr-3trdy-cly5k-nsgkf-gjmtp-mfw9r-a8n6a" class="archive-item-link ">Yorkdale Shopping Centre (Marciano DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Sep  6, 2018
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Sep  5, 2018
+              
+                 &ndash; Sep  6, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2018/9/5/ace-ping-pong-lounge-event-dj" class="archive-item-link ">Ace Ping Pong Lounge (Special Event DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Sep  5, 2018
+              
+                 &ndash; Sep  6, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Sep  1, 2018
+              
+                 &ndash; Sep  2, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2018/6/9/wax-nightclub-the-saturday-social-zsfrb-2scy8-44b6r-wbgcn-7jc9x" class="archive-item-link ">Wax Nightclub (The Saturday Social)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Sep  1, 2018
+              
+                 &ndash; Sep  2, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+
+      </ul>
+
+      
+
+    </li>
+
+    
+
+    <li class="archive-group">
+
+      
+        
+          
+            <!-- event -->
+            <a href="/calendar?month=August-2018" class="archive-group-name-link">
+          
+        
+        
+        
+        
+        
+      
+
+        
+          August 2018
+        
+        
+      </a>
+
+      
+      
+      <ul class="archive-item-list">
+        
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Aug 31, 2018
+              
+                 &ndash; Sep  1, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/11/17/trappers-alley-friday-night-asw6h-9apk5-d39gs" class="archive-item-link ">Trappers Alley (Fire Fridays)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Aug 31, 2018
+              
+                 &ndash; Sep  1, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Aug 25, 2018
+              
+                 &ndash; Aug 26, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2018/6/9/wax-nightclub-the-saturday-social-zsfrb-2scy8-44b6r-wbgcn-nendt" class="archive-item-link ">Wax Nightclub (The Saturday Social)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Aug 25, 2018
+              
+                 &ndash; Aug 26, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Aug 10, 2018
+              
+                 &ndash; Aug 11, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2018/8/10/boots-amp-hearts-impromptu-campground-show" class="archive-item-link ">Boots &amp; Hearts (Impromptu Campground DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Aug 10, 2018
+              
+                 &ndash; Aug 11, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Aug  4, 2018
+              
+                 &ndash; Aug  5, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2018/6/9/wax-nightclub-the-saturday-social-zsfrb-2scy8-44b6r-wbgcn" class="archive-item-link ">Wax Nightclub (The Saturday Social)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Aug  4, 2018
+              
+                 &ndash; Aug  5, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Aug  3, 2018
+              
+                 &ndash; Aug  4, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/11/17/trappers-alley-friday-night-asw6h-9apk5-d39gs-lkpfe" class="archive-item-link ">Trappers Alley (Fire Fridays)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Aug  3, 2018
+              
+                 &ndash; Aug  4, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+
+      </ul>
+
+      
+
+    </li>
+
+    
+
+    <li class="archive-group">
+
+      
+        
+          
+            <!-- event -->
+            <a href="/calendar?month=July-2018" class="archive-group-name-link">
+          
+        
+        
+        
+        
+        
+      
+
+        
+          July 2018
+        
+        
+      </a>
+
+      
+      
+      <ul class="archive-item-list">
+        
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Jul 27, 2018
+              
+                 &ndash; Jul 28, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/11/17/trappers-alley-friday-night-asw6h-9apk5-42rds" class="archive-item-link ">Trappers Alley (Fire Fridays)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Jul 27, 2018
+              
+                 &ndash; Jul 28, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Jul 21, 2018
+              
+                 &ndash; Jul 22, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2018/6/9/wax-nightclub-the-saturday-social-zsfrb-2scy8-44b6r" class="archive-item-link ">Wax Nightclub (The Saturday Social)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Jul 21, 2018
+              
+                 &ndash; Jul 22, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Jul 21, 2018
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2018/7/27/the-lakeview-weddi" class="archive-item-link ">The Lakeview (Wedding Ceremony)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Jul 21, 2018
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Jul 12, 2018
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2017/3/11/upper-canada-mall-guess-dj-zf3wn-7jnrz-r6rf8-pm9zr-3trdy-cly5k-nsgkf-gjmtp-mfw9r" class="archive-item-link ">CF Sherway Gardens (Marciano DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Jul 12, 2018
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Jul  7, 2018
+              
+                 &ndash; Jul  8, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2018/6/9/wax-nightclub-the-saturday-social-zsfrb-2scy8" class="archive-item-link ">Wax Nightclub (The Saturday Social)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Jul  7, 2018
+              
+                 &ndash; Jul  8, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+
+      </ul>
+
+      
+
+    </li>
+
+    
+
+    <li class="archive-group">
+
+      
+        
+          
+            <!-- event -->
+            <a href="/calendar?month=June-2018" class="archive-group-name-link">
+          
+        
+        
+        
+        
+        
+      
+
+        
+          June 2018
+        
+        
+      </a>
+
+      
+      
+      <ul class="archive-item-list">
+        
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Jun 29, 2018
+              
+                 &ndash; Jun 30, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/11/17/trappers-alley-friday-night-asw6h-9apk5" class="archive-item-link ">Trappers Alley (Fire Fridays)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Jun 29, 2018
+              
+                 &ndash; Jun 30, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Jun 23, 2018
+              
+                 &ndash; Jun 24, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2018/6/9/wax-nightclub-the-saturday-social-zsfrb" class="archive-item-link ">Wax Nightclub (The Saturday Social)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Jun 23, 2018
+              
+                 &ndash; Jun 24, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Jun 16, 2018
+              
+                 &ndash; Jun 17, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/5/21/turkey-point-hotel-sunday-dj-ncnxd-s3mzj" class="archive-item-link ">Turkey Point Hotel (Saturday DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Jun 16, 2018
+              
+                 &ndash; Jun 17, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Jun 15, 2018
+              
+                 &ndash; Jun 16, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/6/9/private-residence-pre-prom-party-dj-zb2dr" class="archive-item-link ">Private Residence (Prom Afterparty DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Jun 15, 2018
+              
+                 &ndash; Jun 16, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Jun  9, 2018
+              
+                 &ndash; Jun 10, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2018/6/9/wax-nightclub-the-saturday-social" class="archive-item-link ">Wax Nightclub (The Saturday Social)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Jun  9, 2018
+              
+                 &ndash; Jun 10, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Jun  7, 2018
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2017/3/11/upper-canada-mall-guess-dj-zf3wn-7jnrz-r6rf8-pm9zr-3trdy-cly5k-nsgkf-gjmtp" class="archive-item-link ">CF Sherway Gardens (Marciano DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Jun  7, 2018
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+
+      </ul>
+
+      
+
+    </li>
+
+    
+
+    <li class="archive-group">
+
+      
+        
+          
+            <!-- event -->
+            <a href="/calendar?month=May-2018" class="archive-group-name-link">
+          
+        
+        
+        
+        
+        
+      
+
+        
+          May 2018
+        
+        
+      </a>
+
+      
+      
+      <ul class="archive-item-list">
+        
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            May 26, 2018
+              
+                 &ndash; May 27, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-jcagx-hgj79-brsd8-e63s5-drajb-96g43-295sb-hm2ln-4sjk8-ry4r7-j67ys-d7lmd-etfb2-krdx8-5e7jx-3t82r-aan2t-hb9ml-dhhlr-6xlge" class="archive-item-link ">Phil's Grandson's Place (Sinful Saturdays)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            May 26, 2018
+              
+                 &ndash; May 27, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            May 25, 2018
+              
+                 &ndash; May 26, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/11/17/trappers-alley-friday-night-asw6h" class="archive-item-link ">Trappers Alley (Fire Fridays)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            May 25, 2018
+              
+                 &ndash; May 26, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            May 19, 2018
+              
+                 &ndash; May 20, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-jcagx-hgj79-brsd8-e63s5-drajb-96g43-295sb-hm2ln-4sjk8-ry4r7-j67ys-d7lmd-etfb2-krdx8-5e7jx-3t82r-aan2t-hb9ml-dhhlr-beyrp" class="archive-item-link ">Phil's Grandson's Place (Sinful Saturdays)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            May 19, 2018
+              
+                 &ndash; May 20, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            May 12, 2018
+              
+                 &ndash; May 13, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-jcagx-hgj79-brsd8-e63s5-drajb-96g43-295sb-hm2ln-4sjk8-ry4r7-j67ys-d7lmd-etfb2-krdx8-5e7jx-3t82r-aan2t-hb9ml-dhhlr-kehrl" class="archive-item-link ">Phil's Grandson's Place (Sinful Saturdays)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            May 12, 2018
+              
+                 &ndash; May 13, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            May 10, 2018
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2017/3/11/upper-canada-mall-guess-dj-zf3wn-7jnrz-r6rf8-pm9zr-3trdy-cly5k-nsgkf" class="archive-item-link ">CF Fairview Mall (Marciano DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            May 10, 2018
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            May  5, 2018
+              
+                 &ndash; May  6, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-jcagx-hgj79-brsd8-e63s5-drajb-96g43-295sb-hm2ln-4sjk8-ry4r7-j67ys-d7lmd-etfb2-krdx8-5e7jx-3t82r-aan2t-hb9ml-dhhlr-yalkk" class="archive-item-link ">Phil's Grandson's Place (Sinful Saturdays)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            May  5, 2018
+              
+                 &ndash; May  6, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            May  5, 2018
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2017/3/11/upper-canada-mall-guess-dj-zf3wn-7jnrz-r6rf8-twtjb" class="archive-item-link ">Upper Canada Mall (Guess DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            May  5, 2018
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+
+      </ul>
+
+      
+
+    </li>
+
+    
+
+    <li class="archive-group">
+
+      
+        
+          
+            <!-- event -->
+            <a href="/calendar?month=April-2018" class="archive-group-name-link">
+          
+        
+        
+        
+        
+        
+      
+
+        
+          April 2018
+        
+        
+      </a>
+
+      
+      
+      <ul class="archive-item-list">
+        
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Apr 28, 2018
+              
+                 &ndash; Apr 29, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-jcagx-hgj79-brsd8-e63s5-drajb-96g43-295sb-hm2ln-4sjk8-ry4r7-j67ys-d7lmd-etfb2-krdx8-5e7jx-3t82r-aan2t-hb9ml-dhhlr" class="archive-item-link ">Phil's Grandson's Place (Sinful Saturdays)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Apr 28, 2018
+              
+                 &ndash; Apr 29, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Apr 21, 2018
+              
+                 &ndash; Apr 22, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-jcagx-hgj79-brsd8-e63s5-drajb-96g43-295sb-hm2ln-4sjk8-ry4r7-j67ys-d7lmd-etfb2-krdx8-5e7jx-3t82r-aan2t-hb9ml-2xx8c" class="archive-item-link ">Phil's Grandson's Place (Sinful Saturdays)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Apr 21, 2018
+              
+                 &ndash; Apr 22, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Apr 14, 2018
+              
+                 &ndash; Apr 15, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-jcagx-hgj79-brsd8-e63s5-drajb-96g43-295sb-hm2ln-4sjk8-ry4r7-j67ys-d7lmd-etfb2-krdx8-5e7jx-3t82r-aan2t-hb9ml-jsf4d" class="archive-item-link ">Phil's Grandson's Place (Sinful Saturdays)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Apr 14, 2018
+              
+                 &ndash; Apr 15, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Apr 12, 2018
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2017/3/11/upper-canada-mall-guess-dj-zf3wn-7jnrz-r6rf8-pm9zr-3trdy-cly5k" class="archive-item-link ">CF Fairview Mall (Marciano DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Apr 12, 2018
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Apr  7, 2018
+              
+                 &ndash; Apr  8, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-jcagx-hgj79-brsd8-e63s5-drajb-96g43-295sb-hm2ln-4sjk8-ry4r7-j67ys-d7lmd-etfb2-krdx8-5e7jx-3t82r-aan2t-hb9ml" class="archive-item-link ">Phil's Grandson's Place (Saturday Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Apr  7, 2018
+              
+                 &ndash; Apr  8, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+
+      </ul>
+
+      
+
+    </li>
+
+    
+
+    <li class="archive-group">
+
+      
+        
+          
+            <!-- event -->
+            <a href="/calendar?month=March-2018" class="archive-group-name-link">
+          
+        
+        
+        
+        
+        
+      
+
+        
+          March 2018
+        
+        
+      </a>
+
+      
+      
+      <ul class="archive-item-list">
+        
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Mar 31, 2018
+              
+                 &ndash; Apr  1, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-jcagx-hgj79-brsd8-e63s5-drajb-96g43-295sb-hm2ln-4sjk8-ry4r7-j67ys-d7lmd-etfb2-krdx8-5e7jx-3t82r-aan2t-wbrsr" class="archive-item-link ">Phil's Grandson's Place (Saturday Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Mar 31, 2018
+              
+                 &ndash; Apr  1, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Mar 24, 2018
+              
+                 &ndash; Mar 25, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-jcagx-hgj79-brsd8-e63s5-drajb-96g43-295sb-hm2ln-4sjk8-ry4r7-j67ys-d7lmd-etfb2-krdx8-5e7jx-3t82r-aan2t-hkmx6" class="archive-item-link ">Phil's Grandson's Place (Saturday Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Mar 24, 2018
+              
+                 &ndash; Mar 25, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Mar 18, 2018
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-jcagx-hgj79-brsd8-e63s5-drajb-96g43-295sb-hm2ln-4sjk8-ry4r7-j67ys-d7lmd-etfb2-krdx8-5e7jx-3t82r-aan2t-acymg-z6mc3-2ppdc" class="archive-item-link ">The Turret (Saint Patrick's Day Celebration - Closing DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Mar 18, 2018
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Mar 17, 2018
+              
+                 &ndash; Mar 18, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-jcagx-hgj79-brsd8-e63s5-drajb-96g43-295sb-hm2ln-4sjk8-ry4r7-j67ys-d7lmd-etfb2-krdx8-5e7jx-3t82r-aan2t-acymg" class="archive-item-link ">Phil's Grandson's Place (Saturday Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Mar 17, 2018
+              
+                 &ndash; Mar 18, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Mar 17, 2018
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-jcagx-hgj79-brsd8-e63s5-drajb-96g43-295sb-hm2ln-4sjk8-ry4r7-j67ys-d7lmd-etfb2-krdx8-5e7jx-3t82r-aan2t-acymg-z6mc3" class="archive-item-link ">The Turret (Saint Patrick's Day Celebration - Opening DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Mar 17, 2018
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Mar 10, 2018
+              
+                 &ndash; Mar 11, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-jcagx-hgj79-brsd8-e63s5-drajb-96g43-295sb-hm2ln-4sjk8-ry4r7-j67ys-d7lmd-etfb2-krdx8-5e7jx-3t82r-aan2t-wfcd8" class="archive-item-link ">Phil's Grandson's Place (Saturday Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Mar 10, 2018
+              
+                 &ndash; Mar 11, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Mar 10, 2018
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2017/3/11/upper-canada-mall-guess-dj-zf3wn-7jnrz-r6rf8-pm9zr-ercwh" class="archive-item-link ">Promenade Shopping Centre (Guess DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Mar 10, 2018
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Mar  8, 2018
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2017/3/11/upper-canada-mall-guess-dj-zf3wn-7jnrz-r6rf8-pm9zr-3trdy" class="archive-item-link ">CF Fairview Mall (Marciano DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Mar  8, 2018
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Mar  3, 2018
+              
+                 &ndash; Mar  4, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-jcagx-hgj79-brsd8-e63s5-drajb-96g43-295sb-hm2ln-4sjk8-ry4r7-j67ys-d7lmd-etfb2-krdx8-5e7jx-3t82r-aan2t-3c3cy" class="archive-item-link ">Phil's Grandson's Place (Saturday Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Mar  3, 2018
+              
+                 &ndash; Mar  4, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+
+      </ul>
+
+      
+
+    </li>
+
+    
+
+    <li class="archive-group">
+
+      
+        
+          
+            <!-- event -->
+            <a href="/calendar?month=February-2018" class="archive-group-name-link">
+          
+        
+        
+        
+        
+        
+      
+
+        
+          February 2018
+        
+        
+      </a>
+
+      
+      
+      <ul class="archive-item-list">
+        
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Feb 24, 2018
+              
+                 &ndash; Feb 25, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-jcagx-hgj79-brsd8-e63s5-drajb-96g43-295sb-hm2ln-4sjk8-ry4r7-j67ys-d7lmd-etfb2-krdx8-5e7jx-3t82r-aan2t" class="archive-item-link ">Phil's Grandson's Place (Saturday Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Feb 24, 2018
+              
+                 &ndash; Feb 25, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Feb 17, 2018
+              
+                 &ndash; Feb 18, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-jcagx-hgj79-brsd8-e63s5-drajb-96g43-295sb-hm2ln-4sjk8-ry4r7-j67ys-d7lmd-etfb2-krdx8-5e7jx-3t82r-tfwyn" class="archive-item-link ">Phil's Grandson's Place (Saturday Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Feb 17, 2018
+              
+                 &ndash; Feb 18, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Feb 10, 2018
+              
+                 &ndash; Feb 11, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-jcagx-hgj79-brsd8-e63s5-drajb-96g43-295sb-hm2ln-4sjk8-ry4r7-j67ys-d7lmd-etfb2-krdx8-5e7jx-3t82r-6fa2s" class="archive-item-link ">Phil's Grandson's Place (Saturday Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Feb 10, 2018
+              
+                 &ndash; Feb 11, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Feb  3, 2018
+              
+                 &ndash; Feb  4, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-jcagx-hgj79-brsd8-e63s5-drajb-96g43-295sb-hm2ln-4sjk8-ry4r7-j67ys-d7lmd-etfb2-krdx8-5e7jx-3t82r" class="archive-item-link ">Phil's Grandson's Place (Saturday Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Feb  3, 2018
+              
+                 &ndash; Feb  4, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Feb  3, 2018
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2017/3/11/upper-canada-mall-guess-dj-zf3wn-7jnrz-r6rf8-pm9zr" class="archive-item-link ">CF Fairview Mall (Guess DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Feb  3, 2018
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+
+      </ul>
+
+      
+
+    </li>
+
+    
+
+    <li class="archive-group">
+
+      
+        
+          
+            <!-- event -->
+            <a href="/calendar?month=January-2018" class="archive-group-name-link">
+          
+        
+        
+        
+        
+        
+      
+
+        
+          January 2018
+        
+        
+      </a>
+
+      
+      
+      <ul class="archive-item-list">
+        
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Jan 27, 2018
+              
+                 &ndash; Jan 28, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-jcagx-hgj79-brsd8-e63s5-drajb-96g43-295sb-hm2ln-4sjk8-ry4r7-j67ys-d7lmd-etfb2-krdx8-5e7jx" class="archive-item-link ">Phil's Grandson's Place (Saturday Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Jan 27, 2018
+              
+                 &ndash; Jan 28, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Jan 20, 2018
+              
+                 &ndash; Jan 21, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-jcagx-hgj79-brsd8-e63s5-drajb-96g43-295sb-hm2ln-4sjk8-ry4r7-j67ys-d7lmd-etfb2-krdx8-5e7jx-2el98" class="archive-item-link ">Phil's Grandson's Place (Saturday Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Jan 20, 2018
+              
+                 &ndash; Jan 21, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Jan 13, 2018
+              
+                 &ndash; Jan 14, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-jcagx-hgj79-brsd8-e63s5-drajb-96g43-295sb-hm2ln-4sjk8-ry4r7-j67ys-d7lmd-etfb2-krdx8-5e7jx-28thy" class="archive-item-link ">Phil's Grandson's Place (Saturday Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Jan 13, 2018
+              
+                 &ndash; Jan 14, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Jan  6, 2018
+              
+                 &ndash; Jan  7, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-jcagx-hgj79-brsd8-e63s5-drajb-96g43-295sb-hm2ln-4sjk8-ry4r7-j67ys-d7lmd-etfb2-krdx8-5e7jx-28thy-wjmtm" class="archive-item-link ">Phil's Grandson's Place (Saturday Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Jan  6, 2018
+              
+                 &ndash; Jan  7, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+
+      </ul>
+
+      
+
+    </li>
+
+    
+
+    <li class="archive-group">
+
+      
+        
+          
+            <!-- event -->
+            <a href="/calendar?month=December-2017" class="archive-group-name-link">
+          
+        
+        
+        
+        
+        
+      
+
+        
+          December 2017
+        
+        
+      </a>
+
+      
+      
+      <ul class="archive-item-list">
+        
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Dec 31, 2017
+              
+                 &ndash; Jan  1, 2018
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/12/31/beertown-public-house-cambridge-new-years-eve" class="archive-item-link ">Beertown Public House Cambridge (New Year's Eve)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Dec 31, 2017
+              
+                 &ndash; Jan  1, 2018
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Dec 30, 2017
+              
+                 &ndash; Dec 31, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-jcagx-hgj79-brsd8-e63s5-drajb-96g43-295sb-hm2ln-4sjk8-ry4r7-j67ys-d7lmd-etfb2-krdx8" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Dec 30, 2017
+              
+                 &ndash; Dec 31, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Dec 23, 2017
+              
+                 &ndash; Dec 24, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-jcagx-hgj79-brsd8-e63s5-drajb-96g43-295sb-hm2ln-4sjk8-ry4r7-j67ys-d7lmd-etfb2-sx5ra" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Dec 23, 2017
+              
+                 &ndash; Dec 24, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Dec 16, 2017
+              
+                 &ndash; Dec 17, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-jcagx-hgj79-brsd8-e63s5-drajb-96g43-295sb-hm2ln-4sjk8-ry4r7-j67ys-d7lmd-h9fya" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Dec 16, 2017
+              
+                 &ndash; Dec 17, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Dec 14, 2017
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2016/10/6/hillcrest-mall-marciano-dj-2fy52-kednh-f7crj-jjfe5-pkck9-hthfy-s5sde" class="archive-item-link ">Hillcrest Mall (Marciano DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Dec 14, 2017
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Dec  9, 2017
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2017/3/11/upper-canada-mall-guess-dj-zf3wn-7jnrz-r6rf8" class="archive-item-link ">Upper Canada Mall (Guess DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Dec  9, 2017
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Dec  2, 2017
+              
+                 &ndash; Dec  3, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-jcagx-hgj79-brsd8-e63s5-drajb-96g43-295sb-hm2ln-4sjk8-ry4r7-j67ys-d7lmd" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Dec  2, 2017
+              
+                 &ndash; Dec  3, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+
+      </ul>
+
+      
+
+    </li>
+
+    
+
+    <li class="archive-group">
+
+      
+        
+          
+            <!-- event -->
+            <a href="/calendar?month=November-2017" class="archive-group-name-link">
+          
+        
+        
+        
+        
+        
+      
+
+        
+          November 2017
+        
+        
+      </a>
+
+      
+      
+      <ul class="archive-item-list">
+        
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Nov 25, 2017
+              
+                 &ndash; Nov 26, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-jcagx-hgj79-brsd8-e63s5-drajb-96g43-295sb-hm2ln-4sjk8-ry4r7-j67ys" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Nov 25, 2017
+              
+                 &ndash; Nov 26, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Nov 18, 2017
+              
+                 &ndash; Nov 19, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-jcagx-hgj79-brsd8-e63s5-drajb-96g43-295sb-hm2ln-4sjk8-ry4r7" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Nov 18, 2017
+              
+                 &ndash; Nov 19, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Nov 17, 2017
+              
+                 &ndash; Nov 18, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/11/17/trappers-alley-friday-night" class="archive-item-link ">Trappers Alley (Friday Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Nov 17, 2017
+              
+                 &ndash; Nov 18, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Nov 11, 2017
+              
+                 &ndash; Nov 12, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-jcagx-hgj79-brsd8-e63s5-drajb-96g43-295sb-hm2ln-4sjk8" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Nov 11, 2017
+              
+                 &ndash; Nov 12, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Nov  4, 2017
+              
+                 &ndash; Nov  5, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-jcagx-hgj79-brsd8-e63s5-drajb-96g43-295sb-hm2ln" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Nov  4, 2017
+              
+                 &ndash; Nov  5, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+
+      </ul>
+
+      
+
+    </li>
+
+    
+
+    <li class="archive-group">
+
+      
+        
+          
+            <!-- event -->
+            <a href="/calendar?month=October-2017" class="archive-group-name-link">
+          
+        
+        
+        
+        
+        
+      
+
+        
+          October 2017
+        
+        
+      </a>
+
+      
+      
+      <ul class="archive-item-list">
+        
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Oct 28, 2017
+              
+                 &ndash; Oct 29, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-jcagx-hgj79-brsd8-e63s5-drajb-96g43-295sb" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Oct 28, 2017
+              
+                 &ndash; Oct 29, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Oct 21, 2017
+              
+                 &ndash; Oct 22, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-jcagx-hgj79-brsd8-e63s5-drajb-96g43" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Oct 21, 2017
+              
+                 &ndash; Oct 22, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Oct 14, 2017
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2017/10/14/white-carnation-banquet-hall-wedding-reception" class="archive-item-link ">White Carnation Banquet Hall (Wedding Reception)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Oct 14, 2017
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Oct  7, 2017
+              
+                 &ndash; Oct  8, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-jcagx-hgj79-brsd8-e63s5-drajb" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Oct  7, 2017
+              
+                 &ndash; Oct  8, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Oct  5, 2017
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2016/10/6/hillcrest-mall-marciano-dj-2fy52-kednh-f7crj-jjfe5-pkck9" class="archive-item-link ">Hillcrest Mall (Marciano DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Oct  5, 2017
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+
+      </ul>
+
+      
+
+    </li>
+
+    
+
+    <li class="archive-group">
+
+      
+        
+          
+            <!-- event -->
+            <a href="/calendar?month=September-2017" class="archive-group-name-link">
+          
+        
+        
+        
+        
+        
+      
+
+        
+          September 2017
+        
+        
+      </a>
+
+      
+      
+      <ul class="archive-item-list">
+        
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Sep 30, 2017
+              
+                 &ndash; Oct  1, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-jcagx-hgj79-brsd8-e63s5" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Sep 30, 2017
+              
+                 &ndash; Oct  1, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Sep 30, 2017
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2017/3/11/upper-canada-mall-guess-dj-zf3wn-7jnrz" class="archive-item-link ">Upper Canada Mall (Guess DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Sep 30, 2017
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Sep 23, 2017
+              
+                 &ndash; Sep 24, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-jcagx-hgj79-brsd8" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Sep 23, 2017
+              
+                 &ndash; Sep 24, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Sep 16, 2017
+              
+                 &ndash; Sep 17, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-jcagx-hgj79" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Sep 16, 2017
+              
+                 &ndash; Sep 17, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Sep  9, 2017
+              
+                 &ndash; Sep 10, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-jcagx" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Sep  9, 2017
+              
+                 &ndash; Sep 10, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Sep  7, 2017
+              
+                 &ndash; Sep  8, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-mmbm5-r5nlm-33nxz" class="archive-item-link ">Phil's Grandson's Place (All Request Thursday)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Sep  7, 2017
+              
+                 &ndash; Sep  8, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Sep  7, 2017
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2017/2/10/cf-markville-marciano-dj-yw2k9-s77pt-kk7dp-f6wlh" class="archive-item-link ">CF Markville (Marciano DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Sep  7, 2017
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Sep  2, 2017
+              
+                 &ndash; Sep  3, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Sep  2, 2017
+              
+                 &ndash; Sep  3, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+
+      </ul>
+
+      
+
+    </li>
+
+    
+
+    <li class="archive-group">
+
+      
+        
+          
+            <!-- event -->
+            <a href="/calendar?month=August-2017" class="archive-group-name-link">
+          
+        
+        
+        
+        
+        
+      
+
+        
+          August 2017
+        
+        
+      </a>
+
+      
+      
+      <ul class="archive-item-list">
+        
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Aug 26, 2017
+              
+                 &ndash; Aug 27, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5-8ngr9-hzawj-nkm72-xf54m-7a2ex-ntfd2-sm33p-cnx67-g6tls-yz5cf-hedy9-zpyg7-mjet3-7gxyp-cxm5y-kmwrf-yzj39-a5tjr-hw2r4-3rzrs-kbzjr-ltjfy-xhh7l-zg4a3-x45h9-xc87m-92csd-fds78-arzjh" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Aug 26, 2017
+              
+                 &ndash; Aug 27, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Aug 19, 2017
+              
+                 &ndash; Aug 20, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5-8ngr9-hzawj-nkm72-xf54m-7a2ex-ntfd2-sm33p-cnx67-g6tls-yz5cf-hedy9-zpyg7-mjet3-7gxyp-cxm5y-kmwrf-yzj39-a5tjr-hw2r4-3rzrs-kbzjr-ltjfy-xhh7l-zg4a3-x45h9-xc87m-92csd-fds78-3jxaw-5pwn4-wehz5-ya4lk" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Aug 19, 2017
+              
+                 &ndash; Aug 20, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Aug 19, 2017
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2017/3/11/upper-canada-mall-guess-dj-zf3wn-s2dge" class="archive-item-link ">Upper Canada Mall (Guess DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Aug 19, 2017
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Aug 12, 2017
+              
+                 &ndash; Aug 13, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/5/21/turkey-point-hotel-sunday-dj-ncnxd-7r76c-7by54" class="archive-item-link ">Turkey Point Hotel (Saturday DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Aug 12, 2017
+              
+                 &ndash; Aug 13, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Aug  5, 2017
+              
+                 &ndash; Aug  6, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5-8ngr9-hzawj-nkm72-xf54m-7a2ex-ntfd2-sm33p-cnx67-g6tls-yz5cf-hedy9-zpyg7-mjet3-7gxyp-cxm5y-kmwrf-yzj39-a5tjr-hw2r4-3rzrs-kbzjr-ltjfy-xhh7l-zg4a3-x45h9-xc87m-92csd-fds78-3jxaw-5pwn4-e64ym-44sc8" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Aug  5, 2017
+              
+                 &ndash; Aug  6, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+
+      </ul>
+
+      
+
+    </li>
+
+    
+
+    <li class="archive-group">
+
+      
+        
+          
+            <!-- event -->
+            <a href="/calendar?month=July-2017" class="archive-group-name-link">
+          
+        
+        
+        
+        
+        
+      
+
+        
+          July 2017
+        
+        
+      </a>
+
+      
+      
+      <ul class="archive-item-list">
+        
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Jul 29, 2017
+              
+                 &ndash; Jul 30, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5-8ngr9-hzawj-nkm72-xf54m-7a2ex-ntfd2-sm33p-cnx67-g6tls-yz5cf-hedy9-zpyg7-mjet3-7gxyp-cxm5y-kmwrf-yzj39-a5tjr-hw2r4-3rzrs-kbzjr-ltjfy-xhh7l-zg4a3-x45h9-xc87m-92csd-fds78-3jxaw-5pwn4-e64ym" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Jul 29, 2017
+              
+                 &ndash; Jul 30, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Jul 22, 2017
+              
+                 &ndash; Jul 23, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5-8ngr9-hzawj-nkm72-xf54m-7a2ex-ntfd2-sm33p-cnx67-g6tls-yz5cf-hedy9-zpyg7-mjet3-7gxyp-cxm5y-kmwrf-yzj39-a5tjr-hw2r4-3rzrs-kbzjr-ltjfy-xhh7l-zg4a3-x45h9-xc87m-92csd-fds78-3jxaw-5pwn4-tm97t-wam4h" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Jul 22, 2017
+              
+                 &ndash; Jul 23, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Jul 15, 2017
+              
+                 &ndash; Jul 16, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5-8ngr9-hzawj-nkm72-xf54m-7a2ex-ntfd2-sm33p-cnx67-g6tls-yz5cf-hedy9-zpyg7-mjet3-7gxyp-cxm5y-kmwrf-yzj39-a5tjr-hw2r4-3rzrs-kbzjr-ltjfy-xhh7l-zg4a3-x45h9-xc87m-92csd-fds78-3jxaw-5pwn4-tm97t" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Jul 15, 2017
+              
+                 &ndash; Jul 16, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Jul 13, 2017
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2016/10/6/hillcrest-mall-marciano-dj-2fy52-kednh-f7crj-jjfe5" class="archive-item-link ">Hillcrest Mall (Marciano DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Jul 13, 2017
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Jul  8, 2017
+              
+                 &ndash; Jul  9, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/5/21/turkey-point-hotel-sunday-dj-ncnxd-7r76c" class="archive-item-link ">Turkey Point Hotel (Saturday DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Jul  8, 2017
+              
+                 &ndash; Jul  9, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Jul  1, 2017
+              
+                 &ndash; Jul  2, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5-8ngr9-hzawj-nkm72-xf54m-7a2ex-ntfd2-sm33p-cnx67-g6tls-yz5cf-hedy9-zpyg7-mjet3-7gxyp-cxm5y-kmwrf-yzj39-a5tjr-hw2r4-3rzrs-kbzjr-ltjfy-xhh7l-zg4a3-x45h9-xc87m-92csd-fds78-3jxaw-5pwn4-wehz5-xj4tw" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Jul  1, 2017
+              
+                 &ndash; Jul  2, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+
+      </ul>
+
+      
+
+    </li>
+
+    
+
+    <li class="archive-group">
+
+      
+        
+          
+            <!-- event -->
+            <a href="/calendar?month=June-2017" class="archive-group-name-link">
+          
+        
+        
+        
+        
+        
+      
+
+        
+          June 2017
+        
+        
+      </a>
+
+      
+      
+      <ul class="archive-item-list">
+        
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Jun 28, 2017
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2017/6/28/the-bombshelter-pub-bomber-wednesday" class="archive-item-link ">The Bombshelter Pub (Bomber Wednesday)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Jun 28, 2017
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Jun 24, 2017
+              
+                 &ndash; Jun 25, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/5/21/turkey-point-hotel-sunday-dj-ncnxd" class="archive-item-link ">Turkey Point Hotel (Saturday DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Jun 24, 2017
+              
+                 &ndash; Jun 25, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Jun 17, 2017
+              
+                 &ndash; Jun 18, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5-8ngr9-hzawj-nkm72-xf54m-7a2ex-ntfd2-sm33p-cnx67-g6tls-yz5cf-hedy9-zpyg7-mjet3-7gxyp-cxm5y-kmwrf-yzj39-a5tjr-hw2r4-3rzrs-kbzjr-ltjfy-xhh7l-zg4a3-x45h9-xc87m-92csd-fds78-3jxaw-5pwn4-wehz5-klssp" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Jun 17, 2017
+              
+                 &ndash; Jun 18, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Jun 10, 2017
+              
+                 &ndash; Jun 11, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5-8ngr9-hzawj-nkm72-xf54m-7a2ex-ntfd2-sm33p-cnx67-g6tls-yz5cf-hedy9-zpyg7-mjet3-7gxyp-cxm5y-kmwrf-yzj39-a5tjr-hw2r4-3rzrs-kbzjr-ltjfy-xhh7l-zg4a3-x45h9-xc87m-92csd-fds78-3jxaw-5pwn4-wehz5" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Jun 10, 2017
+              
+                 &ndash; Jun 11, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Jun 10, 2017
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2017/3/11/upper-canada-mall-guess-dj-zf3wn" class="archive-item-link ">Upper Canada Mall (Guess DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Jun 10, 2017
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Jun  9, 2017
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2017/6/9/private-residence-pre-prom-party-dj" class="archive-item-link ">Private Residence (Pre-prom Party DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Jun  9, 2017
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Jun  8, 2017
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2017/2/10/cf-markville-marciano-dj-yw2k9-s77pt-kk7dp" class="archive-item-link ">CF Markville (Marciano DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Jun  8, 2017
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Jun  3, 2017
+              
+                 &ndash; Jun  4, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5-8ngr9-hzawj-nkm72-xf54m-7a2ex-ntfd2-sm33p-cnx67-g6tls-yz5cf-hedy9-zpyg7-mjet3-7gxyp-cxm5y-kmwrf-yzj39-a5tjr-hw2r4-3rzrs-kbzjr-ltjfy-xhh7l-zg4a3-x45h9-xc87m-92csd-fds78-3jxaw-5pwn4" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Jun  3, 2017
+              
+                 &ndash; Jun  4, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+
+      </ul>
+
+      
+
+    </li>
+
+    
+
+    <li class="archive-group">
+
+      
+        
+          
+            <!-- event -->
+            <a href="/calendar?month=May-2017" class="archive-group-name-link">
+          
+        
+        
+        
+        
+        
+      
+
+        
+          May 2017
+        
+        
+      </a>
+
+      
+      
+      <ul class="archive-item-list">
+        
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            May 27, 2017
+              
+                 &ndash; May 28, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5-8ngr9-hzawj-nkm72-xf54m-7a2ex-ntfd2-sm33p-cnx67-g6tls-yz5cf-hedy9-zpyg7-mjet3-7gxyp-cxm5y-kmwrf-yzj39-a5tjr-hw2r4-3rzrs-kbzjr-ltjfy-xhh7l-zg4a3-x45h9-xc87m-92csd-fds78-3jxaw" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            May 27, 2017
+              
+                 &ndash; May 28, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            May 21, 2017
+              
+                 &ndash; May 22, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/5/21/turkey-point-hotel-sunday-dj" class="archive-item-link ">Turkey Point Hotel (Sunday DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            May 21, 2017
+              
+                 &ndash; May 22, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            May 20, 2017
+              
+                 &ndash; May 21, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5-8ngr9-hzawj-nkm72-xf54m-7a2ex-ntfd2-sm33p-cnx67-g6tls-yz5cf-hedy9-zpyg7-mjet3-7gxyp-cxm5y-kmwrf-yzj39-a5tjr-hw2r4-3rzrs-kbzjr-ltjfy-xhh7l-zg4a3-x45h9-xc87m-92csd-fds78" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            May 20, 2017
+              
+                 &ndash; May 21, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            May 13, 2017
+              
+                 &ndash; May 14, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5-8ngr9-hzawj-nkm72-xf54m-7a2ex-ntfd2-sm33p-cnx67-g6tls-yz5cf-hedy9-zpyg7-mjet3-7gxyp-cxm5y-kmwrf-yzj39-a5tjr-hw2r4-3rzrs-kbzjr-ltjfy-xhh7l-zg4a3-x45h9-xc87m-92csd" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            May 13, 2017
+              
+                 &ndash; May 14, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            May 13, 2017
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2017/2/10/cf-markville-marciano-dj-yw2k9-s77pt" class="archive-item-link ">CF Markville (Marciano DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            May 13, 2017
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            May  6, 2017
+              
+                 &ndash; May  7, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5-8ngr9-hzawj-nkm72-xf54m-7a2ex-ntfd2-sm33p-cnx67-g6tls-yz5cf-hedy9-zpyg7-mjet3-7gxyp-cxm5y-kmwrf-yzj39-a5tjr-hw2r4-3rzrs-kbzjr-ltjfy-xhh7l-zg4a3-x45h9-xc87m" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            May  6, 2017
+              
+                 &ndash; May  7, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+
+      </ul>
+
+      
+
+    </li>
+
+    
+
+    <li class="archive-group">
+
+      
+        
+          
+            <!-- event -->
+            <a href="/calendar?month=April-2017" class="archive-group-name-link">
+          
+        
+        
+        
+        
+        
+      
+
+        
+          April 2017
+        
+        
+      </a>
+
+      
+      
+      <ul class="archive-item-list">
+        
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Apr 29, 2017
+              
+                 &ndash; Apr 30, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5-8ngr9-hzawj-nkm72-xf54m-7a2ex-ntfd2-sm33p-cnx67-g6tls-yz5cf-hedy9-zpyg7-mjet3-7gxyp-cxm5y-kmwrf-yzj39-a5tjr-hw2r4-3rzrs-kbzjr-ltjfy-xhh7l-zg4a3-x45h9" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Apr 29, 2017
+              
+                 &ndash; Apr 30, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Apr 22, 2017
+              
+                 &ndash; Apr 23, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5-8ngr9-hzawj-nkm72-xf54m-7a2ex-ntfd2-sm33p-cnx67-g6tls-yz5cf-hedy9-zpyg7-mjet3-7gxyp-cxm5y-kmwrf-yzj39-a5tjr-hw2r4-3rzrs-kbzjr-ltjfy-xhh7l-zg4a3" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Apr 22, 2017
+              
+                 &ndash; Apr 23, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Apr 15, 2017
+              
+                 &ndash; Apr 16, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5-8ngr9-hzawj-nkm72-xf54m-7a2ex-ntfd2-sm33p-cnx67-g6tls-yz5cf-hedy9-zpyg7-mjet3-7gxyp-cxm5y-kmwrf-yzj39-a5tjr-hw2r4-3rzrs-kbzjr-ltjfy-xhh7l" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Apr 15, 2017
+              
+                 &ndash; Apr 16, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Apr 13, 2017
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2016/10/6/hillcrest-mall-marciano-dj-2fy52-kednh-f7crj" class="archive-item-link ">Hillcrest Mall (Marciano DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Apr 13, 2017
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Apr  8, 2017
+              
+                 &ndash; Apr  9, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5-8ngr9-hzawj-nkm72-xf54m-7a2ex-ntfd2-sm33p-cnx67-g6tls-yz5cf-hedy9-zpyg7-mjet3-7gxyp-cxm5y-kmwrf-yzj39-a5tjr-hw2r4-3rzrs-kbzjr-ltjfy" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Apr  8, 2017
+              
+                 &ndash; Apr  9, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Apr  8, 2017
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2016/10/18/stone-road-mall-guess-dj-szps6" class="archive-item-link ">Stone Road Mall (Guess DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Apr  8, 2017
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Apr  2, 2017
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2017/4/2/red-rose-convention-centre-book-launch" class="archive-item-link ">Red Rose Convention Centre (Book Launch)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Apr  2, 2017
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Apr  1, 2017
+              
+                 &ndash; Apr  2, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5-8ngr9-hzawj-nkm72-xf54m-7a2ex-ntfd2-sm33p-cnx67-g6tls-yz5cf-hedy9-zpyg7-mjet3-7gxyp-cxm5y-kmwrf-yzj39-a5tjr-hw2r4-3rzrs-kbzjr" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Apr  1, 2017
+              
+                 &ndash; Apr  2, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+
+      </ul>
+
+      
+
+    </li>
+
+    
+
+    <li class="archive-group">
+
+      
+        
+          
+            <!-- event -->
+            <a href="/calendar?month=March-2017" class="archive-group-name-link">
+          
+        
+        
+        
+        
+        
+      
+
+        
+          March 2017
+        
+        
+      </a>
+
+      
+      
+      <ul class="archive-item-list">
+        
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Mar 31, 2017
+              
+                 &ndash; Apr  1, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/3/31/olive-r-twist-friday-night-dj" class="archive-item-link ">Olive 'R Twist (Friday Night DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Mar 31, 2017
+              
+                 &ndash; Apr  1, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Mar 25, 2017
+              
+                 &ndash; Mar 26, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5-8ngr9-hzawj-nkm72-xf54m-7a2ex-ntfd2-sm33p-cnx67-g6tls-yz5cf-hedy9-zpyg7-mjet3-7gxyp-cxm5y-kmwrf-yzj39-a5tjr-hw2r4-3rzrs" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Mar 25, 2017
+              
+                 &ndash; Mar 26, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Mar 24, 2017
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2017/2/10/cf-markville-marciano-dj-yw2k9" class="archive-item-link ">CF Markville (Marciano DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Mar 24, 2017
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Mar 18, 2017
+              
+                 &ndash; Mar 19, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5-8ngr9-hzawj-nkm72-xf54m-7a2ex-ntfd2-sm33p-cnx67-g6tls-yz5cf-hedy9-zpyg7-mjet3-7gxyp-cxm5y-kmwrf-yzj39-a5tjr-hw2r4" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Mar 18, 2017
+              
+                 &ndash; Mar 19, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Mar 11, 2017
+              
+                 &ndash; Mar 12, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5-8ngr9-hzawj-nkm72-xf54m-7a2ex-ntfd2-sm33p-cnx67-g6tls-yz5cf-hedy9-zpyg7-mjet3-7gxyp-cxm5y-kmwrf-yzj39-a5tjr" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Mar 11, 2017
+              
+                 &ndash; Mar 12, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Mar 11, 2017
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2017/3/11/upper-canada-mall-guess-dj" class="archive-item-link ">Upper Canada Mall (Guess DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Mar 11, 2017
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Mar  4, 2017
+              
+                 &ndash; Mar  5, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5-8ngr9-hzawj-nkm72-xf54m-7a2ex-ntfd2-sm33p-cnx67-g6tls-yz5cf-hedy9-zpyg7-mjet3-7gxyp-cxm5y-kmwrf-yzj39" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Mar  4, 2017
+              
+                 &ndash; Mar  5, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+
+      </ul>
+
+      
+
+    </li>
+
+    
+
+    <li class="archive-group">
+
+      
+        
+          
+            <!-- event -->
+            <a href="/calendar?month=February-2017" class="archive-group-name-link">
+          
+        
+        
+        
+        
+        
+      
+
+        
+          February 2017
+        
+        
+      </a>
+
+      
+      
+      <ul class="archive-item-list">
+        
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Feb 25, 2017
+              
+                 &ndash; Feb 26, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5-8ngr9-hzawj-nkm72-xf54m-7a2ex-ntfd2-sm33p-cnx67-g6tls-yz5cf-hedy9-zpyg7-mjet3-7gxyp-cxm5y-kmwrf" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Feb 25, 2017
+              
+                 &ndash; Feb 26, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Feb 18, 2017
+              
+                 &ndash; Feb 19, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5-8ngr9-hzawj-nkm72-xf54m-7a2ex-ntfd2-sm33p-cnx67-g6tls-yz5cf-hedy9-zpyg7-mjet3-7gxyp-cxm5y" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Feb 18, 2017
+              
+                 &ndash; Feb 19, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Feb 11, 2017
+              
+                 &ndash; Feb 12, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5-8ngr9-hzawj-nkm72-xf54m-7a2ex-ntfd2-sm33p-cnx67-g6tls-yz5cf-hedy9-zpyg7-mjet3-7gxyp" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Feb 11, 2017
+              
+                 &ndash; Feb 12, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Feb 11, 2017
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2017/2/11/erin-mills-town-centre-guess-dj" class="archive-item-link ">Erin Mills Town Centre (Guess DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Feb 11, 2017
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Feb 10, 2017
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2017/2/10/cf-markville-marciano-dj" class="archive-item-link ">CF Markville (Marciano DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Feb 10, 2017
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Feb  4, 2017
+              
+                 &ndash; Feb  5, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5-8ngr9-hzawj-nkm72-xf54m-7a2ex-ntfd2-sm33p-cnx67-g6tls-yz5cf-hedy9-zpyg7-mjet3" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Feb  4, 2017
+              
+                 &ndash; Feb  5, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+
+      </ul>
+
+      
+
+    </li>
+
+    
+
+    <li class="archive-group">
+
+      
+        
+          
+            <!-- event -->
+            <a href="/calendar?month=January-2017" class="archive-group-name-link">
+          
+        
+        
+        
+        
+        
+      
+
+        
+          January 2017
+        
+        
+      </a>
+
+      
+      
+      <ul class="archive-item-list">
+        
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Jan 28, 2017
+              
+                 &ndash; Jan 29, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5-8ngr9-hzawj-nkm72-xf54m-7a2ex-ntfd2-sm33p-cnx67-g6tls-yz5cf-hedy9-zpyg7" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Jan 28, 2017
+              
+                 &ndash; Jan 29, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Jan 21, 2017
+              
+                 &ndash; Jan 22, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5-8ngr9-hzawj-nkm72-xf54m-7a2ex-ntfd2-sm33p-cnx67-g6tls-yz5cf-hedy9" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Jan 21, 2017
+              
+                 &ndash; Jan 22, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Jan 14, 2017
+              
+                 &ndash; Jan 15, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5-8ngr9-hzawj-nkm72-xf54m-7a2ex-ntfd2-sm33p-cnx67-g6tls-yz5cf" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Jan 14, 2017
+              
+                 &ndash; Jan 15, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Jan  7, 2017
+              
+                 &ndash; Jan  8, 2017
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5-8ngr9-hzawj-nkm72-xf54m-7a2ex-ntfd2-sm33p-cnx67-g6tls" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Jan  7, 2017
+              
+                 &ndash; Jan  8, 2017
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+
+      </ul>
+
+      
+
+    </li>
+
+    
+
+    <li class="archive-group">
+
+      
+        
+          
+            <!-- event -->
+            <a href="/calendar?month=December-2016" class="archive-group-name-link">
+          
+        
+        
+        
+        
+        
+      
+
+        
+          December 2016
+        
+        
+      </a>
+
+      
+      
+      <ul class="archive-item-list">
+        
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Dec 17, 2016
+              
+                 &ndash; Dec 18, 2016
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5-8ngr9-hzawj-nkm72-xf54m-7a2ex-ntfd2-sm33p-cnx67" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Dec 17, 2016
+              
+                 &ndash; Dec 18, 2016
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Dec 15, 2016
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2016/10/6/hillcrest-mall-marciano-dj-2fy52-kednh" class="archive-item-link ">Hillcrest Mall (Marciano DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Dec 15, 2016
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Dec 10, 2016
+              
+                 &ndash; Dec 11, 2016
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5-8ngr9-hzawj-nkm72-xf54m-7a2ex-ntfd2-sm33p" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Dec 10, 2016
+              
+                 &ndash; Dec 11, 2016
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Dec 10, 2016
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2016/12/10/hillcrest-mall-guess-dj" class="archive-item-link ">Hillcrest Mall (Guess DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Dec 10, 2016
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Dec  3, 2016
+              
+                 &ndash; Dec  4, 2016
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5-8ngr9-hzawj-nkm72-xf54m-7a2ex-ntfd2" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Dec  3, 2016
+              
+                 &ndash; Dec  4, 2016
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+
+      </ul>
+
+      
+
+    </li>
+
+    
+
+    <li class="archive-group">
+
+      
+        
+          
+            <!-- event -->
+            <a href="/calendar?month=November-2016" class="archive-group-name-link">
+          
+        
+        
+        
+        
+        
+      
+
+        
+          November 2016
+        
+        
+      </a>
+
+      
+      
+      <ul class="archive-item-list">
+        
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Nov 26, 2016
+              
+                 &ndash; Nov 27, 2016
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5-8ngr9-hzawj-nkm72-xf54m-7a2ex" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Nov 26, 2016
+              
+                 &ndash; Nov 27, 2016
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Nov 19, 2016
+              
+                 &ndash; Nov 20, 2016
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5-8ngr9-hzawj-nkm72-xf54m" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Nov 19, 2016
+              
+                 &ndash; Nov 20, 2016
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Nov 18, 2016
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2016/10/6/hillcrest-mall-marciano-dj-2fy52" class="archive-item-link ">Hillcrest Mall (Marciano DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Nov 18, 2016
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Nov 12, 2016
+              
+                 &ndash; Nov 13, 2016
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5-8ngr9-hzawj-nkm72" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Nov 12, 2016
+              
+                 &ndash; Nov 13, 2016
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Nov 11, 2016
+              
+                 &ndash; Nov 12, 2016
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-mmbm5-r5nlm" class="archive-item-link ">Phil's Grandson's Place (Feel Good Friday)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Nov 11, 2016
+              
+                 &ndash; Nov 12, 2016
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Nov  5, 2016
+              
+                 &ndash; Nov  6, 2016
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5-8ngr9-hzawj-nkm72-4zgdt" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Nov  5, 2016
+              
+                 &ndash; Nov  6, 2016
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+
+      </ul>
+
+      
+
+    </li>
+
+    
+
+    <li class="archive-group">
+
+      
+        
+          
+            <!-- event -->
+            <a href="/calendar?month=October-2016" class="archive-group-name-link">
+          
+        
+        
+        
+        
+        
+      
+
+        
+          October 2016
+        
+        
+      </a>
+
+      
+      
+      <ul class="archive-item-list">
+        
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Oct 29, 2016
+              
+                 &ndash; Oct 30, 2016
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5-8ngr9-hzawj" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Oct 29, 2016
+              
+                 &ndash; Oct 30, 2016
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Oct 22, 2016
+              
+                 &ndash; Oct 23, 2016
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5-8ngr9" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Oct 22, 2016
+              
+                 &ndash; Oct 23, 2016
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Oct 18, 2016
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2016/10/18/stone-road-mall-guess-dj" class="archive-item-link ">Stone Road Mall (Guess DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Oct 18, 2016
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Oct 15, 2016
+              
+                 &ndash; Oct 16, 2016
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46-zxrd5" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Oct 15, 2016
+              
+                 &ndash; Oct 16, 2016
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Oct  8, 2016
+              
+                 &ndash; Oct  9, 2016
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-a9j46" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Oct  8, 2016
+              
+                 &ndash; Oct  9, 2016
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Oct  6, 2016
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2016/10/6/hillcrest-mall-marciano-dj" class="archive-item-link ">Hillcrest Mall (Marciano DJ)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Oct  6, 2016
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+
+      </ul>
+
+      
+
+    </li>
+
+    
+
+    <li class="archive-group">
+
+      
+        
+          
+            <!-- event -->
+            <a href="/calendar?month=September-2016" class="archive-group-name-link">
+          
+        
+        
+        
+        
+        
+      
+
+        
+          September 2016
+        
+        
+      </a>
+
+      
+      
+      <ul class="archive-item-list">
+        
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Sep 24, 2016
+              
+                 &ndash; Sep 25, 2016
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9-cebzy" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Sep 24, 2016
+              
+                 &ndash; Sep 25, 2016
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Sep 22, 2016
+              
+          
+          </span>
+
+          
+            <a href="/calendar/2016/9/22/st-benedict-catholic-secondary-school-grade-9-dance" class="archive-item-link ">St. Benedict Catholic Secondary School (Grade 9 Dance)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Sep 22, 2016
+              
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Sep 19, 2016
+              
+                 &ndash; Sep 20, 2016
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-mmbm5" class="archive-item-link ">Phil's Grandson's Place (DJ Battle)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Sep 19, 2016
+              
+                 &ndash; Sep 20, 2016
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Sep 17, 2016
+              
+                 &ndash; Sep 18, 2016
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7-443x9" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Sep 17, 2016
+              
+                 &ndash; Sep 18, 2016
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Sep  3, 2016
+              
+                 &ndash; Sep  4, 2016
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2016/9/3/district-nightclub-white-room" class="archive-item-link ">District Nightclub (White Room)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Sep  3, 2016
+              
+                 &ndash; Sep  4, 2016
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+
+      </ul>
+
+      
+
+    </li>
+
+    
+
+    <li class="archive-group">
+
+      
+        
+          
+            <!-- event -->
+            <a href="/calendar?month=August-2016" class="archive-group-name-link">
+          
+        
+        
+        
+        
+        
+      
+
+        
+          August 2016
+        
+        
+      </a>
+
+      
+      
+      <ul class="archive-item-list">
+        
+        
+        
+        <li class="archive-item archive-item--show-date">
+
+          <span class="archive-item-date-before">
+          
+            Aug 27, 2016
+              
+                 &ndash; Aug 28, 2016
+              
+            
+          
+          </span>
+
+          
+            <a href="/calendar/2017/9/2/phils-grandsons-place-s5nj7" class="archive-item-link ">Phil's Grandson's Place (Ladies Night)</a>
+          
+
+          
+          <span class="archive-item-date-after">
+          
+            Aug 27, 2016
+              
+                 &ndash; Aug 28, 2016
+              
+            
+          
+          </span>
+          
+
+        </li>
+
+        
+
+      </ul>
+
+      
+
+    </li>
+
+    
+
+  </ul>
+
+  
+
+</div>
+&nbsp;]]></content:encoded>
+      <wp:post_name>archive-of-gigs</wp:post_name>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_id>9</wp:post_id>
+      <wp:status>publish</wp:status>
+    </item>
+    <item>
+      <link>/instagram</link>
+      <title>Instagram</title>
+      <pubDate>Sat, 23 Sep 2017 04:16:18 +0000</pubDate>
+      <content:encoded><![CDATA[&nbsp;&nbsp;
+
+
+  
+
+  
+
+
+<div class="
+  sqs-gallery-container
+  sqs-gallery-block-grid
+  sqs-gallery-aspect-ratio-square
+  sqs-gallery-thumbnails-per-row-3
+  
+  
+
+  
+    
+    
+  
+  
+  
+  
+
+  
+  
+
+  
+  
+  clear"
+  
+  
+>
+  <div class="sqs-gallery">
+    
+      
+
+        
+
+        
+
+        
+          
+            <div class="slide" data-type="image">
+              <div class="margin-wrapper">
+                <a
+                  
+                      
+                        href="https://www.instagram.com/p/BpvAAegAo4f/" 
+                      
+                  
+
+                  class="image-slide-anchor content-fill"
+                >
+                  <noscript><img src="https://static1.squarespace.com/static/5902a4bdb3db2bade49c52a0/59b9bb6de03f38cd8186ffff/5bde2d4282fd2de169f56076/1541287237440/" alt="Remington 870 action shot" /></noscript><img class="thumb-image" data-src="https://static1.squarespace.com/static/5902a4bdb3db2bade49c52a0/59b9bb6de03f38cd8186ffff/5bde2d4282fd2de169f56076/1541287237440/" data-image="https://static1.squarespace.com/static/5902a4bdb3db2bade49c52a0/59b9bb6de03f38cd8186ffff/5bde2d4282fd2de169f56076/1541287237440/" data-image-dimensions="640x640" data-image-focal-point="0.5,0.5" alt="Remington 870 action shot" data-load="false" data-image-id="5bde2d4282fd2de169f56076" data-type="image" />
+                </a>
+                
+              </div>
+            </div>
+          
+
+          
+        
+
+      
+
+        
+
+        
+
+        
+          
+            <div class="slide" data-type="image">
+              <div class="margin-wrapper">
+                <a
+                  
+                      
+                        href="https://www.instagram.com/p/Bpjt0dagG0H/" 
+                      
+                  
+
+                  class="image-slide-anchor content-fill"
+                >
+                  <noscript><img src="https://static1.squarespace.com/static/5902a4bdb3db2bade49c52a0/59b9bb6de03f38cd8186ffff/5bd8963f16fded5cabf3dc13/1540920899219/" alt="Throwback to getting to be a part of my good friend Justin Mitchell's wedding where I had the pleasure to DJ. Congratulations again @justin_mitchell66" /></noscript><img class="thumb-image" data-src="https://static1.squarespace.com/static/5902a4bdb3db2bade49c52a0/59b9bb6de03f38cd8186ffff/5bd8963f16fded5cabf3dc13/1540920899219/" data-image="https://static1.squarespace.com/static/5902a4bdb3db2bade49c52a0/59b9bb6de03f38cd8186ffff/5bd8963f16fded5cabf3dc13/1540920899219/" data-image-dimensions="640x640" data-image-focal-point="0.5,0.5" alt="Throwback to getting to be a part of my good friend Justin Mitchell's wedding where I had the pleasure to DJ. Congratulations again @justin_mitchell66" data-load="false" data-image-id="5bd8963f16fded5cabf3dc13" data-type="image" />
+                </a>
+                
+              </div>
+            </div>
+          
+
+          
+        
+
+      
+
+        
+
+        
+
+        
+          
+            <div class="slide" data-type="image">
+              <div class="margin-wrapper">
+                <a
+                  
+                      
+                        href="https://www.instagram.com/p/BonWw72lemb/" 
+                      
+                  
+
+                  class="image-slide-anchor content-fill"
+                >
+                  <noscript><img src="https://static1.squarespace.com/static/5902a4bdb3db2bade49c52a0/59b9bb6de03f38cd8186ffff/5bb9a22b87d422aa75c4b30b/1538892349631/" alt="Keeping it lit last night at Trappers" /></noscript><img class="thumb-image" data-src="https://static1.squarespace.com/static/5902a4bdb3db2bade49c52a0/59b9bb6de03f38cd8186ffff/5bb9a22b87d422aa75c4b30b/1538892349631/" data-image="https://static1.squarespace.com/static/5902a4bdb3db2bade49c52a0/59b9bb6de03f38cd8186ffff/5bb9a22b87d422aa75c4b30b/1538892349631/" data-image-dimensions="640x560" data-image-focal-point="0.5,0.5" alt="Keeping it lit last night at Trappers" data-load="false" data-image-id="5bb9a22b87d422aa75c4b30b" data-type="image" />
+                </a>
+                
+              </div>
+            </div>
+          
+
+          
+        
+
+      
+
+        
+
+        
+
+        
+          
+            <div class="slide" data-type="image">
+              <div class="margin-wrapper">
+                <a
+                  
+                      
+                        href="https://www.instagram.com/p/BnjP9OhlMyk/" 
+                      
+                  
+
+                  class="image-slide-anchor content-fill"
+                >
+                  <noscript><img src="https://static1.squarespace.com/static/5902a4bdb3db2bade49c52a0/59b9bb6de03f38cd8186ffff/5b96a4b692c3966dcc577aea/1536599229388/" alt="Frosh week fun at @thepubonking" /></noscript><img class="thumb-image" data-src="https://static1.squarespace.com/static/5902a4bdb3db2bade49c52a0/59b9bb6de03f38cd8186ffff/5b96a4b692c3966dcc577aea/1536599229388/" data-image="https://static1.squarespace.com/static/5902a4bdb3db2bade49c52a0/59b9bb6de03f38cd8186ffff/5b96a4b692c3966dcc577aea/1536599229388/" data-image-dimensions="640x640" data-image-focal-point="0.5,0.5" alt="Frosh week fun at @thepubonking" data-load="false" data-image-id="5b96a4b692c3966dcc577aea" data-type="image" />
+                </a>
+                
+              </div>
+            </div>
+          
+
+          
+        
+
+      
+
+        
+
+        
+
+        
+          
+            <div class="slide" data-type="image">
+              <div class="margin-wrapper">
+                <a
+                  
+                      
+                        href="https://www.instagram.com/p/BnjPgJulwo_/" 
+                      
+                  
+
+                  class="image-slide-anchor content-fill"
+                >
+                  <noscript><img src="https://static1.squarespace.com/static/5902a4bdb3db2bade49c52a0/59b9bb6de03f38cd8186ffff/5b96a4b692c3966dcc577aeb/1536599234749/" alt="Covering for Pablo like..." /></noscript><img class="thumb-image" data-src="https://static1.squarespace.com/static/5902a4bdb3db2bade49c52a0/59b9bb6de03f38cd8186ffff/5b96a4b692c3966dcc577aeb/1536599234749/" data-image="https://static1.squarespace.com/static/5902a4bdb3db2bade49c52a0/59b9bb6de03f38cd8186ffff/5b96a4b692c3966dcc577aeb/1536599234749/" data-image-dimensions="640x640" data-image-focal-point="0.5,0.5" alt="Covering for Pablo like..." data-load="false" data-image-id="5b96a4b692c3966dcc577aeb" data-type="image" />
+                </a>
+                
+              </div>
+            </div>
+          
+
+          
+        
+
+      
+
+        
+
+        
+
+        
+          
+            <div class="slide" data-type="image">
+              <div class="margin-wrapper">
+                <a
+                  
+                      
+                        href="https://www.instagram.com/p/BWMXgI4hj_l/" 
+                      
+                  
+
+                  class="image-slide-anchor content-fill"
+                >
+                  <noscript><img src="https://static1.squarespace.com/static/5902a4bdb3db2bade49c52a0/59b9bb6de03f38cd8186ffff/59b9bb6d88199ebfa390864f/1505344366792/" alt="Covering for Whiteout like..." /></noscript><img class="thumb-image" data-src="https://static1.squarespace.com/static/5902a4bdb3db2bade49c52a0/59b9bb6de03f38cd8186ffff/59b9bb6d88199ebfa390864f/1505344366792/" data-image="https://static1.squarespace.com/static/5902a4bdb3db2bade49c52a0/59b9bb6de03f38cd8186ffff/59b9bb6d88199ebfa390864f/1505344366792/" data-image-dimensions="640x424" data-image-focal-point="0.5,0.5" alt="Covering for Whiteout like..." data-load="false" data-image-id="59b9bb6d88199ebfa390864f" data-type="image" />
+                </a>
+                
+              </div>
+            </div>
+          
+
+          
+        
+
+      
+
+        
+
+        
+
+        
+          
+            <div class="slide" data-type="image">
+              <div class="margin-wrapper">
+                <a
+                  
+                      
+                        href="https://www.instagram.com/p/BUpzuvLhDfW/" 
+                      
+                  
+
+                  class="image-slide-anchor content-fill"
+                >
+                  <noscript><img src="https://static1.squarespace.com/static/5902a4bdb3db2bade49c52a0/59b9bb6de03f38cd8186ffff/59b9bb6d88199ebfa3908650/1505344366737/" alt="Just another Saturday night at Phil's
+
+Photo cred @novaberry" /></noscript><img class="thumb-image" data-src="https://static1.squarespace.com/static/5902a4bdb3db2bade49c52a0/59b9bb6de03f38cd8186ffff/59b9bb6d88199ebfa3908650/1505344366737/" data-image="https://static1.squarespace.com/static/5902a4bdb3db2bade49c52a0/59b9bb6de03f38cd8186ffff/59b9bb6d88199ebfa3908650/1505344366737/" data-image-dimensions="640x640" data-image-focal-point="0.5,0.5" alt="Just another Saturday night at Phil's
+
+Photo cred @novaberry" data-load="false" data-image-id="59b9bb6d88199ebfa3908650" data-type="image" />
+                </a>
+                
+              </div>
+            </div>
+          
+
+          
+        
+
+      
+
+        
+
+        
+
+        
+          
+            <div class="slide" data-type="image">
+              <div class="margin-wrapper">
+                <a
+                  
+                      
+                        href="https://www.instagram.com/p/BUSTrAXBtnI/" 
+                      
+                  
+
+                  class="image-slide-anchor content-fill"
+                >
+                  <noscript><img src="https://static1.squarespace.com/static/5902a4bdb3db2bade49c52a0/59b9bb6de03f38cd8186ffff/5b03ac788a4134f832211840/1526967434533/" alt="Progress photo" /></noscript><img class="thumb-image" data-src="https://static1.squarespace.com/static/5902a4bdb3db2bade49c52a0/59b9bb6de03f38cd8186ffff/5b03ac788a4134f832211840/1526967434533/" data-image="https://static1.squarespace.com/static/5902a4bdb3db2bade49c52a0/59b9bb6de03f38cd8186ffff/5b03ac788a4134f832211840/1526967434533/" data-image-dimensions="640x640" data-image-focal-point="0.5,0.5" alt="Progress photo" data-load="false" data-image-id="5b03ac788a4134f832211840" data-type="image" />
+                </a>
+                
+              </div>
+            </div>
+          
+
+          
+        
+
+      
+
+        
+
+        
+
+        
+          
+
+          
+            <div class="slide" data-type="video">
+              <div class="margin-wrapper">
+                <div
+                  class="
+                    content-wrapper
+                    content-fill
+                    
+                  "
+                  
+                >
+                  <div class="sqs-video-wrapper" data-html="&lt;iframe frameborder=&quot;0&quot; height=&quot;710&quot; scrolling=&quot;no&quot; width=&quot;612&quot; allowtransparency=&quot;true&quot; src=&quot;https://www.instagram.com/p/BAS_UEDA_Zf/embed/&quot;&gt;&lt;/iframe&gt;" data-provider-name=""><div class="sqs-video-overlay" style="opacity: 0;"><img data-load="false" data-src="https://static1.squarespace.com/static/5902a4bdb3db2bade49c52a0/59b9bb6de03f38cd8186ffff/59b9bb6d88199ebfa3908651/1505344366770/" data-image-dimensions="640x640" data-image-focal-point="0.5,0.5" /><div class="sqs-video-opaque"> </div><div class="sqs-video-icon"></div></div></div>
+                </div>
+                
+              </div>
+            </div>
+          
+        
+
+      
+
+        
+
+        
+
+        
+          
+            <div class="slide" data-type="image">
+              <div class="margin-wrapper">
+                <a
+                  
+                      
+                        href="https://www.instagram.com/p/84FcxcA_eq/" 
+                      
+                  
+
+                  class="image-slide-anchor content-fill"
+                >
+                  <noscript><img src="https://static1.squarespace.com/static/5902a4bdb3db2bade49c52a0/59b9bb6de03f38cd8186ffff/59b9bb6d88199ebfa3908652/1505344368274/" alt="View from the drum throne #drumset #drums #drumsetupgrade #zildjian #remo #studio" /></noscript><img class="thumb-image" data-src="https://static1.squarespace.com/static/5902a4bdb3db2bade49c52a0/59b9bb6de03f38cd8186ffff/59b9bb6d88199ebfa3908652/1505344368274/" data-image="https://static1.squarespace.com/static/5902a4bdb3db2bade49c52a0/59b9bb6de03f38cd8186ffff/59b9bb6d88199ebfa3908652/1505344368274/" data-image-dimensions="640x640" data-image-focal-point="0.5,0.5" alt="View from the drum throne #drumset #drums #drumsetupgrade #zildjian #remo #studio" data-load="false" data-image-id="59b9bb6d88199ebfa3908652" data-type="image" />
+                </a>
+                
+              </div>
+            </div>
+          
+
+          
+        
+
+      
+    
+  </div>
+
+  
+
+</div>
+
+
+
+
+<style type="text/css" id="design-grid-css">
+#block-yui_3_17_2_3_1506138096486_3836 .sqs-gallery-block-grid .sqs-gallery-design-grid { margin-right: -20px; }
+#block-yui_3_17_2_3_1506138096486_3836 .sqs-gallery-block-grid .sqs-gallery-design-grid-slide .margin-wrapper { margin-right: 20px; margin-bottom: 20px; }
+</style>
+
+
+
+&nbsp;]]></content:encoded>
+      <wp:post_name>instagram</wp:post_name>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_id>10</wp:post_id>
+      <wp:status>publish</wp:status>
+    </item>
+    <item>
+      <link>/soundcloud</link>
+      <title>SoundCloud</title>
+      <pubDate>Sat, 23 Sep 2017 04:13:14 +0000</pubDate>
+      <content:encoded><![CDATA[&nbsp;&nbsp;<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?visual=true&amp;url=https%3A%2F%2Fapi.soundcloud.com%2Fusers%2F232938346&amp;show_artwork=true&amp;callback=YUI.Env.JSONP.yui_3_17_2_1_1506138096486_690029&amp;wmode=opaque"></iframe>&nbsp;]]></content:encoded>
+      <wp:post_name>soundcloud</wp:post_name>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_id>11</wp:post_id>
+      <wp:status>publish</wp:status>
+    </item>
+    <item>
+      <link>/mixcloud</link>
+      <title>Mixcloud</title>
+      <pubDate>Sun, 03 Dec 2017 23:27:21 +0000</pubDate>
+      <content:encoded><![CDATA[&nbsp;&nbsp;<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FMichaelToor%2Fbig-room-bangers-mix-i%2F" frameborder="0" ></iframe>&nbsp;&nbsp;&nbsp;<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FMichaelToor%2F2017-early-club-vibes-mix%2F" frameborder="0" ></iframe>&nbsp;]]></content:encoded>
+      <wp:post_name>mixcloud</wp:post_name>
+      <wp:post_type>page</wp:post_type>
+      <wp:post_id>12</wp:post_id>
+      <wp:status>publish</wp:status>
+    </item>
+  </channel>
+</rss>
+

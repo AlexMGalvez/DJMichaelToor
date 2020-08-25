@@ -4,8 +4,8 @@
   "description": "The Michael Toor DJ website",
   "main": "app.js",
   "dependencies": {
-    "async": "^2.6.2",
-    "bcrypt": "^3.0.6",
+    "bcrypt": "^5.0.0",
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
     "bootstrap": "^4.1.1",
     "connect-flash": "^0.1.1",
@@ -22,6 +22,7 @@
     "passport-local": "^1.0.0"
   },
   "devDependencies": {
+    "async": "^2.6.3",
     "css-loader": "^0.28.11",
     "ejs-loader": "^0.3.1"
   },

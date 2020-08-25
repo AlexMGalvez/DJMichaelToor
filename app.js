@@ -131,7 +131,7 @@ app.post("/contact", (req, res) => {
         subject: req.body.subject,
         text:  "Email from " + req.body.fname + " " +  req.body.lname + " at " +  req.body.email + "\n" + "Message: \n" + req.body.message
     };
-    
+
     req.check("email", "Invalid email address").isEmail();
     req.check("fname", "Empty first name property").notEmpty();
     req.check("lname", "Empty last name property").notEmpty();
