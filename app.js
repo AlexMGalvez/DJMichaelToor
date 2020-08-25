@@ -12,8 +12,10 @@ let fs               = require("fs"),                 //file reader
     passport         = require("passport"),
     LocalStrategy    = require("passport-local"),     //session for local username and password
     bcrypt           = require("bcrypt");             //user password hashing
+    if (process.env.NODE_ENV !== 'production') { 
                        require("dotenv").config()     //loads variables from .env -used for sensitive information
-
+    }
+    
 //database connection
 var pool  = mysql.createPool({
     connectionLimit     : 10,
