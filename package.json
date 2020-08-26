@@ -27,12 +27,9 @@
     "ejs-loader": "^0.3.1"
   },
   "scripts": {
-    "dev": "react-scripts start",
-    "start": "serve -s build",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run build"
+    "start": "node app.js",
+    "build": "",
+    "serve": "nodemon server.js"
   },
   "author": "Alex Galvez",
   "license": "ISC"
