@@ -14,24 +14,16 @@ let fs               = require("fs"),                 //file reader
     bcrypt           = require("bcrypt");             //user password hashing
                        require("dotenv").config()     //loads variables from .env -used for sensitive information
 
-
 //database connection
-// var pool  = mysql.createPool({
-//     connectionLimit     : 10,
-//     host                : process.env.DB_HOST,
-//     user                : process.env.DB_USER,
-//     password            : process.env.DB_PASS,
-//     database            : process.env.DB_NAME,
-//     dateStrings         : "date",
-//     port                : process.env.DB_PORT,
-//     multipleStatements  : true
-// });
-
 var pool  = mysql.createPool({
-    host                : 'localhost',
-    user                : 'root',
-    password            : '',
-    database            : 'gigsarchive'
+    connectionLimit     : 10,
+    host                : process.env.DB_HOST,
+    user                : process.env.DB_USER,
+    password            : process.env.DB_PASS,
+    database            : process.env.DB_NAME,
+    dateStrings         : "date",
+    port                : process.env.DB_PORT,
+    multipleStatements  : true
 });
 
 app.set("view engine", "ejs");
