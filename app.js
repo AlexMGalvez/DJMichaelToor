@@ -16,15 +16,22 @@ let fs               = require("fs"),                 //file reader
 
 
 //database connection
+// var pool  = mysql.createPool({
+//     connectionLimit     : 10,
+//     host                : process.env.DB_HOST,
+//     user                : process.env.DB_USER,
+//     password            : process.env.DB_PASS,
+//     database            : process.env.DB_NAME,
+//     dateStrings         : "date",
+//     port                : process.env.DB_PORT,
+//     multipleStatements  : true
+// });
+
 var pool  = mysql.createPool({
-    connectionLimit     : 10,
-    host                : process.env.DB_HOST,
-    user                : process.env.DB_USER,
-    password            : process.env.DB_PASS,
-    database            : process.env.DB_NAME,
-    dateStrings         : "date",
-    port                : process.env.DB_PORT,
-    multipleStatements  : true
+    host                : 'localhost',
+    user                : 'root',
+    password            : '',
+    database            : 'gigsarchive'
 });
 
 app.set("view engine", "ejs");
