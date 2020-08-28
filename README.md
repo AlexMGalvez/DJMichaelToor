@@ -3,7 +3,7 @@
 ![alt text](
 https://raw.githubusercontent.com/AlexMGalvez/DJMichaelToor/master/public/images/MichaelToorLogo.png)
 
-> As my first full stack project with node.js, this dj website allows the dj to advertise himself by presenting his music, bio, personal studio and his performed gigs to potential clients. A client can contact the dj through the website if his services are desired.
+> As my first full stack project with node.js, this dj website allows the dj to advertise himself by presenting his music, bio, personal studio and his performed gigs to potential clients.
 
 ## Technologies
 * Node.js - version 14.5.0
