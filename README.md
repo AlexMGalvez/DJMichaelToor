@@ -15,10 +15,10 @@ Website link to deployed app on Heroku: https://djmichaeltoor.herokuapp.com/
 
 ## Features
 This website includes:
-* User authentication for the owner to manage the website
-* The Nodemailer module for clients to contact the dJ via email 
-* A MySQL database for storing all the dJ's gigs. The database can be appended to or edited through the owner's user options
-* A calendar module for client and owner interaction to the database
+* User authentication and the use of sessions for the owner to manage his website
+* The Nodemailer module which allows clients to contact the dj via email 
+* A MySQL database for storing all the dj's gigs. The database can be appended to or edited through the owner's user options
+* A calendar module for client and owner interaction with the database
 
 ## Status
 This website is no longer in use by the owner since he is now a producer and no longer strictly a dj. The deployed app on Heroku is just for demonstration purposes. 
