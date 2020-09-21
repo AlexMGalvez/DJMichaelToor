@@ -14,7 +14,8 @@ let fs               = require("fs"),                 //file reader
     bcrypt           = require("bcrypt");             //user password hashing
                        require("dotenv").config()     //loads variables from .env -used for sensitive information
 
-const ExpressBrute   = require('express-brute');      //prevent bruteforece attacks for login
+//prevent bruteforece attacks for login                   
+const ExpressBrute   = require('express-brute');
 const store          = new ExpressBrute.MemoryStore();
 const bruteforce     = new ExpressBrute(store);
 
