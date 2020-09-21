@@ -19,6 +19,7 @@ This website includes:
 * The Nodemailer module which allows clients to contact the dj via email 
 * A MySQL database for storing all the dj's gigs. The database can be appended to or edited through the owner's user options
 * A calendar module for client and owner interaction with the database
+* Security measures taken into account regarding brute force attack prevention, password hashing and preventing SQL injection
 
 ## Status
 This website is no longer in use by the owner since he is now a producer and no longer strictly a dj. The deployed app on Heroku is just for demonstration purposes. 
