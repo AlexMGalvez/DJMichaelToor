@@ -14,6 +14,10 @@ let fs               = require("fs"),                 //file reader
     bcrypt           = require("bcrypt");             //user password hashing
                        require("dotenv").config()     //loads variables from .env -used for sensitive information
 
+const ExpressBrute   = require('express-brute');      //prevent bruteforece attacks for login
+const store          = new ExpressBrute.MemoryStore();
+const bruteforce     = new ExpressBrute(store);
+
 //database connection
 var pool  = mysql.createPool({
     connectionLimit     : 10,
@@ -28,6 +32,7 @@ var pool  = mysql.createPool({
 
 app.set("view engine", "ejs");
 
+app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(flash());
 app.use(expressValidator());
@@ -261,7 +266,7 @@ app.get("/login", (req, res) => {
     res.render("login");
 });
 
-app.post("/login", passport.authenticate("local", {
+app.post("/login", bruteforce.prevent, passport.authenticate("local", {
     successRedirect: "/archive_options",
     failureRedirect: "/login",
     failureFlash : true
