@@ -22,4 +22,4 @@ This website includes:
 * Security measures taken into account regarding brute force attack prevention, password hashing and preventing SQL injection
 
 ## Status
-This website is no longer in use by the owner since he is now a producer and no longer strictly a dj. The deployed app on Heroku is just for demonstration purposes. 
+This website is no longer in use by the owner since he is now a producer and no longer a dj. The deployed app on Heroku is just for demonstration purposes. 
